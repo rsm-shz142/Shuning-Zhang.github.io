@@ -1,0 +1,37 @@
+---
+title: "S-Mobile: Predicting Customer Churn"
+---
+
+# S-Mobile: Predicting Customer Churn
+
+![](smobile.png){width=500}
+
+This project focuses on predicting customer churn using data analytics and machine learning techniques.
+
+## Project Overview
+
+Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.
+
+## Objectives
+
+- Predict whether a customer will churn
+- Identify key drivers of churn
+- Provide actionable insights to reduce churn
+- Evaluate business impact of different strategies
+
+## Tools Used
+
+- Python
+- pandas
+- Machine Learning models
+- Data Visualization
+
+## Key Insights
+
+- Customers with low engagement are more likely to churn
+- Usage patterns strongly predict churn behavior
+- Machine learning models improve prediction accuracy
+
+## GitHub Repository
+
+[👉 View Full Project on GitHub](https://github.com/rsm-shz142/smobile-project)

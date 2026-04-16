@@ -1,0 +1,35 @@
+---
+title: "My Experience Using Obsidian for Note-Taking"
+date: "2026-04-05"
+categories: [productivity, obsidian, learning]
+image: "https://picsum.photos/800/400?random=22"
+description: "A brief review of using Obsidian as a tool for organizing notes and learning."
+---
+
+## Introduction
+
+Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information.
+
+## Key Features I Like
+
+One of the most useful features in Obsidian is the ability to create links between notes. This allows me to connect ideas across different topics, which makes my notes feel more like a network rather than isolated pages.
+
+I also find the Markdown-based system very convenient. It keeps everything simple and focused on content rather than formatting.
+
+## How I Use It
+
+I mainly use Obsidian for:
+
+- Organizing class notes
+- Recording ideas from readings or videos
+- Structuring long-term learning topics
+
+For example, I can create separate notes for finance, analytics, and personal development, and then link related concepts together.
+
+## Limitations
+
+Although Obsidian is powerful, it does have a learning curve. It takes some time to understand how to organize notes effectively, especially when using features like backlinks and graph view.
+
+## Reflection
+
+Overall, Obsidian has improved how I manage my learning process. It encourages me to think more actively about connections between ideas, rather than just storing information.

@@ -1,0 +1,415 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shuning Zhang",
+    "section": "",
+    "text": "Welcome to my website!"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file."
+  },
+  {
+    "objectID": "projects/project1/index.html",
+    "href": "projects/project1/index.html",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "This project focuses on predicting customer churn using data analytics and machine learning techniques.\n\n\nCustomer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.\n\n\n\n\nPredict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies\n\n\n\n\n\nPython\npandas\nMachine Learning models\nData Visualization\n\n\n\n\n\nCustomers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy\n\n\n\n\n👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "projects/project1/index.html#sub-header",
+    "href": "projects/project1/index.html#sub-header",
+    "title": "Analysis of Cars",
+    "section": "",
+    "text": "Here is a plot:\n#| message: false\nlibrary(tidyverse) data(mtcars)\nmtcars |&gt; ggplot(aes(mpg, disp)) + geom_point(color=“dodgerblue4”, size=2)"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Projects",
+    "section": "",
+    "text": "Pentathlon: Next Product to Buy Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/my-first-post.html",
+    "href": "posts/my-first-post.html",
+    "title": "Building My First Quarto Website",
+    "section": "",
+    "text": "In this project, I created my first Quarto website and learned how to organize multiple pages in one site."
+  },
+  {
+    "objectID": "posts/my-first-post.html#introduction",
+    "href": "posts/my-first-post.html#introduction",
+    "title": "Building My First Quarto Website",
+    "section": "",
+    "text": "In this project, I created my first Quarto website and learned how to organize multiple pages in one site."
+  },
+  {
+    "objectID": "posts/my-first-post.html#what-i-added",
+    "href": "posts/my-first-post.html#what-i-added",
+    "title": "Building My First Quarto Website",
+    "section": "What I added",
+    "text": "What I added\nFor this version of the website, I added a blog section, customized the navigation bar, and applied my own CSS styling."
+  },
+  {
+    "objectID": "posts/my-first-post.html#what-i-learned",
+    "href": "posts/my-first-post.html#what-i-learned",
+    "title": "Building My First Quarto Website",
+    "section": "What I learned",
+    "text": "What I learned\nOne thing I learned is that Quarto makes it easy to turn simple .qmd files into clean web pages. I also learned how to connect multiple pages together using the _quarto.yml file."
+  },
+  {
+    "objectID": "posts/my-first-post.html#a-simple-code-example",
+    "href": "posts/my-first-post.html#a-simple-code-example",
+    "title": "Building My First Quarto Website",
+    "section": "A simple code example",
+    "text": "A simple code example\n\nprint(\"Hello from my Quarto blog!\")\n\nHello from my Quarto blog!"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog: Learning Notes",
+    "section": "",
+    "text": "AUTHOR Shuning Zhang\nWelcome to my blog page. Here I collect short reflections on website building, design, and learning.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nA/B Testing a Call to Action\n\n\n\nstatistics\n\nab-testing\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding My First Quarto Website\n\n\n\nquarto\n\nwebsite\n\nlearning\n\n\n\nA reflection on building my first multi-page Quarto website and customizing its layout.\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Experience Using Obsidian for Note-Taking\n\n\n\nproductivity\n\nobsidian\n\nlearning\n\n\n\nA brief review of using Obsidian as a tool for organizing notes and learning.\n\n\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA Simple Marketing Analysis: Why Branding Matters\n\n\n\nmarketing\n\nanalysis\n\nbusiness\n\n\n\nA short discussion on how branding influences customer perception and decision-making.\n\n\n\n\n\nApr 4, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html#welcome-to-my-blog",
+    "href": "blog.html#welcome-to-my-blog",
+    "title": "Blog",
+    "section": "",
+    "text": "This page contains posts about my learning experience, website building process, and class-related reflections."
+  },
+  {
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
+    "title": "Building My First Quarto Website",
+    "section": "",
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+  },
+  {
+    "objectID": "posts/post1.html#introduction",
+    "href": "posts/post1.html#introduction",
+    "title": "Building My First Quarto Website",
+    "section": "",
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+  },
+  {
+    "objectID": "posts/post1.html#what-i-added",
+    "href": "posts/post1.html#what-i-added",
+    "title": "Building My First Quarto Website",
+    "section": "What I added",
+    "text": "What I added\nFor this version of the website, I added a blog section, customized the navigation bar, and applied my own CSS styling."
+  },
+  {
+    "objectID": "posts/post1.html#what-i-learned",
+    "href": "posts/post1.html#what-i-learned",
+    "title": "Building My First Quarto Website",
+    "section": "What I learned",
+    "text": "What I learned\nThrough this process, I learned:\n\nHow Quarto organizes content using .qmd files\nHow to create a navigation bar across multiple pages\nHow to customize the appearance of a website using CSS\nHow to structure content so that it is easy to read and navigate"
+  },
+  {
+    "objectID": "posts/post1.html#a-simple-code-example",
+    "href": "posts/post1.html#a-simple-code-example",
+    "title": "Building My First Quarto Website",
+    "section": "A simple code example",
+    "text": "A simple code example\n\nprint(\"Hello from my Quarto blog!\")\n\nHello from my Quarto blog!"
+  },
+  {
+    "objectID": "posts/post3.html",
+    "href": "posts/post3.html",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "",
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+  },
+  {
+    "objectID": "posts/post3.html#why-a-blog-page-matters",
+    "href": "posts/post3.html#why-a-blog-page-matters",
+    "title": "Why I Added a Blog to My Portfolio",
+    "section": "",
+    "text": "A blog page adds more structure to a website and makes it feel more complete."
+  },
+  {
+    "objectID": "posts/post3.html#my-goal",
+    "href": "posts/post3.html#my-goal",
+    "title": "Why I Added a Blog to My Portfolio",
+    "section": "My goal",
+    "text": "My goal\nI wanted my website to show not only static pages, but also ongoing learning and reflection."
+  },
+  {
+    "objectID": "posts/post3.html#conclusion",
+    "href": "posts/post3.html#conclusion",
+    "title": "Why I Added a Blog to My Portfolio",
+    "section": "Conclusion",
+    "text": "Conclusion\nEven one or two simple posts can make a student website look more polished."
+  },
+  {
+    "objectID": "posts/post2.html",
+    "href": "posts/post2.html",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "",
+    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+  },
+  {
+    "objectID": "posts/post2.html#overview",
+    "href": "posts/post2.html#overview",
+    "title": "Three Things I Learned from Website Design",
+    "section": "",
+    "text": "In this post, I summarize a few lessons I learned while improving the appearance of my website."
+  },
+  {
+    "objectID": "posts/post2.html#design-ideas",
+    "href": "posts/post2.html#design-ideas",
+    "title": "Three Things I Learned from Website Design",
+    "section": "Design ideas",
+    "text": "Design ideas\nA clear navigation bar, readable spacing, and consistent colors can make a website look much more professional."
+  },
+  {
+    "objectID": "posts/post2.html#final-thought",
+    "href": "posts/post2.html#final-thought",
+    "title": "Three Things I Learned from Website Design",
+    "section": "Final thought",
+    "text": "Final thought\nSmall visual improvements can make a big difference."
+  },
+  {
+    "objectID": "posts/post1.html#reflection",
+    "href": "posts/post1.html#reflection",
+    "title": "Building My First Quarto Website",
+    "section": "Reflection",
+    "text": "Reflection\nOverall, this project helped me understand how a simple text-based system can be used to build a complete website. It also gave me more confidence in learning new tools independently."
+  },
+  {
+    "objectID": "posts/post3.html#introduction",
+    "href": "posts/post3.html#introduction",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "",
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+  },
+  {
+    "objectID": "posts/post3.html#example",
+    "href": "posts/post3.html#example",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Example",
+    "text": "Example\nFor example, consider two coffee shops offering similar drinks at similar prices. One has a well-designed logo, consistent visual identity, and a clear brand story, while the other does not.\nMost customers are more likely to choose the brand that appears more professional and trustworthy."
+  },
+  {
+    "objectID": "posts/post3.html#key-insight",
+    "href": "posts/post3.html#key-insight",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Key Insight",
+    "text": "Key Insight\nBranding is not just about design. It includes:\n\nVisual identity (logo, colors, layout)\nMessaging and tone\nCustomer experience\n\nAll of these elements work together to create a consistent image in the customer’s mind."
+  },
+  {
+    "objectID": "posts/post3.html#why-it-matters",
+    "href": "posts/post3.html#why-it-matters",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nStrong branding can:\n\nIncrease customer trust\nImprove perceived value\nDifferentiate a product from competitors\n\nThis is especially important in competitive markets."
+  },
+  {
+    "objectID": "posts/post3.html#reflection",
+    "href": "posts/post3.html#reflection",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Reflection",
+    "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
+  },
+  {
+    "objectID": "posts/post2.html#introduction",
+    "href": "posts/post2.html#introduction",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "",
+    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+  },
+  {
+    "objectID": "posts/post2.html#key-features-i-like",
+    "href": "posts/post2.html#key-features-i-like",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Key Features I Like",
+    "text": "Key Features I Like\nOne of the most useful features in Obsidian is the ability to create links between notes. This allows me to connect ideas across different topics, which makes my notes feel more like a network rather than isolated pages.\nI also find the Markdown-based system very convenient. It keeps everything simple and focused on content rather than formatting."
+  },
+  {
+    "objectID": "posts/post2.html#how-i-use-it",
+    "href": "posts/post2.html#how-i-use-it",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "How I Use It",
+    "text": "How I Use It\nI mainly use Obsidian for:\n\nOrganizing class notes\nRecording ideas from readings or videos\nStructuring long-term learning topics\n\nFor example, I can create separate notes for finance, analytics, and personal development, and then link related concepts together."
+  },
+  {
+    "objectID": "posts/post2.html#limitations",
+    "href": "posts/post2.html#limitations",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Limitations",
+    "text": "Limitations\nAlthough Obsidian is powerful, it does have a learning curve. It takes some time to understand how to organize notes effectively, especially when using features like backlinks and graph view."
+  },
+  {
+    "objectID": "posts/post2.html#reflection",
+    "href": "posts/post2.html#reflection",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Reflection",
+    "text": "Reflection\nOverall, Obsidian has improved how I manage my learning process. It encourages me to think more actively about connections between ideas, rather than just storing information."
+  },
+  {
+    "objectID": "posts/post1.html#challenges",
+    "href": "posts/post1.html#challenges",
+    "title": "Building My First Quarto Website",
+    "section": "Challenges",
+    "text": "Challenges\nOne of the main challenges I faced was adjusting the layout and styles. Small changes in CSS sometimes had unexpected effects, and I had to experiment a lot to understand how different elements interact."
+  },
+  {
+    "objectID": "posts/post1.html#what-i-built",
+    "href": "posts/post1.html#what-i-built",
+    "title": "Building My First Quarto Website",
+    "section": "What I built",
+    "text": "What I built\nThe website includes several sections such as an About page, a Resume page, a Projects page, and a Blog page. One of the most interesting parts was learning how these pages are connected through the _quarto.yml file.\nI also added a blog section to make the website feel more dynamic and less static."
+  },
+  {
+    "objectID": "posts/ab-testing.html",
+    "href": "posts/ab-testing.html",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "My website includes a landing page where visitors can sign up to receive a newsletter. Since the landing page is often the first interaction a visitor has with the site, even small design or wording choices may affect whether that visitor decides to subscribe.\nIn this post, I study whether the wording of a call to action can change sign-up behavior. I compare two versions of the message shown on the page. CTA A reads “Sign up for our newsletter here!” while CTA B reads “Stay up to date by signing up!” Both messages are trying to encourage the same action, but they may not be equally effective.\nTo evaluate the two messages, I use an A/B test. In an A/B test, visitors are randomly assigned to one of two versions of a webpage element. One group sees CTA A and the other sees CTA B. Because the assignment is random, differences in sign-up rates between the two groups can be attributed to the CTA wording rather than to systematic differences between visitors. The goal is to determine which CTA produces the higher newsletter sign-up rate."
+  },
+  {
+    "objectID": "posts/ab-testing.html#introduction",
+    "href": "posts/ab-testing.html#introduction",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "My website includes a landing page where visitors can sign up to receive a newsletter. Since the landing page is often the first interaction a visitor has with the site, even small design or wording choices may affect whether that visitor decides to subscribe.\nIn this post, I study whether the wording of a call to action can change sign-up behavior. I compare two versions of the message shown on the page. CTA A reads “Sign up for our newsletter here!” while CTA B reads “Stay up to date by signing up!” Both messages are trying to encourage the same action, but they may not be equally effective.\nTo evaluate the two messages, I use an A/B test. In an A/B test, visitors are randomly assigned to one of two versions of a webpage element. One group sees CTA A and the other sees CTA B. Because the assignment is random, differences in sign-up rates between the two groups can be attributed to the CTA wording rather than to systematic differences between visitors. The goal is to determine which CTA produces the higher newsletter sign-up rate."
+  },
+  {
+    "objectID": "posts/ab-testing.html#the-ab-test-as-a-statistical-problem",
+    "href": "posts/ab-testing.html#the-ab-test-as-a-statistical-problem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The A/B Test as a Statistical Problem",
+    "text": "The A/B Test as a Statistical Problem\nWe can express this A/B test as a simple statistical problem. For each visitor, the outcome is binary: either the visitor signs up for the newsletter or does not. Because the outcome only takes the values 1 or 0, each observation can be modeled as a Bernoulli random variable with parameter (), where () represents the probability of signing up.\nThe CTA shown to a visitor may affect that probability, so I allow the sign-up rate to differ across the two groups. Let (_A) be the probability of signing up for visitors who see CTA A, and let (_B) be the corresponding probability for visitors who see CTA B.\nThe quantity of interest is the difference in sign-up rates: [ = _A - _B ] If (&gt; 0), CTA A performs better on average. If (&lt; 0), CTA B performs better.\nBecause the true probabilities (_A) and (_B) are unknown, I estimate them using the observed sample means in each group. Since the data are binary, each sample mean is just the sample proportion of visitors who signed up. This gives the estimator [ = {X}_A - {X}_B ] where ({X}_A) is the sample sign-up rate for CTA A and ({X}_B) is the sample sign-up rate for CTA B."
+  },
+  {
+    "objectID": "posts/ab-testing.html#simulating-data",
+    "href": "posts/ab-testing.html#simulating-data",
+    "title": "A/B Testing a Call to Action",
+    "section": "Simulating Data",
+    "text": "Simulating Data\nIn a real A/B test, the true sign-up probabilities would be unknown. We would only observe sample outcomes and then try to infer the underlying difference between the two CTAs. For this exercise, however, simulation is helpful because it lets us work in a setting where the truth is known in advance. That makes it easier to evaluate how well our estimator performs.\nI assume that visitors who see CTA A sign up with probability (_A = 0.22), while visitors who see CTA B sign up with probability (_B = 0.18). This means the true treatment effect is [ = _A - _B = 0.04. ]\nUsing these assumptions, I simulate 1,000 Bernoulli observations for each group. Each observation equals 1 if the visitor signs up and 0 otherwise. These simulated samples will be used throughout the rest of the post.\n\npi_A = 0.22\npi_B = 0.18\nn_A = 1000\nn_B = 1000\n\nA = np.random.binomial(1, pi_A, n_A)\nB = np.random.binomial(1, pi_B, n_B)\n\ntheta_true = pi_A - pi_B\ntheta_hat = A.mean() - B.mean()\n\nprint(f\"Sample sign-up rate for CTA A: {A.mean():.4f}\")\nprint(f\"Sample sign-up rate for CTA B: {B.mean():.4f}\")\nprint(f\"Estimated difference (theta_hat): {theta_hat:.4f}\")\nprint(f\"True difference (theta): {theta_true:.4f}\")\n\nSample sign-up rate for CTA A: 0.2160\nSample sign-up rate for CTA B: 0.1780\nEstimated difference (theta_hat): 0.0380\nTrue difference (theta): 0.0400"
+  },
+  {
+    "objectID": "posts/ab-testing.html#the-law-of-large-numbers",
+    "href": "posts/ab-testing.html#the-law-of-large-numbers",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Law of Large Numbers",
+    "text": "The Law of Large Numbers\nThe Law of Large Numbers states that as the sample size increases, the sample average converges to the true population mean. In other words, while individual observations are noisy, averaging over many observations produces a more stable and reliable estimate.\nIn the context of this A/B test, this idea is important because our estimator of interest, ( = {X}_A - {X}_B), is based on sample averages. As we collect more data, we expect this estimate to get closer to the true treatment effect.\nTo illustrate this, I compute the difference between the outcomes in the two groups for each observation and then track how the cumulative average of these differences evolves as the sample size grows.\n\ndiffs = A - B\nrunning_mean = np.cumsum(diffs) / np.arange(1, len(diffs) + 1)\n\nplt.figure()\nplt.plot(np.arange(1, len(diffs) + 1), running_mean)\nplt.axhline(theta_true, linestyle=\"--\")\nplt.xlabel(\"Number of paired observations\")\nplt.ylabel(\"Cumulative average of A - B\")\nplt.title(\"The Law of Large Numbers for the Estimated Treatment Effect\")\nplt.show()\n\n\n\n\n\n\n\n\nAt the beginning, the running average fluctuates substantially, even taking on extreme values, because each new observation has a large impact when the sample size is very small. As more observations are added, these fluctuations become less pronounced and the estimate begins to stabilize.\nOver time, the cumulative average settles near the true treatment effect of 0.04. This illustrates the Law of Large Numbers: although individual observations are highly variable, averaging over a large number of observations produces a stable and reliable estimate of the underlying population parameter."
+  },
+  {
+    "objectID": "posts/ab-testing.html#bootstrap-standard-errors",
+    "href": "posts/ab-testing.html#bootstrap-standard-errors",
+    "title": "A/B Testing a Call to Action",
+    "section": "Bootstrap Standard Errors",
+    "text": "Bootstrap Standard Errors\nSo far, I have computed a single estimate of the treatment effect. However, this estimate is based on a finite sample and is therefore subject to randomness. If I were to repeat the experiment with a different sample, I would likely obtain a slightly different estimate.\nTo quantify this uncertainty, I use the concept of a standard error. The standard error measures how much an estimator is expected to vary across repeated samples. In this section, I estimate the standard error of () using a bootstrap approach and compare it to the analytical formula.\nThe bootstrap method works by repeatedly resampling from the observed data with replacement and recomputing the estimator each time. This produces an empirical distribution of the estimator, which can be used to approximate its variability.\n\nn_boot = 1000\nboot_thetas = []\n\nfor _ in range(n_boot):\n    A_boot = np.random.choice(A, size=len(A), replace=True)\n    B_boot = np.random.choice(B, size=len(B), replace=True)\n    boot_theta = A_boot.mean() - B_boot.mean()\n    boot_thetas.append(boot_theta)\n\nboot_thetas = np.array(boot_thetas)\n\n\nplt.hist(boot_thetas, bins=30)\nplt.axvline(theta_hat, linestyle=\"--\")\nplt.xlabel(\"Bootstrap estimates of theta\")\nplt.ylabel(\"Frequency\")\nplt.title(\"Bootstrap Distribution of the Treatment Effect\")\nplt.show()\n\n\n\n\n\n\n\n\nThe histogram shows the distribution of the estimated treatment effect across many bootstrap samples. While each individual estimate differs slightly due to random sampling, the values are concentrated around the original estimate. This distribution reflects the uncertainty associated with ().\n\nse_boot = boot_thetas.std()\nprint(f\"Bootstrap standard error: {se_boot:.4f}\")\n\nBootstrap standard error: 0.0177\n\n\n\nse_analytical = np.sqrt(\n    A.mean() * (1 - A.mean()) / len(A) +\n    B.mean() * (1 - B.mean()) / len(B)\n)\n\nprint(f\"Analytical standard error: {se_analytical:.4f}\")\n\nAnalytical standard error: 0.0178\n\n\nThe bootstrap standard error is very close to the analytical standard error. This is reassuring, as it suggests that the bootstrap procedure is capturing the variability of the estimator correctly. The analytical formula is derived under standard assumptions, while the bootstrap provides a more general, data-driven way to estimate uncertainty.\n\nci_lower = theta_hat - 1.96 * se_boot\nci_upper = theta_hat + 1.96 * se_boot\n\nprint(f\"95% CI: [{ci_lower:.4f}, {ci_upper:.4f}]\")\n\n95% CI: [0.0034, 0.0726]\n\n\nUsing the bootstrap standard error, I construct a 95% confidence interval for the treatment effect. This interval provides a range of plausible values for the true difference in sign-up rates. If the experiment were repeated many times, about 95% of such intervals would contain the true treatment effect. Importantly, the interval does not include zero, which suggests that there is a statistically significant difference between the two CTAs."
+  },
+  {
+    "objectID": "posts/ab-testing.html#the-central-limit-theorem",
+    "href": "posts/ab-testing.html#the-central-limit-theorem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Central Limit Theorem",
+    "text": "The Central Limit Theorem\nThe Central Limit Theorem (CLT) provides a theoretical foundation for statistical inference. It states that, under fairly general conditions, the sampling distribution of an estimator becomes approximately normal as the sample size grows.\nIn this context, the estimator of interest is ( = {X}_A - {X}_B). Even though the underlying data are binary, the CLT tells us that the distribution of () across repeated samples should be approximately normal when the sample size is large.\nTo illustrate this, I repeatedly simulate new datasets and compute () each time. This allows me to approximate the sampling distribution of the estimator and compare it to a normal distribution.\n\nn_sim = 1000\ntheta_hats = []\n\nfor _ in range(n_sim):\n    A_sim = np.random.binomial(1, pi_A, n_A)\n    B_sim = np.random.binomial(1, pi_B, n_B)\n    theta_sim = A_sim.mean() - B_sim.mean()\n    theta_hats.append(theta_sim)\n\ntheta_hats = np.array(theta_hats)\n\n\nmean_theta = theta_hats.mean()\nstd_theta = theta_hats.std()\n\nx = np.linspace(mean_theta - 4*std_theta, mean_theta + 4*std_theta, 100)\n\nplt.hist(theta_hats, bins=30, density=True)\nplt.plot(x, norm.pdf(x, mean_theta, std_theta))\nplt.axvline(theta_true, linestyle=\"--\")\n\nplt.xlabel(\"Estimated treatment effect\")\nplt.ylabel(\"Density\")\nplt.title(\"Sampling Distribution of the Estimator and Normal Approximation\")\nplt.show()\n\n\n\n\n\n\n\n\nThe histogram shows the distribution of the estimated treatment effect across many repeated samples. The distribution is approximately symmetric and bell-shaped, even though the underlying data are binary.\nThe overlaid normal curve closely matches the simulated distribution, indicating that the normal approximation works well in this setting. This is consistent with the Central Limit Theorem, which states that the sampling distribution of an estimator becomes approximately normal as the sample size increases.\nThis result is important because it allows us to use normal-based methods, such as confidence intervals and hypothesis tests, even when the original data are not normally distributed."
+  },
+  {
+    "objectID": "posts/ab-testing.html#hypothesis-testing",
+    "href": "posts/ab-testing.html#hypothesis-testing",
+    "title": "A/B Testing a Call to Action",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\nTo formally evaluate whether the two CTAs perform differently, I use a hypothesis test. The goal is to assess whether the observed difference in sign-up rates could plausibly be explained by random variation alone.\nThe null hypothesis assumes that there is no difference between the two CTAs: [ H_0: = 0 ] while the alternative hypothesis is that there is a nonzero difference: [ H_1: . ]\nUnder the null hypothesis, the estimated treatment effect should be close to zero, up to sampling variability. I use the standard error of the estimator to compute a test statistic, which measures how far the observed estimate is from zero in standardized units.\n\nz_stat = theta_hat / se_boot\nprint(f\"Test statistic (z): {z_stat:.4f}\")\n\nTest statistic (z): 2.1529\n\n\n\np_value = 2 * (1 - norm.cdf(abs(z_stat)))\nprint(f\"P-value: {p_value:.4f}\")\n\nP-value: 0.0313\n\n\nThe p-value measures how likely it would be to observe a difference at least as extreme as the one in the data if the null hypothesis were true. In this case, the p-value is approximately 0.031, which is below the 5% significance level.\nTherefore, I reject the null hypothesis of no difference between the two CTAs. This suggests that the observed difference in sign-up rates is unlikely to be due to random chance alone.\nSince the estimated treatment effect is positive, the results indicate that CTA A leads to a higher sign-up rate than CTA B."
+  },
+  {
+    "objectID": "posts/ab-testing.html#the-t-test-as-a-regression",
+    "href": "posts/ab-testing.html#the-t-test-as-a-regression",
+    "title": "A/B Testing a Call to Action",
+    "section": "The T-Test as a Regression",
+    "text": "The T-Test as a Regression\nAnother way to analyze the A/B test is to frame it as a regression problem. Instead of comparing group means directly, I can estimate the treatment effect using a simple linear regression.\nTo do this, I combine the data from both groups into a single dataset and create an indicator variable that equals 1 if the observation comes from CTA A and 0 if it comes from CTA B. I then regress the binary outcome (sign-up or not) on this indicator.\nIn this setup, the coefficient on the indicator variable represents the difference in average outcomes between the two groups. This means that the regression coefficient should be equal to the estimator ( = {X}_A - {X}_B).\nThis shows that a two-sample t-test is equivalent to a regression with a binary treatment variable.\n\n# Combine data\nY = np.concatenate([A, B])\nT = np.concatenate([np.ones(len(A)), np.zeros(len(B))])\n\n\nX = sm.add_constant(T)\nmodel = sm.OLS(Y, X).fit()\n\ncoef = model.params[1]\nse_reg = model.bse[1]\np_reg = model.pvalues[1]\nintercept = model.params[0]\n\nprint(f\"Intercept (mean outcome for CTA B): {intercept:.4f}\")\nprint(f\"Regression estimate of treatment effect: {coef:.4f}\")\nprint(f\"Standard error: {se_reg:.4f}\")\nprint(f\"P-value: {p_reg:.4f}\")\nprint(f\"Difference in means (theta_hat): {theta_hat:.4f}\")\n\nIntercept (mean outcome for CTA B): 0.1780\nRegression estimate of treatment effect: 0.0380\nStandard error: 0.0178\nP-value: 0.0327\nDifference in means (theta_hat): 0.0380\n\n\n\nbeta = model.params[1]\nprint(f\"Regression estimate of treatment effect: {beta:.4f}\")\nprint(f\"Difference in means (theta_hat): {theta_hat:.4f}\")\n\nRegression estimate of treatment effect: 0.0380\nDifference in means (theta_hat): 0.0380\n\n\nThe regression results match the earlier difference-in-means calculation exactly: the estimated coefficient on the treatment indicator is 0.038, which is the same as (). The intercept is 0.178, which corresponds to the average sign-up rate for CTA B.\nThis confirms that a simple regression with a binary treatment indicator recovers the same treatment effect as the two-sample comparison of means. In this sense, the t-test and the regression approach are just two different ways of expressing the same underlying statistical idea."
+  },
+  {
+    "objectID": "posts/ab-testing.html#the-problem-with-peeking",
+    "href": "posts/ab-testing.html#the-problem-with-peeking",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Problem with Peeking",
+    "text": "The Problem with Peeking\nA key assumption behind the hypothesis testing framework used above is that the data are analyzed only once, after the full sample has been collected. In practice, however, it is tempting to monitor the results of an experiment as data come in and stop early if the results look promising. This behavior is often referred to as “peeking.”\nPeeking creates a problem because it effectively increases the number of opportunities to reject the null hypothesis. Each time we check the data, there is a chance of observing a statistically significant result purely by random variation. As a result, repeatedly checking the data inflates the probability of a false positive.\nIn other words, even if there is no true effect, peeking can make it appear as though there is one. This undermines the validity of p-values and confidence intervals, which rely on a fixed sampling plan.\nTo maintain valid inference, researchers must either commit to a pre-specified sample size or use methods that explicitly account for sequential testing. This highlights an important limitation of standard A/B testing procedures and underscores the need for careful experimental design."
+  },
+  {
+    "objectID": "projects/project1/index.html#project-overview",
+    "href": "projects/project1/index.html#project-overview",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior."
+  },
+  {
+    "objectID": "projects/project1/index.html#objectives",
+    "href": "projects/project1/index.html#objectives",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "Predict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies"
+  },
+  {
+    "objectID": "projects/project1/index.html#tools-used",
+    "href": "projects/project1/index.html#tools-used",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "Python\npandas\nMachine Learning models\nData Visualization"
+  },
+  {
+    "objectID": "projects/project1/index.html#key-insights",
+    "href": "projects/project1/index.html#key-insights",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "Customers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy"
+  },
+  {
+    "objectID": "projects/project1/index.html#github-repository",
+    "href": "projects/project1/index.html#github-repository",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "",
+    "text": "👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "projects/project2/index.html",
+    "href": "projects/project2/index.html",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "This project develops customer-level predictive models to optimize promotional messaging strategies using experimental e-mail marketing data.\n\n\nThe goal of this project is to move from a one-size-fits-all marketing approach to a personalized decision framework that maximizes long-term customer value.\nA randomized controlled trial (RCT) tested different e-mail frequencies (1–4 per week). While higher frequency increased short-term revenue, it also led to higher unsubscribe rates, reducing long-term customer lifetime value (LTV).\nThis project builds on that experimental data to determine the most effective message (or no message) for each individual customer.\n\n\n\n\nFeature engineering using Polars\nBuilt multiple predictive models:\n\nLogistic Regression\nRandom Forest\nXGBoost\nNeural Networks\n\nApplied the Next Product to Buy (NPTB) framework\nEstimated:\n\nPurchase probability\nExpected order value\nExpected profit\n\n\n\n\n\n\nCustomer behavior varies significantly, making personalization critical\nHigher email frequency increases short-term revenue but harms long-term engagement\nPredictive modeling enables better targeting decisions than static strategies\nPersonalized messaging significantly improves expected profit per customer\n\n\n\n\n\nBuilt and compared multiple predictive models\nEngineered features and processed data\nEvaluated model performance using multiple metrics\nInterpreted results and translated them into business insights\n\n\n\n\n👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "projects/project2/index.html#project-overview",
+    "href": "projects/project2/index.html#project-overview",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "The goal of this project is to move from a one-size-fits-all marketing approach to a personalized decision framework that maximizes long-term customer value.\nA randomized controlled trial (RCT) tested different e-mail frequencies (1–4 per week). While higher frequency increased short-term revenue, it also led to higher unsubscribe rates, reducing long-term customer lifetime value (LTV).\nThis project builds on that experimental data to determine the most effective message (or no message) for each individual customer."
+  },
+  {
+    "objectID": "projects/project2/index.html#methodology",
+    "href": "projects/project2/index.html#methodology",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "Feature engineering using Polars\nBuilt multiple predictive models:\n\nLogistic Regression\nRandom Forest\nXGBoost\nNeural Networks\n\nApplied the Next Product to Buy (NPTB) framework\nEstimated:\n\nPurchase probability\nExpected order value\nExpected profit"
+  },
+  {
+    "objectID": "projects/project2/index.html#key-insights",
+    "href": "projects/project2/index.html#key-insights",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "Customer behavior varies significantly, making personalization critical\nHigher email frequency increases short-term revenue but harms long-term engagement\nPredictive modeling enables better targeting decisions than static strategies\nPersonalized messaging significantly improves expected profit per customer"
+  },
+  {
+    "objectID": "projects/project2/index.html#my-contribution",
+    "href": "projects/project2/index.html#my-contribution",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "Built and compared multiple predictive models\nEngineered features and processed data\nEvaluated model performance using multiple metrics\nInterpreted results and translated them into business insights"
+  },
+  {
+    "objectID": "projects/project2/index.html#github-repository",
+    "href": "projects/project2/index.html#github-repository",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "",
+    "text": "👉 View Full Project on GitHub"
+  }
+]

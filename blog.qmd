@@ -1,0 +1,21 @@
+---
+title: "Blog: Learning Notes"
+format:
+  html:
+    title-block-banner: true
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  fields: [date, title, description, categories, image]
+  image-height: 160px
+---
+
+
+**AUTHOR**
+Shuning Zhang
+
+Welcome to my blog page. Here I collect short reflections on website building, design, and learning.
