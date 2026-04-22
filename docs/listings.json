@@ -1,18 +1,19 @@
 [
   {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/project2/index.html",
-      "/projects/project1/index.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
+      "/posts/card_krueger_replication.html",
       "/posts/ab-testing.html",
       "/posts/post1.html",
       "/posts/post2.html",
       "/posts/post3.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/project2/index.html",
+      "/projects/project1/index.html"
     ]
   }
 ]

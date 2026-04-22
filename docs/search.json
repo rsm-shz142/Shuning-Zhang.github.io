@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Shuning Zhang",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog: Learning Notes",
     "section": "",
-    "text": "Welcome to my website!"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "My Resume",
-    "section": "",
-    "text": "Download PDF file."
-  },
-  {
-    "objectID": "projects/project1/index.html",
-    "href": "projects/project1/index.html",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "This project focuses on predicting customer churn using data analytics and machine learning techniques.\n\n\nCustomer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.\n\n\n\n\nPredict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies\n\n\n\n\n\nPython\npandas\nMachine Learning models\nData Visualization\n\n\n\n\n\nCustomers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy\n\n\n\n\n👉 View Full Project on GitHub"
-  },
-  {
-    "objectID": "projects/project1/index.html#sub-header",
-    "href": "projects/project1/index.html#sub-header",
-    "title": "Analysis of Cars",
-    "section": "",
-    "text": "Here is a plot:\n#| message: false\nlibrary(tidyverse) data(mtcars)\nmtcars |&gt; ggplot(aes(mpg, disp)) + geom_point(color=“dodgerblue4”, size=2)"
+    "text": "AUTHOR Shuning Zhang\nWelcome to my blog page. Here I collect short reflections on website building, design, and learning.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nReplication of Card and Krueger (1994)\n\n\n\nCausal Inference\n\nDiff-in-Diff\n\nEconomics\n\n\n\n\n\n\n\n\n\nApr 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA/B Testing a Call to Action\n\n\n\nstatistics\n\nab-testing\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding My First Quarto Website\n\n\n\nquarto\n\nwebsite\n\nlearning\n\n\n\nA reflection on building my first multi-page Quarto website and customizing its layout.\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Experience Using Obsidian for Note-Taking\n\n\n\nproductivity\n\nobsidian\n\nlearning\n\n\n\nA brief review of using Obsidian as a tool for organizing notes and learning.\n\n\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA Simple Marketing Analysis: Why Branding Matters\n\n\n\nmarketing\n\nanalysis\n\nbusiness\n\n\n\nA short discussion on how branding influences customer perception and decision-making.\n\n\n\n\n\nApr 4, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html",
@@ -35,116 +14,46 @@
     "text": "Pentathlon: Next Product to Buy Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/my-first-post.html",
-    "href": "posts/my-first-post.html",
-    "title": "Building My First Quarto Website",
+    "objectID": "projects/project1/index.html",
+    "href": "projects/project1/index.html",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "In this project, I created my first Quarto website and learned how to organize multiple pages in one site."
+    "text": "This project focuses on predicting customer churn using data analytics and machine learning techniques.\n\n\nCustomer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.\n\n\n\n\nPredict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies\n\n\n\n\n\nPython\npandas\nMachine Learning models\nData Visualization\n\n\n\n\n\nCustomers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy\n\n\n\n\n👉 View Full Project on GitHub"
   },
   {
-    "objectID": "posts/my-first-post.html#introduction",
-    "href": "posts/my-first-post.html#introduction",
-    "title": "Building My First Quarto Website",
+    "objectID": "projects/project1/index.html#project-overview",
+    "href": "projects/project1/index.html#project-overview",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "In this project, I created my first Quarto website and learned how to organize multiple pages in one site."
+    "text": "Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior."
   },
   {
-    "objectID": "posts/my-first-post.html#what-i-added",
-    "href": "posts/my-first-post.html#what-i-added",
-    "title": "Building My First Quarto Website",
-    "section": "What I added",
-    "text": "What I added\nFor this version of the website, I added a blog section, customized the navigation bar, and applied my own CSS styling."
-  },
-  {
-    "objectID": "posts/my-first-post.html#what-i-learned",
-    "href": "posts/my-first-post.html#what-i-learned",
-    "title": "Building My First Quarto Website",
-    "section": "What I learned",
-    "text": "What I learned\nOne thing I learned is that Quarto makes it easy to turn simple .qmd files into clean web pages. I also learned how to connect multiple pages together using the _quarto.yml file."
-  },
-  {
-    "objectID": "posts/my-first-post.html#a-simple-code-example",
-    "href": "posts/my-first-post.html#a-simple-code-example",
-    "title": "Building My First Quarto Website",
-    "section": "A simple code example",
-    "text": "A simple code example\n\nprint(\"Hello from my Quarto blog!\")\n\nHello from my Quarto blog!"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog: Learning Notes",
+    "objectID": "projects/project1/index.html#objectives",
+    "href": "projects/project1/index.html#objectives",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "AUTHOR Shuning Zhang\nWelcome to my blog page. Here I collect short reflections on website building, design, and learning.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nA/B Testing a Call to Action\n\n\n\nstatistics\n\nab-testing\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding My First Quarto Website\n\n\n\nquarto\n\nwebsite\n\nlearning\n\n\n\nA reflection on building my first multi-page Quarto website and customizing its layout.\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Experience Using Obsidian for Note-Taking\n\n\n\nproductivity\n\nobsidian\n\nlearning\n\n\n\nA brief review of using Obsidian as a tool for organizing notes and learning.\n\n\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA Simple Marketing Analysis: Why Branding Matters\n\n\n\nmarketing\n\nanalysis\n\nbusiness\n\n\n\nA short discussion on how branding influences customer perception and decision-making.\n\n\n\n\n\nApr 4, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Predict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies"
   },
   {
-    "objectID": "blog.html#welcome-to-my-blog",
-    "href": "blog.html#welcome-to-my-blog",
-    "title": "Blog",
+    "objectID": "projects/project1/index.html#tools-used",
+    "href": "projects/project1/index.html#tools-used",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "This page contains posts about my learning experience, website building process, and class-related reflections."
+    "text": "Python\npandas\nMachine Learning models\nData Visualization"
   },
   {
-    "objectID": "posts/post1.html",
-    "href": "posts/post1.html",
-    "title": "Building My First Quarto Website",
+    "objectID": "projects/project1/index.html#key-insights",
+    "href": "projects/project1/index.html#key-insights",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+    "text": "Customers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy"
   },
   {
-    "objectID": "posts/post1.html#introduction",
-    "href": "posts/post1.html#introduction",
-    "title": "Building My First Quarto Website",
+    "objectID": "projects/project1/index.html#github-repository",
+    "href": "projects/project1/index.html#github-repository",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "",
-    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
-  },
-  {
-    "objectID": "posts/post1.html#what-i-added",
-    "href": "posts/post1.html#what-i-added",
-    "title": "Building My First Quarto Website",
-    "section": "What I added",
-    "text": "What I added\nFor this version of the website, I added a blog section, customized the navigation bar, and applied my own CSS styling."
-  },
-  {
-    "objectID": "posts/post1.html#what-i-learned",
-    "href": "posts/post1.html#what-i-learned",
-    "title": "Building My First Quarto Website",
-    "section": "What I learned",
-    "text": "What I learned\nThrough this process, I learned:\n\nHow Quarto organizes content using .qmd files\nHow to create a navigation bar across multiple pages\nHow to customize the appearance of a website using CSS\nHow to structure content so that it is easy to read and navigate"
-  },
-  {
-    "objectID": "posts/post1.html#a-simple-code-example",
-    "href": "posts/post1.html#a-simple-code-example",
-    "title": "Building My First Quarto Website",
-    "section": "A simple code example",
-    "text": "A simple code example\n\nprint(\"Hello from my Quarto blog!\")\n\nHello from my Quarto blog!"
-  },
-  {
-    "objectID": "posts/post3.html",
-    "href": "posts/post3.html",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "",
-    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
-  },
-  {
-    "objectID": "posts/post3.html#why-a-blog-page-matters",
-    "href": "posts/post3.html#why-a-blog-page-matters",
-    "title": "Why I Added a Blog to My Portfolio",
-    "section": "",
-    "text": "A blog page adds more structure to a website and makes it feel more complete."
-  },
-  {
-    "objectID": "posts/post3.html#my-goal",
-    "href": "posts/post3.html#my-goal",
-    "title": "Why I Added a Blog to My Portfolio",
-    "section": "My goal",
-    "text": "My goal\nI wanted my website to show not only static pages, but also ongoing learning and reflection."
-  },
-  {
-    "objectID": "posts/post3.html#conclusion",
-    "href": "posts/post3.html#conclusion",
-    "title": "Why I Added a Blog to My Portfolio",
-    "section": "Conclusion",
-    "text": "Conclusion\nEven one or two simple posts can make a student website look more polished."
+    "text": "👉 View Full Project on GitHub"
   },
   {
     "objectID": "posts/post2.html",
@@ -152,69 +61,6 @@
     "title": "My Experience Using Obsidian for Note-Taking",
     "section": "",
     "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
-  },
-  {
-    "objectID": "posts/post2.html#overview",
-    "href": "posts/post2.html#overview",
-    "title": "Three Things I Learned from Website Design",
-    "section": "",
-    "text": "In this post, I summarize a few lessons I learned while improving the appearance of my website."
-  },
-  {
-    "objectID": "posts/post2.html#design-ideas",
-    "href": "posts/post2.html#design-ideas",
-    "title": "Three Things I Learned from Website Design",
-    "section": "Design ideas",
-    "text": "Design ideas\nA clear navigation bar, readable spacing, and consistent colors can make a website look much more professional."
-  },
-  {
-    "objectID": "posts/post2.html#final-thought",
-    "href": "posts/post2.html#final-thought",
-    "title": "Three Things I Learned from Website Design",
-    "section": "Final thought",
-    "text": "Final thought\nSmall visual improvements can make a big difference."
-  },
-  {
-    "objectID": "posts/post1.html#reflection",
-    "href": "posts/post1.html#reflection",
-    "title": "Building My First Quarto Website",
-    "section": "Reflection",
-    "text": "Reflection\nOverall, this project helped me understand how a simple text-based system can be used to build a complete website. It also gave me more confidence in learning new tools independently."
-  },
-  {
-    "objectID": "posts/post3.html#introduction",
-    "href": "posts/post3.html#introduction",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "",
-    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
-  },
-  {
-    "objectID": "posts/post3.html#example",
-    "href": "posts/post3.html#example",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Example",
-    "text": "Example\nFor example, consider two coffee shops offering similar drinks at similar prices. One has a well-designed logo, consistent visual identity, and a clear brand story, while the other does not.\nMost customers are more likely to choose the brand that appears more professional and trustworthy."
-  },
-  {
-    "objectID": "posts/post3.html#key-insight",
-    "href": "posts/post3.html#key-insight",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Key Insight",
-    "text": "Key Insight\nBranding is not just about design. It includes:\n\nVisual identity (logo, colors, layout)\nMessaging and tone\nCustomer experience\n\nAll of these elements work together to create a consistent image in the customer’s mind."
-  },
-  {
-    "objectID": "posts/post3.html#why-it-matters",
-    "href": "posts/post3.html#why-it-matters",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nStrong branding can:\n\nIncrease customer trust\nImprove perceived value\nDifferentiate a product from competitors\n\nThis is especially important in competitive markets."
-  },
-  {
-    "objectID": "posts/post3.html#reflection",
-    "href": "posts/post3.html#reflection",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Reflection",
-    "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
   },
   {
     "objectID": "posts/post2.html#introduction",
@@ -252,11 +98,18 @@
     "text": "Reflection\nOverall, Obsidian has improved how I manage my learning process. It encourages me to think more actively about connections between ideas, rather than just storing information."
   },
   {
-    "objectID": "posts/post1.html#challenges",
-    "href": "posts/post1.html#challenges",
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
     "title": "Building My First Quarto Website",
-    "section": "Challenges",
-    "text": "Challenges\nOne of the main challenges I faced was adjusting the layout and styles. Small changes in CSS sometimes had unexpected effects, and I had to experiment a lot to understand how different elements interact."
+    "section": "",
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+  },
+  {
+    "objectID": "posts/post1.html#introduction",
+    "href": "posts/post1.html#introduction",
+    "title": "Building My First Quarto Website",
+    "section": "",
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
   },
   {
     "objectID": "posts/post1.html#what-i-built",
@@ -264,6 +117,34 @@
     "title": "Building My First Quarto Website",
     "section": "What I built",
     "text": "What I built\nThe website includes several sections such as an About page, a Resume page, a Projects page, and a Blog page. One of the most interesting parts was learning how these pages are connected through the _quarto.yml file.\nI also added a blog section to make the website feel more dynamic and less static."
+  },
+  {
+    "objectID": "posts/post1.html#what-i-learned",
+    "href": "posts/post1.html#what-i-learned",
+    "title": "Building My First Quarto Website",
+    "section": "What I learned",
+    "text": "What I learned\nThrough this process, I learned:\n\nHow Quarto organizes content using .qmd files\nHow to create a navigation bar across multiple pages\nHow to customize the appearance of a website using CSS\nHow to structure content so that it is easy to read and navigate"
+  },
+  {
+    "objectID": "posts/post1.html#challenges",
+    "href": "posts/post1.html#challenges",
+    "title": "Building My First Quarto Website",
+    "section": "Challenges",
+    "text": "Challenges\nOne of the main challenges I faced was adjusting the layout and styles. Small changes in CSS sometimes had unexpected effects, and I had to experiment a lot to understand how different elements interact."
+  },
+  {
+    "objectID": "posts/post1.html#reflection",
+    "href": "posts/post1.html#reflection",
+    "title": "Building My First Quarto Website",
+    "section": "Reflection",
+    "text": "Reflection\nOverall, this project helped me understand how a simple text-based system can be used to build a complete website. It also gave me more confidence in learning new tools independently."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file."
   },
   {
     "objectID": "posts/ab-testing.html",
@@ -336,39 +217,81 @@
     "text": "The Problem with Peeking\nA key assumption behind the hypothesis testing framework used above is that the data are analyzed only once, after the full sample has been collected. In practice, however, it is tempting to monitor the results of an experiment as data come in and stop early if the results look promising. This behavior is often referred to as “peeking.”\nPeeking creates a problem because it effectively increases the number of opportunities to reject the null hypothesis. Each time we check the data, there is a chance of observing a statistically significant result purely by random variation. As a result, repeatedly checking the data inflates the probability of a false positive.\nIn other words, even if there is no true effect, peeking can make it appear as though there is one. This undermines the validity of p-values and confidence intervals, which rely on a fixed sampling plan.\nTo maintain valid inference, researchers must either commit to a pre-specified sample size or use methods that explicitly account for sequential testing. This highlights an important limitation of standard A/B testing procedures and underscores the need for careful experimental design."
   },
   {
-    "objectID": "projects/project1/index.html#project-overview",
-    "href": "projects/project1/index.html#project-overview",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "posts/card_krueger_replication.html",
+    "href": "posts/card_krueger_replication.html",
+    "title": "Replication of Card and Krueger (1994)",
     "section": "",
-    "text": "Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior."
+    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
   },
   {
-    "objectID": "projects/project1/index.html#objectives",
-    "href": "projects/project1/index.html#objectives",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "posts/card_krueger_replication.html#introduction",
+    "href": "posts/card_krueger_replication.html#introduction",
+    "title": "Replication of Card and Krueger (1994)",
     "section": "",
-    "text": "Predict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies"
+    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
   },
   {
-    "objectID": "projects/project1/index.html#tools-used",
-    "href": "projects/project1/index.html#tools-used",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Python\npandas\nMachine Learning models\nData Visualization"
+    "objectID": "posts/card_krueger_replication.html#main-analysis",
+    "href": "posts/card_krueger_replication.html#main-analysis",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "Main Analysis",
+    "text": "Main Analysis\n\nTable 2 — Key Variable Means (Partial Replication)\nTable 2 in the paper reports descriptive statistics for both states before and after the minimum wage increase. We replicate the employment and wage rows below. The point of this table is to show that NJ and PA stores were similar before the policy — especially that their starting wages were nearly identical (NJ: $4.61, PA: $4.63), which validates the parallel trends assumption.\n\n\nWave 1 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 1)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n20.44 (0.51)\n23.33 (1.35)\n20.44 (0.51)\n23.33 (1.35)\n-2.0\n\n\n1\nStarting wage (\\$/hr)\n4.61 (0.02)\n4.63 (0.04)\n4.61 (0.02)\n4.63 (0.04)\n-0.4\n\n\n2\nHours open (weekday)\n14.42 (0.15)\n14.53 (0.33)\n14.42 (0.20)\n14.52 (0.29)\n-0.3\n\n\n\n\n\n\n\n\nWave 2 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 2)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n21.03 (0.52)\n21.17 (0.94)\n21.03 (0.52)\n21.17 (0.94)\n-0.1\n\n\n1\nStarting wage (\\$/hr)\n5.08 (0.01)\n4.62 (0.04)\n5.08 (0.01)\n4.62 (0.04)\n10.8\n\n\n\n\n\n\n\nOur replicated means match the paper exactly. Notice that by Wave 2, the average starting wage in NJ jumped to $5.08 (just above the new $5.05 minimum), while PA wages barely moved. This confirms the policy was binding in NJ.\n\n\nTable 3 — Difference-in-Differences (Rows 1–3, Columns i–iii)\nThis is the heart of the paper. We compare average FTE employment before and after the minimum wage increase in NJ vs. PA.\n\n\n\n\n\n\n\n\n\n\nRow 1: FTE before\nRow 2: FTE after\nRow 3: Change\n\n\n\n\n0\nPA (i)\n23.33\n21.17\n-2.17\n\n\n1\nNJ (ii)\n20.44\n21.03\n0.59\n\n\n2\nNJ – PA (iii)\n-2.89\n-0.14\n2.75 (t=1.53)\n\n\n3\nPaper DiD\n–2.89\n–0.14\n2.76 (t=2.03)\n\n\n\n\n\n\n\nHow to read this table:\n\nBefore the wage increase, NJ stores employed slightly fewer workers than PA stores (20.44 vs. 23.33).\nAfter the increase, NJ employment rose while PA employment fell.\nThe DiD estimate of +2.76 FTE employees (our replication: +2.75) is positive and statistically significant (t ≈ 2.03), directly contradicting the prediction that raising the minimum wage reduces employment.\n\n\n\nTable 4, Column (i) — Regression-Adjusted DiD\nA simple OLS regression of the change in FTE employment on a New Jersey dummy confirms the DiD result while being more precise about the standard error. The sample here is restricted to stores with valid employment and wage data in both waves.\n\n\nSample size:        351  (paper: 357)\nNJ dummy (β):       2.28  (paper: 2.33)\nStandard error:     1.19  (paper: 1.19)\nt-statistic:        1.91\nMean ΔemploymentPA: -1.88\n\n\nThe coefficient on the NJ dummy (2.28, paper: 2.33) tells us that, controlling for nothing else, NJ stores gained about 2.3 more FTE employees than PA stores between Wave 1 and Wave 2. The standard error of 1.19 matches the paper exactly. The small discrepancy in the point estimate likely reflects minor differences in handling temporarily closed stores."
   },
   {
-    "objectID": "projects/project1/index.html#key-insights",
-    "href": "projects/project1/index.html#key-insights",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Customers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy"
+    "objectID": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
+    "href": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "Something Additional: Visualizing the Wage Distribution Shift",
+    "text": "Something Additional: Visualizing the Wage Distribution Shift\nOne of the most compelling pieces of evidence in the paper is Figure 1: the distribution of starting wages in NJ and PA before and after the minimum wage increase. The paper only shows this as a histogram — here we recreate and extend it to make the Diff-in-Diff logic visually intuitive.\nThe key insight: if the minimum wage is truly binding (i.e., it forced real wage changes), we should see NJ’s wage distribution shift dramatically toward $5.05 after April 1992, while PA’s distribution stays flat. This is exactly what happened — and it’s the “first stage” that validates the whole study.\n\n\n\n\n\nStarting wage distributions before and after New Jersey’s minimum wage increase. The policy dramatically compressed NJ wages upward to the new $5.05 floor, while Pennsylvania’s distribution barely changed.\n\n\n\n\n\n\nShare of stores paying exactly $5.05 (new minimum):\n  NJ Wave 2: 89.0%  (paper: 85.2%)\n  PA Wave 2: 1.4%  (paper:  1.3%)\n\nShare of stores still paying $4.25 (old minimum):\n  NJ Wave 1: 32.2%  (paper: 30.5%)\n  PA Wave 1: 34.2%  (paper: 32.9%)\n  NJ Wave 2: 0.0%  (paper:  0.0%)\n  PA Wave 2: 28.2%  (paper: 25.3%)\n\n\nWhat this shows:\n\nBefore the increase (Wave 1), NJ and PA had nearly identical wage distributions — about 30% of stores in both states paid exactly the old minimum of $4.25/hr. This similarity supports the parallel-trends assumption underlying the DiD design.\nAfter the increase (Wave 2), 85% of NJ stores piled up right at the new $5.05 floor, while Pennsylvania’s distribution barely moved. By Wave 2, zero NJ stores still paid $4.25.\nThis dramatic shift is the “first stage” of the causal chain: the law actually changed wages, so any subsequent employment effects can be attributed to the policy rather than coincidence.\nDespite this large wage shock, NJ employment increased relative to PA — the central paradox that motivated the paper and challenged a generation of economists to rethink the competitive model of the labor market."
   },
   {
-    "objectID": "projects/project1/index.html#github-repository",
-    "href": "projects/project1/index.html#github-repository",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "posts/card_krueger_replication.html#references",
+    "href": "posts/card_krueger_replication.html#references",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "References",
+    "text": "References\nCard, David, and Alan B. Krueger. 1994. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review 84 (4): 772–793."
+  },
+  {
+    "objectID": "posts/post3.html",
+    "href": "posts/post3.html",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
     "section": "",
-    "text": "👉 View Full Project on GitHub"
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+  },
+  {
+    "objectID": "posts/post3.html#introduction",
+    "href": "posts/post3.html#introduction",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "",
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+  },
+  {
+    "objectID": "posts/post3.html#example",
+    "href": "posts/post3.html#example",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Example",
+    "text": "Example\nFor example, consider two coffee shops offering similar drinks at similar prices. One has a well-designed logo, consistent visual identity, and a clear brand story, while the other does not.\nMost customers are more likely to choose the brand that appears more professional and trustworthy."
+  },
+  {
+    "objectID": "posts/post3.html#key-insight",
+    "href": "posts/post3.html#key-insight",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Key Insight",
+    "text": "Key Insight\nBranding is not just about design. It includes:\n\nVisual identity (logo, colors, layout)\nMessaging and tone\nCustomer experience\n\nAll of these elements work together to create a consistent image in the customer’s mind."
+  },
+  {
+    "objectID": "posts/post3.html#why-it-matters",
+    "href": "posts/post3.html#why-it-matters",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nStrong branding can:\n\nIncrease customer trust\nImprove perceived value\nDifferentiate a product from competitors\n\nThis is especially important in competitive markets."
+  },
+  {
+    "objectID": "posts/post3.html#reflection",
+    "href": "posts/post3.html#reflection",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Reflection",
+    "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
   },
   {
     "objectID": "projects/project2/index.html",
@@ -411,5 +334,12 @@
     "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "",
     "text": "👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shuning Zhang",
+    "section": "",
+    "text": "Welcome to my website!"
   }
 ]
