@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In a real A/B test, the true sign-up probabilities would be unknown. We would only observe sample outcomes and then try to infer the underlying difference between the two CTAs. For this exercise, however, simulation is helpful because it lets us work in a setting where the truth is known in advance. That makes it easier to evaluate how well our estimator performs.</p>
 <p>I assume that visitors who see CTA A sign up with probability (_A = 0.22), while visitors who see CTA B sign up with probability (_B = 0.18). This means the true treatment effect is [ = _A - _B = 0.04. ]</p>
 <p>Using these assumptions, I simulate 1,000 Bernoulli observations for each group. Each observation equals 1 if the visitor signs up and 0 otherwise. These simulated samples will be used throughout the rest of the post.</p>
-<div id="d7c512a7" class="cell" data-execution_count="2">
+<div id="b91c7db4" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pi_A <span class="op">=</span> <span class="fl">0.22</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pi_B <span class="op">=</span> <span class="fl">0.18</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>n_A <span class="op">=</span> <span class="dv">1000</span></span>
@@ -259,7 +259,7 @@ True difference (theta): 0.0400</code></pre>
 <p>The Law of Large Numbers states that as the sample size increases, the sample average converges to the true population mean. In other words, while individual observations are noisy, averaging over many observations produces a more stable and reliable estimate.</p>
 <p>In the context of this A/B test, this idea is important because our estimator of interest, ( = {X}_A - {X}_B), is based on sample averages. As we collect more data, we expect this estimate to get closer to the true treatment effect.</p>
 <p>To illustrate this, I compute the difference between the outcomes in the two groups for each observation and then track how the cumulative average of these differences evolves as the sample size grows.</p>
-<div id="929daac0" class="cell" data-execution_count="3">
+<div id="92034794" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>diffs <span class="op">=</span> A <span class="op">-</span> B</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>running_mean <span class="op">=</span> np.cumsum(diffs) <span class="op">/</span> np.arange(<span class="dv">1</span>, <span class="bu">len</span>(diffs) <span class="op">+</span> <span class="dv">1</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -286,7 +286,7 @@ True difference (theta): 0.0400</code></pre>
 <p>So far, I have computed a single estimate of the treatment effect. However, this estimate is based on a finite sample and is therefore subject to randomness. If I were to repeat the experiment with a different sample, I would likely obtain a slightly different estimate.</p>
 <p>To quantify this uncertainty, I use the concept of a standard error. The standard error measures how much an estimator is expected to vary across repeated samples. In this section, I estimate the standard error of () using a bootstrap approach and compare it to the analytical formula.</p>
 <p>The bootstrap method works by repeatedly resampling from the observed data with replacement and recomputing the estimator each time. This produces an empirical distribution of the estimator, which can be used to approximate its variability.</p>
-<div id="8af6f45b" class="cell" data-execution_count="4">
+<div id="ab8537e0" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n_boot <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>boot_thetas <span class="op">=</span> []</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -298,7 +298,7 @@ True difference (theta): 0.0400</code></pre>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>boot_thetas <span class="op">=</span> np.array(boot_thetas)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="2b8eeba0" class="cell" data-execution_count="5">
+<div id="4b4d7dff" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.hist(boot_thetas, bins<span class="op">=</span><span class="dv">30</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.axvline(theta_hat, linestyle<span class="op">=</span><span class="st">"--"</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Bootstrap estimates of theta"</span>)</span>
@@ -314,14 +314,14 @@ True difference (theta): 0.0400</code></pre>
 </div>
 </div>
 <p>The histogram shows the distribution of the estimated treatment effect across many bootstrap samples. While each individual estimate differs slightly due to random sampling, the values are concentrated around the original estimate. This distribution reflects the uncertainty associated with ().</p>
-<div id="53672706" class="cell" data-execution_count="6">
+<div id="763e36a4" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>se_boot <span class="op">=</span> boot_thetas.std()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Bootstrap standard error: </span><span class="sc">{</span>se_boot<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Bootstrap standard error: 0.0177</code></pre>
 </div>
 </div>
-<div id="f1c9904f" class="cell" data-execution_count="7">
+<div id="f21acd9c" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>se_analytical <span class="op">=</span> np.sqrt(</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    A.mean() <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> A.mean()) <span class="op">/</span> <span class="bu">len</span>(A) <span class="op">+</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    B.mean() <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> B.mean()) <span class="op">/</span> <span class="bu">len</span>(B)</span>
@@ -333,7 +333,7 @@ True difference (theta): 0.0400</code></pre>
 </div>
 </div>
 <p>The bootstrap standard error is very close to the analytical standard error. This is reassuring, as it suggests that the bootstrap procedure is capturing the variability of the estimator correctly. The analytical formula is derived under standard assumptions, while the bootstrap provides a more general, data-driven way to estimate uncertainty.</p>
-<div id="3ecc1d7f" class="cell" data-execution_count="8">
+<div id="c83c4c4a" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>ci_lower <span class="op">=</span> theta_hat <span class="op">-</span> <span class="fl">1.96</span> <span class="op">*</span> se_boot</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>ci_upper <span class="op">=</span> theta_hat <span class="op">+</span> <span class="fl">1.96</span> <span class="op">*</span> se_boot</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -349,7 +349,7 @@ True difference (theta): 0.0400</code></pre>
 <p>The Central Limit Theorem (CLT) provides a theoretical foundation for statistical inference. It states that, under fairly general conditions, the sampling distribution of an estimator becomes approximately normal as the sample size grows.</p>
 <p>In this context, the estimator of interest is ( = {X}_A - {X}_B). Even though the underlying data are binary, the CLT tells us that the distribution of () across repeated samples should be approximately normal when the sample size is large.</p>
 <p>To illustrate this, I repeatedly simulate new datasets and compute () each time. This allows me to approximate the sampling distribution of the estimator and compare it to a normal distribution.</p>
-<div id="dd8fe6ab" class="cell" data-execution_count="9">
+<div id="a8eff1f3" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>n_sim <span class="op">=</span> <span class="dv">1000</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>theta_hats <span class="op">=</span> []</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -361,7 +361,7 @@ True difference (theta): 0.0400</code></pre>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>theta_hats <span class="op">=</span> np.array(theta_hats)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="467770fa" class="cell" data-execution_count="10">
+<div id="179b1e51" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>mean_theta <span class="op">=</span> theta_hats.mean()</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>std_theta <span class="op">=</span> theta_hats.std()</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -392,14 +392,14 @@ True difference (theta): 0.0400</code></pre>
 <p>To formally evaluate whether the two CTAs perform differently, I use a hypothesis test. The goal is to assess whether the observed difference in sign-up rates could plausibly be explained by random variation alone.</p>
 <p>The null hypothesis assumes that there is no difference between the two CTAs: [ H_0: = 0 ] while the alternative hypothesis is that there is a nonzero difference: [ H_1: . ]</p>
 <p>Under the null hypothesis, the estimated treatment effect should be close to zero, up to sampling variability. I use the standard error of the estimator to compute a test statistic, which measures how far the observed estimate is from zero in standardized units.</p>
-<div id="c011c5e8" class="cell" data-execution_count="11">
+<div id="41830027" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>z_stat <span class="op">=</span> theta_hat <span class="op">/</span> se_boot</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Test statistic (z): </span><span class="sc">{</span>z_stat<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Test statistic (z): 2.1529</code></pre>
 </div>
 </div>
-<div id="cbd05047" class="cell" data-execution_count="12">
+<div id="3977033e" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>p_value <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> norm.cdf(<span class="bu">abs</span>(z_stat)))</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"P-value: </span><span class="sc">{</span>p_value<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -416,12 +416,12 @@ True difference (theta): 0.0400</code></pre>
 <p>To do this, I combine the data from both groups into a single dataset and create an indicator variable that equals 1 if the observation comes from CTA A and 0 if it comes from CTA B. I then regress the binary outcome (sign-up or not) on this indicator.</p>
 <p>In this setup, the coefficient on the indicator variable represents the difference in average outcomes between the two groups. This means that the regression coefficient should be equal to the estimator ( = {X}_A - {X}_B).</p>
 <p>This shows that a two-sample t-test is equivalent to a regression with a binary treatment variable.</p>
-<div id="d3560f5a" class="cell" data-execution_count="13">
+<div id="ae30d07d" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine data</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> np.concatenate([A, B])</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> np.concatenate([np.ones(<span class="bu">len</span>(A)), np.zeros(<span class="bu">len</span>(B))])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="ca2c76e0" class="cell" data-execution_count="14">
+<div id="12f3c350" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> sm.add_constant(T)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sm.OLS(Y, X).fit()</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -443,7 +443,7 @@ P-value: 0.0327
 Difference in means (theta_hat): 0.0380</code></pre>
 </div>
 </div>
-<div id="6cd77c35" class="cell" data-execution_count="15">
+<div id="2c4c2a4a" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>beta <span class="op">=</span> model.params[<span class="dv">1</span>]</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Regression estimate of treatment effect: </span><span class="sc">{</span>beta<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Difference in means (theta_hat): </span><span class="sc">{</span>theta_hat<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>

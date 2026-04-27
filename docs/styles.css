@@ -165,3 +165,9 @@ body:has(.quarto-listing-default) .listing-description {
   color: #333 !important;
   margin-top: 0.5rem !important;
 }
+
+/* Projects page title hover color */
+body:has(.quarto-listing-default) .listing-title a:hover {
+  color: #4a90d9 !important;
+  text-decoration: none !important;
+}
