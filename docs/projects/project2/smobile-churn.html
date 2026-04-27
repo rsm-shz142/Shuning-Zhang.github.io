@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Built a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from targeted interventions.">
 
-<title>My Projects – Shuning Zhang</title>
+<title>S-Mobile: Predicting Customer Churn – Shuning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,67 +71,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -142,7 +83,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shuning Zhang</span>
     </a>
   </div>
@@ -153,19 +94,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -179,17 +120,44 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#business-problem" id="toc-business-problem" class="nav-link active" data-scroll-target="#business-problem">Business Problem</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#data-setup" id="toc-data-setup" class="nav-link" data-scroll-target="#data-setup">Data &amp; Setup</a></li>
+  <li><a href="#step-1-churn-prediction-model" id="toc-step-1-churn-prediction-model" class="nav-link" data-scroll-target="#step-1-churn-prediction-model">Step 1 — Churn Prediction Model</a></li>
+  <li><a href="#step-2-key-churn-drivers" id="toc-step-2-key-churn-drivers" class="nav-link" data-scroll-target="#step-2-key-churn-drivers">Step 2 — Key Churn Drivers</a></li>
+  <li><a href="#step-3-retention-actions" id="toc-step-3-retention-actions" class="nav-link" data-scroll-target="#step-3-retention-actions">Step 3 — Retention Actions</a></li>
+  <li><a href="#step-4-quantifying-churn-reduction" id="toc-step-4-quantifying-churn-reduction" class="nav-link" data-scroll-target="#step-4-quantifying-churn-reduction">Step 4 — Quantifying Churn Reduction</a></li>
+  </ul></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#clv-economics-5-year-10-annual-discount-rate" id="toc-clv-economics-5-year-10-annual-discount-rate" class="nav-link" data-scroll-target="#clv-economics-5-year-10-annual-discount-rate">CLV Economics (5-Year, 10% Annual Discount Rate)</a></li>
+  </ul></li>
+  <li><a href="#business-insights" id="toc-business-insights" class="nav-link" data-scroll-target="#business-insights">Business Insights</a></li>
+  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My Contribution</a></li>
+  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Projects</h1>
+<h1 class="title">S-Mobile: Predicting Customer Churn</h1>
 </div>
 
+<div>
+  <div class="description">
+    Built a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from targeted interventions.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -204,91 +172,214 @@ window.Quarto = {
 </header>
 
 
+<p><img src="smobile.png" class="img-fluid" width="300"></p>
+<blockquote class="blockquote">
+<p><strong>One-line summary:</strong> Built an end-to-end churn analytics pipeline for Singapore’s S-Mobile — from predictive modeling and driver analysis to actionable retention strategies with full 5-year CLV evaluation, identifying up to <strong>$258 incremental CLV per customer</strong> from the most effective intervention.</p>
+</blockquote>
+<hr>
+<section id="business-problem" class="level2">
+<h2 class="anchored" data-anchor-id="business-problem">Business Problem</h2>
+<p>S-Mobile, a leading Singapore telecom with approximately 1 million subscribers, faced a 2% monthly churn rate. The traditional response — waiting for customers to call in and threaten to leave — was reactive and trained customers to game the system for discounts.</p>
+<p>The goal was to build a <strong>proactive churn management system</strong>: predict which customers are likely to leave <em>before</em> they do, identify the root causes, design targeted interventions, and evaluate the economics of each action.</p>
+<hr>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="data-setup" class="level3">
+<h3 class="anchored" data-anchor-id="data-setup">Data &amp; Setup</h3>
+<ul>
+<li><strong>39,000</strong> training observations + <strong>30,000</strong> representative sample (2% real-world churn rate)</li>
+<li>Features: device characteristics, usage behavior (minutes, overage, dropped calls), customer demographics (occupation, credit rating, tenure), service history</li>
+<li>Key modeling challenge: training data was balanced at 50% churn for model fitting, then predictions were <strong>probability-corrected</strong> back to the true 2% population rate for downstream CLV analysis</li>
+</ul>
+</section>
+<section id="step-1-churn-prediction-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-churn-prediction-model">Step 1 — Churn Prediction Model</h3>
+<p>Built and compared two models:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Validation AUC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logistic Regression (final)</td>
+<td><strong>~0.70</strong></td>
+</tr>
+<tr class="even">
+<td>Random Forest (tuned, RandomizedSearchCV)</td>
+<td>~0.695</td>
+</tr>
+</tbody>
+</table>
+<p>Random Forest did not materially outperform Logistic Regression on the validation set, suggesting the data has limited nonlinear structure. Logistic Regression was selected as the final model for its interpretability and equivalent predictive performance. Variable <code>car</code> was dropped due to consistent statistical insignificance.</p>
+</section>
+<section id="step-2-key-churn-drivers" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-key-churn-drivers">Step 2 — Key Churn Drivers</h3>
+<p>Using <strong>Permutation Importance</strong> and <strong>Partial Dependence Plots</strong>, the top 5 churn drivers identified were:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Driver</th>
+<th>Finding</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Occupation</strong></td>
+<td>Students churn at far higher rates than retired customers</td>
+</tr>
+<tr class="even">
+<td><strong>Equipment age (eqpdays)</strong></td>
+<td>Older devices strongly predict switching behavior</td>
+</tr>
+<tr class="odd">
+<td><strong>Overage usage</strong></td>
+<td>High overage minutes signal plan mismatch and billing frustration</td>
+</tr>
+<tr class="even">
+<td><strong>Credit rating</strong></td>
+<td>Low-credit customers are significantly less stable</td>
+</tr>
+<tr class="odd">
+<td><strong>Tenure (months)</strong></td>
+<td>Longer-tenure customers are much less likely to churn</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-3-retention-actions" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-retention-actions">Step 3 — Retention Actions</h3>
+<p>Five targeted interventions were designed based on the churn drivers, each applied only to high-risk customers in the relevant segment:</p>
+<ul>
+<li><strong>Early device upgrade program</strong> — for high-risk customers with handsets above 75th percentile age</li>
+<li><strong>Plan optimization</strong> — for high-risk customers with consistently high overage usage</li>
+<li><strong>Student retention offer</strong> — flexible plans for students with above-median churn probability</li>
+<li><strong>Credit auto-pay incentive</strong> — for low-credit customers with high predicted churn risk</li>
+<li><strong>Service quality improvement</strong> — for high-risk customers experiencing frequent dropped calls</li>
+</ul>
+</section>
+<section id="step-4-quantifying-churn-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-quantifying-churn-reduction">Step 4 — Quantifying Churn Reduction</h3>
+<p>Using model-based counterfactual predictions on the representative sample (baseline churn rate = <strong>1.99%</strong>):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Intervention</th>
+<th>Churn Rate Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Credit auto-pay enrollment</strong></td>
+<td><strong>−0.88 pp</strong></td>
+</tr>
+<tr class="even">
+<td>Early device upgrade</td>
+<td>−0.35 pp</td>
+</tr>
+<tr class="odd">
+<td>Plan optimization</td>
+<td>−0.31 pp</td>
+</tr>
+<tr class="even">
+<td>Student retention offer</td>
+<td>−0.04 pp</td>
+</tr>
+<tr class="odd">
+<td>Service quality improvement</td>
+<td>−0.02 pp</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<section id="clv-economics-5-year-10-annual-discount-rate" class="level3">
+<h3 class="anchored" data-anchor-id="clv-economics-5-year-10-annual-discount-rate">CLV Economics (5-Year, 10% Annual Discount Rate)</h3>
+<p>Baseline assumptions: $40/month revenue per customer, 2% monthly churn, 60-month window.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Intervention</th>
+<th>Churn Reduction</th>
+<th>Incremental CLV (Breakeven)</th>
+<th>Proposed Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Credit Auto-pay</strong></td>
+<td>−0.88 pp</td>
+<td><strong>+$258/customer</strong></td>
+<td>$40–$60</td>
+</tr>
+<tr class="even">
+<td>Early Upgrade</td>
+<td>−0.35 pp</td>
+<td>+$93/customer</td>
+<td>$50–$70</td>
+</tr>
+<tr class="odd">
+<td>Plan Optimization</td>
+<td>−0.31 pp</td>
+<td>+$82/customer</td>
+<td>$30–$50</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Baseline 5-year CLV per customer: $1,156</strong></p>
+<p>All three interventions generate positive economic returns under realistic cost assumptions. Credit auto-pay delivers the highest leverage — a $258 CLV buffer against a $40–$60 incentive cost.</p>
+<hr>
+</section>
+</section>
+<section id="business-insights" class="level2">
+<h2 class="anchored" data-anchor-id="business-insights">Business Insights</h2>
+<p><strong>1. Reactive churn management is inferior.</strong> The model-based proactive approach targets customers <em>before</em> they decide to leave, when retention offers are more effective and less expensive.</p>
+<p><strong>2. Not all interventions are equal.</strong> Credit auto-pay delivers 3× the CLV impact of plan optimization. Prioritizing interventions by economic return — not just churn reduction — is critical for budget efficiency.</p>
+<p><strong>3. Probability correction matters for economics.</strong> Predictions from a balanced training set (50% churn) would wildly overstate actual churn risk. Correcting back to the 2% population rate is essential before any CLV or cost-benefit calculation.</p>
+<p><strong>4. Targeting beats mass deployment.</strong> Applying interventions only to high-risk customers within the relevant driver segment maximizes ROI. For example, offering upgrade incentives to all customers wastes budget on low-risk customers who would have stayed anyway.</p>
+<p><strong>5. Model validation should use RCT.</strong> The counterfactual estimates provide a sound starting point, but a pilot randomized experiment is needed before large-scale rollout to confirm the real-world churn reductions are statistically significant.</p>
+<hr>
+</section>
+<section id="my-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-contribution">My Contribution</h2>
+<ul>
+<li>Conducted full EDA including distribution analysis, IQR outlier assessment, standardized difference analysis across churn groups, and categorical churn rate breakdowns</li>
+<li>Built and tuned both Logistic Regression and Random Forest models; made final model selection argument based on validation AUC comparison</li>
+<li>Implemented probability correction from balanced training data to representative 2% population rate</li>
+<li>Designed all five retention actions based on churn driver analysis; quantified churn reduction for each using model-based counterfactuals</li>
+<li>Built the CLV model and computed breakeven costs and proposed investment levels for three priority actions</li>
+</ul>
+<hr>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h2>
+<p><code>Python</code> · <code>Polars</code> · <code>pyrsm</code> · <code>scikit-learn</code> · <code>Logistic Regression</code> · <code>Random Forest</code> · <code>RandomizedSearchCV</code> · <code>Permutation Importance</code> · <code>Partial Dependence Plots</code> · <code>CLV Modeling</code> · <code>Probability Calibration</code> · <code>AUC</code></p>
+<hr>
+</section>
+<section id="github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
+<p>👉 <a href="https://github.com/rsm-shz142/smobile-project">View Full Project on GitHub</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1777278597641" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<a href="./projects/project3/creative-gaming-uplift.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project3/cg.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Creative Gaming: Uplift Modeling
-</h5>
-<div class="card-text listing-description delink">
-<p>Applied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1777268716833" data-listing-reading-time-sort="4" data-listing-word-count-sort="796">
-<a href="./projects/project1/pentathlon-nptb.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project1/pentathlon.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Pentathlon: Next Product to Buy Modeling
-</h5>
-<div class="card-text listing-description delink">
-<p>Built an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1777269146439" data-listing-reading-time-sort="5" data-listing-word-count-sort="846">
-<a href="./projects/project2/smobile-churn.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project2/smobile.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-S-Mobile: Predicting Customer Churn
-</h5>
-<div class="card-text listing-description delink">
-<p>Built a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1777279079070" data-listing-reading-time-sort="5" data-listing-word-count-sort="839">
-<a href="./projects/project4/tuango-targeting.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project4/tuango.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tuango: Targeting Mobile App Messages
-</h5>
-<div class="card-text listing-description delink">
-<p>Built a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

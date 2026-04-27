@@ -1,0 +1,117 @@
+---
+title: "Pentathlon: Next Product to Buy Modeling"
+description: "Built an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment."
+---
+
+
+![](pentathlon.png){width=180px}
+
+> **One-line summary:** Built a Next Product to Buy (NPTB) framework using four machine learning models to determine the optimal promotional email for each of 5 million customers — personalizing messaging increased expected profit by **22% over random assignment** and **9% over the best single-message strategy**.
+
+---
+
+## Business Problem
+
+Pentathlon, a multi-department e-commerce sports retailer, was sending promotional emails without a systematic way to decide **which department's message** to send each customer. The choices were: Endurance, Strength, Water, Team, Backcountry, Racquet, or no message at all.
+
+A prior RCT revealed a key tension: higher email frequency boosted short-term revenue but significantly increased unsubscribe rates, reducing long-term customer lifetime value. The goal of this project was to move from a one-size-fits-all approach to **customer-level personalized messaging** that maximizes expected profit.
+
+---
+
+## Methodology
+
+### Data & Setup
+
+- **600,000** customer–email observations (70/30 train/test split)
+- Features: demographics (age, gender, income, education, children) + historical purchase frequency across 6 departments
+- Target: whether the customer made a purchase within 2 days of receiving the email (`buyer`), and if so, the order size (`total_os`)
+
+### NPTB Framework
+
+For each customer, we estimated the **expected profit** of sending each of the 7 possible messages:
+
+$$\text{Expected Profit} = P(\text{purchase} \mid \text{message}) \times \hat{\text{order size}} \times 0.4$$
+
+The 0.4 margin reflects a 60% COGS assumption. Each customer was then assigned the message yielding the highest expected profit.
+
+### Models Built
+
+We built and compared four model types for predicting purchase probability:
+
+| Model | Approach | Test AUC |
+|---|---|---|
+| Logistic Regression (interaction) | Message × customer feature interactions | ≈ 0.88 |
+| Neural Network (MLP) | Tuned on hidden layer size, alpha | ≈ 0.88 |
+| Random Forest | Tuned on depth, n_estimators | ≈ 0.88 |
+| **XGBoost** | Tuned on learning rate, depth, subsample | **≈ 0.88** |
+
+**Key modeling insight:** A baseline logistic model (without interaction terms) assigned 100% of customers to the same "endurance" message — no personalization at all. Adding message × feature interactions diversified recommendations across multiple departments, enabling true NPTB modeling.
+
+A separate OLS regression on buyers only estimated conditional order size per message, which was combined with purchase probability to compute expected profit.
+
+---
+
+## Key Results
+
+### Personalization Substantially Outperforms Every Alternative
+
+| Strategy | Avg. Expected Profit / Customer | Total Profit (5M customers) |
+|---|---|---|
+| **Personalized (XGBoost)** | **€0.684** | **€3.42M** |
+| Best Single Message (Endurance) | €0.628 | €3.14M |
+| Random Assignment | €0.561 | €2.81M |
+| No Message (Control) | €0.431 | €2.15M |
+
+- Personalization vs. random assignment: **+€616K (+22%)**
+- Personalization vs. best single message: **+€283K (+9%)**
+- Personalization vs. no message: **+€1.27M (+59%)**
+
+### Message Distribution Shifts When Profit Is the Goal
+
+When optimizing for **purchase probability**, ~70% of customers were assigned "Endurance" — one message dominated.
+
+When optimizing for **expected profit** (purchase probability × order size × margin), the distribution became more balanced:
+
+- Endurance: ~43%
+- Backcountry: ~36%
+- Strength: ~17%
+
+This shift reveals that **Backcountry messages, while not the most likely to generate a purchase, tend to generate much larger orders** — making them more profitable for a significant segment of customers.
+
+### Why XGBoost Was Selected as the Final Model
+
+All four models achieved similar test AUC (~0.88), so AUC alone did not differentiate them. We selected the final model based on **personalized expected profit per customer** on the test set — XGBoost produced the highest value across all strategies.
+
+---
+
+## Business Insights
+
+**1. Personalization generates real money at scale.** A ~9% improvement over the best uniform strategy translates to nearly €300K in additional profit per 5M-customer campaign — a figure that compounds across multiple campaigns per year.
+
+**2. Order size matters, not just purchase likelihood.** Optimizing on probability alone misses high-value customers who respond to niche categories with large basket sizes (e.g., backcountry gear). The NPTB framework captures this.
+
+**3. For some customers, no email is optimal.** Including the no-message option in the decision framework prevents over-messaging customers who are unlikely to convert regardless of the department — protecting long-term engagement and LTV.
+
+**4. The proposed 50/50 email policy has room to improve.** Pentathlon's proposed new policy (splitting emails equally between the top 2 departments per customer) improves over random, but does not maximize profit. A fully individualized allocation would outperform the fixed split, especially when the gap between the first and second best message is large.
+
+---
+
+## My Contribution
+
+- Designed and implemented the full NPTB prediction pipeline including counterfactual message scoring for all 7 message types
+- Built interaction logistic regression model and identified why baseline model failed to personalize
+- Engineered the expected profit formula combining purchase probability, order size regression, and margin
+- Compared all four models on both AUC and expected profit metrics; made final model selection argument
+- Wrote the policy critique and improvement recommendations
+
+---
+
+## Tools & Methods
+
+`Python` · `Polars` · `pyrsm` · `scikit-learn` · `XGBoost` · `Logistic Regression (interactions)` · `Neural Network (MLP)` · `Random Forest` · `OLS Regression` · `AUC` · `RMSE` · `Gains Curves`
+
+---
+
+## GitHub Repository
+
+👉 [View Full Project on GitHub](https://github.com/rsm-shz142/pentathlon-project)

@@ -11,49 +11,105 @@
     "href": "projects.html",
     "title": "My Projects",
     "section": "",
-    "text": "Pentathlon: Next Product to Buy Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Creative Gaming: Uplift Modeling\n\n\nApplied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPentathlon: Next Product to Buy Modeling\n\n\nBuilt an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\nBuilt a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTuango: Targeting Mobile App Messages\n\n\nBuilt a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while…\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/project1/index.html",
-    "href": "projects/project1/index.html",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "This project focuses on predicting customer churn using data analytics and machine learning techniques.\n\n\nCustomer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.\n\n\n\n\nPredict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies\n\n\n\n\n\nPython\npandas\nMachine Learning models\nData Visualization\n\n\n\n\n\nCustomers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy\n\n\n\n\n👉 View Full Project on GitHub"
+    "objectID": "projects/project4/tuango-targeting.html#business-problem",
+    "href": "projects/project4/tuango-targeting.html#business-problem",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "Business Problem",
+    "text": "Business Problem\nTuango, a Chinese “deal-of-the-day” platform similar to Groupon, ran a karaoke deal campaign by pushing offer messages through its mobile app. Sending messages has a hidden cost of 9 RMB per customer — if a customer receives too many irrelevant offers and blocks future messages, Tuango permanently loses that marketing channel.\nAfter running a test campaign on 20,908 customers, Tuango had 397,252 remaining customers to contact for the rollout. The question: should all of them receive the message, or only those most likely to buy?"
   },
   {
-    "objectID": "projects/project1/index.html#project-overview",
-    "href": "projects/project1/index.html#project-overview",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior."
+    "objectID": "projects/project4/tuango-targeting.html#methodology",
+    "href": "projects/project4/tuango-targeting.html#methodology",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "Methodology",
+    "text": "Methodology\n\nData & Setup\n\n20,908 test-sample customers used to build and validate the model\n397,252 rollout customers for actual deployment\nKey features: RFM variables (Recency, Frequency, Monetary), Age, Gender, Music purchase history\nTarget variable: whether the customer purchased the karaoke deal (buyer)\n\n\n\nStep 1 — Preliminary Analysis\n\nOverall response rate in the test sample: ~6.2% of customers purchased\nAmong buyers, average order size: ~2.7 sessions (30-minute karaoke sessions at 49 RMB each)\nTuango’s fee: 50% of revenue → margin per response = 0.5 × 49 RMB × avg order size\n\n\n\nStep 2 — Logistic Regression Model\nBuilt a logistic regression model predicting purchase probability using RFM + demographics:\nKey variable importance findings (Permutation Importance):\n\n\n\n\n\n\n\n\nVariable\nImportance\nDirection\n\n\n\n\nMusic (prior music purchase)\nHighest\n↑ increases purchase probability\n\n\nGender\nHigh\nFemale &gt; Other &gt; Male\n\n\nFrequency\nModerate\n↑ more past purchases → more likely to buy\n\n\nMonetary\nModerate\n↑ higher spend → more likely to buy\n\n\nAge\nLow-moderate\n↑ older → less likely to buy\n\n\nRecency\nLowest\nLess recent → less likely to buy\n\n\n\n\n\nStep 3 — Order Size Model\nBuilt a linear regression on buyers only to predict order size. Finding: R-squared is very low — the model explains little variation in order size. This means the RFM variables predict whether someone buys well, but not how much they buy once they decide to purchase.\n\n\nStep 4 — Breakeven Targeting Rule\nCalculated the breakeven response rate:\n\\[\\text{Breakeven} = \\frac{\\text{Cost per message}}{\\text{Margin per response}} = \\frac{9 \\text{ RMB}}{0.5 \\times 49 \\times \\text{avg order size}}\\]\nOnly customers with predicted purchase probability above this breakeven received the message."
   },
   {
-    "objectID": "projects/project1/index.html#objectives",
-    "href": "projects/project1/index.html#objectives",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Predict whether a customer will churn\nIdentify key drivers of churn\nProvide actionable insights to reduce churn\nEvaluate business impact of different strategies"
+    "objectID": "projects/project4/tuango-targeting.html#key-results",
+    "href": "projects/project4/tuango-targeting.html#key-results",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "Key Results",
+    "text": "Key Results\n\nProjected vs. Realized Performance\n\n\n\n\nTarget All\nTarget by Logit Model\n\n\n\n\nMessages sent\n397,252\n~subset only\n\n\nProfit (RMB)\n111,713\n887,423\n\n\nROME\n3.1%\n56.6%\n\n\n\nLogit-based targeting delivered 8× more profit and 18× better ROME than mass messaging.\nThese numbers come from the actual post-rollout data — Tuango contacted all 397,252 customers (to generate evaluation data), allowing a clean comparison of what would have happened under each strategy.\n\n\nWhy the Model Worked\nThe test sample response rate was ~6.2%, but the model identified a subset of customers with much higher predicted purchase probability. By filtering out low-probability customers, the targeting strategy:\n\nConcentrated messages on customers more likely to buy\nReduced wasted message costs on unlikely buyers\nAvoided over-messaging customers who would block future notifications"
   },
   {
-    "objectID": "projects/project1/index.html#tools-used",
-    "href": "projects/project1/index.html#tools-used",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Python\npandas\nMachine Learning models\nData Visualization"
+    "objectID": "projects/project4/tuango-targeting.html#business-insights",
+    "href": "projects/project4/tuango-targeting.html#business-insights",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "Business Insights",
+    "text": "Business Insights\n1. The true cost of a message is not zero. The 9 RMB marginal cost accounts for the long-term risk of customers blocking deal messages — losing that channel permanently is far more costly than a single wasted send.\n2. RFM variables are highly predictive for deal targeting. Prior music purchase history and gender were the strongest predictors, suggesting that category affinity and demographics drive deal responsiveness more than raw usage frequency.\n3. Order size is hard to predict — but that’s okay. The linear regression showed very low R-squared for order size, meaning customers who buy tend to buy similar amounts regardless of their profile. The key lever is correctly predicting who buys, not how much they buy.\n4. Mass messaging is a losing strategy at scale. A 3.1% ROME means the campaign barely broke even. At 397,252 customers, the difference between selective and mass targeting was ¥775,710 in additional profit — from the same customer base.\n5. Model validation on actual rollout data confirms no overfitting. The realized post-rollout profit and ROME figures matched the projected direction from the test sample, confirming that the logistic regression generalized well to new customers."
   },
   {
-    "objectID": "projects/project1/index.html#key-insights",
-    "href": "projects/project1/index.html#key-insights",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "Customers with low engagement are more likely to churn\nUsage patterns strongly predict churn behavior\nMachine learning models improve prediction accuracy"
+    "objectID": "projects/project4/tuango-targeting.html#my-contribution",
+    "href": "projects/project4/tuango-targeting.html#my-contribution",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "My Contribution",
+    "text": "My Contribution\n\nConducted preliminary analysis: calculated response rate, average order size, and breakeven threshold\nBuilt and interpreted the logistic regression model including Permutation Importance and Partial Dependence Plots for all variables\nBuilt the order size linear regression and explained why low R-squared is expected in this context\nDerived the breakeven response rate and implemented the targeting decision rule\nCalculated projected and actual profit and ROME for both strategies; created comparison bar charts\nEvaluated post-rollout realized performance and confirmed model generalization"
   },
   {
-    "objectID": "projects/project1/index.html#github-repository",
-    "href": "projects/project1/index.html#github-repository",
-    "title": "S-Mobile: Predicting Customer Churn",
-    "section": "",
-    "text": "👉 View Full Project on GitHub"
+    "objectID": "projects/project4/tuango-targeting.html#tools-methods",
+    "href": "projects/project4/tuango-targeting.html#tools-methods",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "Tools & Methods",
+    "text": "Tools & Methods\nPython · Polars · pyrsm · plotnine · Logistic Regression · Linear Regression · RFM Analysis · Permutation Importance · Partial Dependence Plots · Test-and-Rollout Design · ROME"
+  },
+  {
+    "objectID": "projects/project4/tuango-targeting.html#github-repository",
+    "href": "projects/project4/tuango-targeting.html#github-repository",
+    "title": "Tuango: Targeting Mobile App Messages",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\n👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#business-problem",
+    "href": "projects/project1/pentathlon-nptb.html#business-problem",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "Business Problem",
+    "text": "Business Problem\nPentathlon, a multi-department e-commerce sports retailer, was sending promotional emails without a systematic way to decide which department’s message to send each customer. The choices were: Endurance, Strength, Water, Team, Backcountry, Racquet, or no message at all.\nA prior RCT revealed a key tension: higher email frequency boosted short-term revenue but significantly increased unsubscribe rates, reducing long-term customer lifetime value. The goal of this project was to move from a one-size-fits-all approach to customer-level personalized messaging that maximizes expected profit."
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#methodology",
+    "href": "projects/project1/pentathlon-nptb.html#methodology",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "Methodology",
+    "text": "Methodology\n\nData & Setup\n\n600,000 customer–email observations (70/30 train/test split)\nFeatures: demographics (age, gender, income, education, children) + historical purchase frequency across 6 departments\nTarget: whether the customer made a purchase within 2 days of receiving the email (buyer), and if so, the order size (total_os)\n\n\n\nNPTB Framework\nFor each customer, we estimated the expected profit of sending each of the 7 possible messages:\n\\[\\text{Expected Profit} = P(\\text{purchase} \\mid \\text{message}) \\times \\hat{\\text{order size}} \\times 0.4\\]\nThe 0.4 margin reflects a 60% COGS assumption. Each customer was then assigned the message yielding the highest expected profit.\n\n\nModels Built\nWe built and compared four model types for predicting purchase probability:\n\n\n\n\n\n\n\n\nModel\nApproach\nTest AUC\n\n\n\n\nLogistic Regression (interaction)\nMessage × customer feature interactions\n≈ 0.88\n\n\nNeural Network (MLP)\nTuned on hidden layer size, alpha\n≈ 0.88\n\n\nRandom Forest\nTuned on depth, n_estimators\n≈ 0.88\n\n\nXGBoost\nTuned on learning rate, depth, subsample\n≈ 0.88\n\n\n\nKey modeling insight: A baseline logistic model (without interaction terms) assigned 100% of customers to the same “endurance” message — no personalization at all. Adding message × feature interactions diversified recommendations across multiple departments, enabling true NPTB modeling.\nA separate OLS regression on buyers only estimated conditional order size per message, which was combined with purchase probability to compute expected profit."
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#key-results",
+    "href": "projects/project1/pentathlon-nptb.html#key-results",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "Key Results",
+    "text": "Key Results\n\nPersonalization Substantially Outperforms Every Alternative\n\n\n\n\n\n\n\n\nStrategy\nAvg. Expected Profit / Customer\nTotal Profit (5M customers)\n\n\n\n\nPersonalized (XGBoost)\n€0.684\n€3.42M\n\n\nBest Single Message (Endurance)\n€0.628\n€3.14M\n\n\nRandom Assignment\n€0.561\n€2.81M\n\n\nNo Message (Control)\n€0.431\n€2.15M\n\n\n\n\nPersonalization vs. random assignment: +€616K (+22%)\nPersonalization vs. best single message: +€283K (+9%)\nPersonalization vs. no message: +€1.27M (+59%)\n\n\n\nMessage Distribution Shifts When Profit Is the Goal\nWhen optimizing for purchase probability, ~70% of customers were assigned “Endurance” — one message dominated.\nWhen optimizing for expected profit (purchase probability × order size × margin), the distribution became more balanced:\n\nEndurance: ~43%\nBackcountry: ~36%\nStrength: ~17%\n\nThis shift reveals that Backcountry messages, while not the most likely to generate a purchase, tend to generate much larger orders — making them more profitable for a significant segment of customers.\n\n\nWhy XGBoost Was Selected as the Final Model\nAll four models achieved similar test AUC (~0.88), so AUC alone did not differentiate them. We selected the final model based on personalized expected profit per customer on the test set — XGBoost produced the highest value across all strategies."
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#business-insights",
+    "href": "projects/project1/pentathlon-nptb.html#business-insights",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "Business Insights",
+    "text": "Business Insights\n1. Personalization generates real money at scale. A ~9% improvement over the best uniform strategy translates to nearly €300K in additional profit per 5M-customer campaign — a figure that compounds across multiple campaigns per year.\n2. Order size matters, not just purchase likelihood. Optimizing on probability alone misses high-value customers who respond to niche categories with large basket sizes (e.g., backcountry gear). The NPTB framework captures this.\n3. For some customers, no email is optimal. Including the no-message option in the decision framework prevents over-messaging customers who are unlikely to convert regardless of the department — protecting long-term engagement and LTV.\n4. The proposed 50/50 email policy has room to improve. Pentathlon’s proposed new policy (splitting emails equally between the top 2 departments per customer) improves over random, but does not maximize profit. A fully individualized allocation would outperform the fixed split, especially when the gap between the first and second best message is large."
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#my-contribution",
+    "href": "projects/project1/pentathlon-nptb.html#my-contribution",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "My Contribution",
+    "text": "My Contribution\n\nDesigned and implemented the full NPTB prediction pipeline including counterfactual message scoring for all 7 message types\nBuilt interaction logistic regression model and identified why baseline model failed to personalize\nEngineered the expected profit formula combining purchase probability, order size regression, and margin\nCompared all four models on both AUC and expected profit metrics; made final model selection argument\nWrote the policy critique and improvement recommendations"
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#tools-methods",
+    "href": "projects/project1/pentathlon-nptb.html#tools-methods",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "Tools & Methods",
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression (interactions) · Neural Network (MLP) · Random Forest · OLS Regression · AUC · RMSE · Gains Curves"
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#github-repository",
+    "href": "projects/project1/pentathlon-nptb.html#github-repository",
+    "title": "Pentathlon: Next Product to Buy Modeling",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
     "objectID": "posts/post2.html",
@@ -294,46 +350,109 @@
     "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
   },
   {
-    "objectID": "projects/project2/index.html",
-    "href": "projects/project2/index.html",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "This project develops customer-level predictive models to optimize promotional messaging strategies using experimental e-mail marketing data.\n\n\nThe goal of this project is to move from a one-size-fits-all marketing approach to a personalized decision framework that maximizes long-term customer value.\nA randomized controlled trial (RCT) tested different e-mail frequencies (1–4 per week). While higher frequency increased short-term revenue, it also led to higher unsubscribe rates, reducing long-term customer lifetime value (LTV).\nThis project builds on that experimental data to determine the most effective message (or no message) for each individual customer.\n\n\n\n\nFeature engineering using Polars\nBuilt multiple predictive models:\n\nLogistic Regression\nRandom Forest\nXGBoost\nNeural Networks\n\nApplied the Next Product to Buy (NPTB) framework\nEstimated:\n\nPurchase probability\nExpected order value\nExpected profit\n\n\n\n\n\n\nCustomer behavior varies significantly, making personalization critical\nHigher email frequency increases short-term revenue but harms long-term engagement\nPredictive modeling enables better targeting decisions than static strategies\nPersonalized messaging significantly improves expected profit per customer\n\n\n\n\n\nBuilt and compared multiple predictive models\nEngineered features and processed data\nEvaluated model performance using multiple metrics\nInterpreted results and translated them into business insights\n\n\n\n\n👉 View Full Project on GitHub"
+    "objectID": "projects/project3/creative-gaming-uplift.html#business-problem",
+    "href": "projects/project3/creative-gaming-uplift.html#business-problem",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Business Problem",
+    "text": "Business Problem\nCreative Gaming needed to decide which of 120,000 customers to show ads for their new game Zalon ($14.99), where each ad costs $1.50 in lost coin purchases. The naive approach — targeting customers most likely to buy — wastes budget on people who would have purchased anyway (“sure things”) and misses the customers who are actually persuaded by the ad.\nThe key question: which customers’ behavior is genuinely changed by seeing an ad?"
   },
   {
-    "objectID": "projects/project2/index.html#project-overview",
-    "href": "projects/project2/index.html#project-overview",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "The goal of this project is to move from a one-size-fits-all marketing approach to a personalized decision framework that maximizes long-term customer value.\nA randomized controlled trial (RCT) tested different e-mail frequencies (1–4 per week). While higher frequency increased short-term revenue, it also led to higher unsubscribe rates, reducing long-term customer lifetime value (LTV).\nThis project builds on that experimental data to determine the most effective message (or no message) for each individual customer."
+    "objectID": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
+    "href": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Why Uplift Modeling, Not Propensity Modeling?",
+    "text": "Why Uplift Modeling, Not Propensity Modeling?\nStandard propensity models rank customers by P(purchase | ad shown), which conflates purchase likelihood with ad effectiveness. Uplift modeling instead estimates the incremental causal effect of the ad per customer:\n\\[\\text{Uplift}_i = P(\\text{purchase} \\mid \\text{ad}=1, X_i) - P(\\text{purchase} \\mid \\text{ad}=0, X_i)\\]\nThis separates customers into four behavioral segments: Persuadables (target these), Sure Things (waste of budget), Lost Causes (ignore), and Do-Not-Disturbs (avoid — ads hurt conversion).\nThe breakeven uplift threshold is: $1.50 / $14.99 ≈ 0.10 — only target customers whose incremental purchase probability exceeds 10%."
   },
   {
-    "objectID": "projects/project2/index.html#methodology",
-    "href": "projects/project2/index.html#methodology",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "Feature engineering using Polars\nBuilt multiple predictive models:\n\nLogistic Regression\nRandom Forest\nXGBoost\nNeural Networks\n\nApplied the Next Product to Buy (NPTB) framework\nEstimated:\n\nPurchase probability\nExpected order value\nExpected profit"
+    "objectID": "projects/project3/creative-gaming-uplift.html#methodology",
+    "href": "projects/project3/creative-gaming-uplift.html#methodology",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Methodology",
+    "text": "Methodology\n\nData & Experimental Setup\nCreative Gaming’s random email allocation policy had created natural experimental data:\n\nGroup 1 (Control): 30,000 customers who received no ad (cg_organic_control)\nGroup 2 (Treatment): 30,000 randomly selected customers who received the Zalon ad (cg_ad_random)\nCombined into a stacked RCT dataset of 60,000 observations with 70/30 train/test split, stratified by converted and ad\n\n\n\nUplift Model Architecture\nFor each model type, two separate models were trained — one on the treatment group and one on the control group — then the uplift score was computed as the difference in predicted probabilities:\n\n\n\n\n\n\n\nModel\nHyperparameters Tuned\n\n\n\n\nLogistic Regression\nBaseline (no tuning needed)\n\n\nNeural Network (MLP)\nHidden layer size: {(100,), (200,)}; alpha: {1e-6, 1e-4, 1e-3}; learning rate: {1e-3, 5e-4}\n\n\nRandom Forest\nn_estimators: {100, 200}; max_depth: {5, 10, None}; min_samples_leaf: {10, 50, 100}\n\n\nXGBoost\nn_estimators: {50, 100, 200}; max_depth: {3, 5, 7}; learning_rate: {0.05, 0.1}; min_child_weight: {1, 5}\n\n\n\nAll ML models used 5-fold cross-validation for hyperparameter tuning."
   },
   {
-    "objectID": "projects/project2/index.html#key-insights",
-    "href": "projects/project2/index.html#key-insights",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "Customer behavior varies significantly, making personalization critical\nHigher email frequency increases short-term revenue but harms long-term engagement\nPredictive modeling enables better targeting decisions than static strategies\nPersonalized messaging significantly improves expected profit per customer"
+    "objectID": "projects/project3/creative-gaming-uplift.html#key-results",
+    "href": "projects/project3/creative-gaming-uplift.html#key-results",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Key Results",
+    "text": "Key Results\n\nUplift vs. Propensity: Targeting the Best 30,000 of 120,000 Customers\n\n\n\nModel\nUplift Profit\nPropensity Profit\nUplift Advantage\n\n\n\n\nLogistic Regression\nhigher\nlower\nuplift wins\n\n\nNeural Network\nhigher\nlower\nuplift wins\n\n\nRandom Forest\nhigher\nlower\nuplift wins\n\n\nXGBoost\nhigher\nlower\nuplift wins\n\n\n\nUplift targeting consistently outperformed propensity targeting across all four models. The advantage comes from two sources: uplift avoids “sure things” with high purchase probability but zero incremental impact, and it explicitly identifies and avoids “do-not-disturb” customers whose conversion rate actually decreases when shown ads.\n\n\nOptimal Targeting Percentage\nRather than arbitrarily targeting 25% (30K of 120K), the optimal targeting proportion was derived using the breakeven condition (uplift ≥ 0.10):\n\nPropensity model (Logistic): optimal ≈ 50% of customers\nUplift model (Logistic): optimal ≈ 15% of customers\n\nThe uplift model targets a much smaller, more concentrated group of genuinely persuadable customers — reducing cost while maximizing incremental profit.\n\n\nWhat the Uplift Charts Revealed\nThe uplift bar charts showed that the top 20% of customers had uplift above 20% — highly persuadable segments. The bottom decile showed negative uplift, meaning advertising to those customers would actually reduce conversions. This confirms that a selective targeting strategy is essential.\nThe correlation analysis further validated the model:\n\nUplift score and pred_treatment: ρ = +0.55 — customers more likely to respond to ads have higher uplift\nUplift score and pred_control: ρ = −0.66 — customers who would buy anyway have lower uplift, not higher"
   },
   {
-    "objectID": "projects/project2/index.html#my-contribution",
-    "href": "projects/project2/index.html#my-contribution",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "Built and compared multiple predictive models\nEngineered features and processed data\nEvaluated model performance using multiple metrics\nInterpreted results and translated them into business insights"
+    "objectID": "projects/project3/creative-gaming-uplift.html#business-insights",
+    "href": "projects/project3/creative-gaming-uplift.html#business-insights",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Business Insights",
+    "text": "Business Insights\n1. Propensity models waste money on “sure things.” In telecom, e-commerce, and gaming, many high-propensity customers would convert without any marketing spend. Uplift modeling correctly identifies them as low-priority targets.\n2. Do-not-disturb customers are a real cost. Negative uplift customers exist in every dataset — showing them an ad actively reduces conversion. Propensity models cannot detect this; uplift models can.\n3. Smaller targeted groups can generate more profit. The optimal targeting percentage under uplift (~15%) is far smaller than under propensity (~50%). Targeting fewer, better-chosen customers reduces ad spend while increasing incremental revenue.\n4. RCT data is the gold standard for uplift modeling. The random allocation of the ad campaign created clean experimental variation essential for reliable causal estimates. Without this, uplift scores would be confounded by selection bias.\n5. Model complexity matters less than model type. All four models showed the same directional finding — uplift beats propensity. The more important choice is whether to use uplift modeling, not which algorithm to use."
   },
   {
-    "objectID": "projects/project2/index.html#github-repository",
-    "href": "projects/project2/index.html#github-repository",
-    "title": "Pentathlon: Next Product to Buy Modeling",
-    "section": "",
-    "text": "👉 View Full Project on GitHub"
+    "objectID": "projects/project3/creative-gaming-uplift.html#my-contribution",
+    "href": "projects/project3/creative-gaming-uplift.html#my-contribution",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "My Contribution",
+    "text": "My Contribution\n\nDesigned and implemented the full uplift modeling pipeline: data stacking, stratified train/test split, dual-model architecture (separate treatment and control models per algorithm)\nBuilt and tuned all four model types (Logistic Regression, Neural Network, Random Forest, XGBoost) with cross-validation\nComputed uplift scores, generated uplift tables and incremental uplift plots for all models\nDerived the optimal targeting percentage using the breakeven threshold formula for both propensity and uplift approaches\nWrote the conceptual explanation distinguishing the four customer segments (Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs)"
+  },
+  {
+    "objectID": "projects/project3/creative-gaming-uplift.html#tools-methods",
+    "href": "projects/project3/creative-gaming-uplift.html#tools-methods",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Tools & Methods",
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression · Neural Network (MLP) · Random Forest · Uplift Modeling · RCT · Incremental Uplift Plots · 5-Fold Cross-Validation · AUC"
+  },
+  {
+    "objectID": "projects/project3/creative-gaming-uplift.html#github-repository",
+    "href": "projects/project3/creative-gaming-uplift.html#github-repository",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\n👉 View Full Project on GitHub"
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#business-problem",
+    "href": "projects/project2/smobile-churn.html#business-problem",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "Business Problem",
+    "text": "Business Problem\nS-Mobile, a leading Singapore telecom with approximately 1 million subscribers, faced a 2% monthly churn rate. The traditional response — waiting for customers to call in and threaten to leave — was reactive and trained customers to game the system for discounts.\nThe goal was to build a proactive churn management system: predict which customers are likely to leave before they do, identify the root causes, design targeted interventions, and evaluate the economics of each action."
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#methodology",
+    "href": "projects/project2/smobile-churn.html#methodology",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "Methodology",
+    "text": "Methodology\n\nData & Setup\n\n39,000 training observations + 30,000 representative sample (2% real-world churn rate)\nFeatures: device characteristics, usage behavior (minutes, overage, dropped calls), customer demographics (occupation, credit rating, tenure), service history\nKey modeling challenge: training data was balanced at 50% churn for model fitting, then predictions were probability-corrected back to the true 2% population rate for downstream CLV analysis\n\n\n\nStep 1 — Churn Prediction Model\nBuilt and compared two models:\n\n\n\nModel\nValidation AUC\n\n\n\n\nLogistic Regression (final)\n~0.70\n\n\nRandom Forest (tuned, RandomizedSearchCV)\n~0.695\n\n\n\nRandom Forest did not materially outperform Logistic Regression on the validation set, suggesting the data has limited nonlinear structure. Logistic Regression was selected as the final model for its interpretability and equivalent predictive performance. Variable car was dropped due to consistent statistical insignificance.\n\n\nStep 2 — Key Churn Drivers\nUsing Permutation Importance and Partial Dependence Plots, the top 5 churn drivers identified were:\n\n\n\n\n\n\n\nDriver\nFinding\n\n\n\n\nOccupation\nStudents churn at far higher rates than retired customers\n\n\nEquipment age (eqpdays)\nOlder devices strongly predict switching behavior\n\n\nOverage usage\nHigh overage minutes signal plan mismatch and billing frustration\n\n\nCredit rating\nLow-credit customers are significantly less stable\n\n\nTenure (months)\nLonger-tenure customers are much less likely to churn\n\n\n\n\n\nStep 3 — Retention Actions\nFive targeted interventions were designed based on the churn drivers, each applied only to high-risk customers in the relevant segment:\n\nEarly device upgrade program — for high-risk customers with handsets above 75th percentile age\nPlan optimization — for high-risk customers with consistently high overage usage\nStudent retention offer — flexible plans for students with above-median churn probability\nCredit auto-pay incentive — for low-credit customers with high predicted churn risk\nService quality improvement — for high-risk customers experiencing frequent dropped calls\n\n\n\nStep 4 — Quantifying Churn Reduction\nUsing model-based counterfactual predictions on the representative sample (baseline churn rate = 1.99%):\n\n\n\nIntervention\nChurn Rate Reduction\n\n\n\n\nCredit auto-pay enrollment\n−0.88 pp\n\n\nEarly device upgrade\n−0.35 pp\n\n\nPlan optimization\n−0.31 pp\n\n\nStudent retention offer\n−0.04 pp\n\n\nService quality improvement\n−0.02 pp"
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#key-results",
+    "href": "projects/project2/smobile-churn.html#key-results",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "Key Results",
+    "text": "Key Results\n\nCLV Economics (5-Year, 10% Annual Discount Rate)\nBaseline assumptions: $40/month revenue per customer, 2% monthly churn, 60-month window.\n\n\n\n\n\n\n\n\n\nIntervention\nChurn Reduction\nIncremental CLV (Breakeven)\nProposed Cost\n\n\n\n\nCredit Auto-pay\n−0.88 pp\n+$258/customer\n$40–$60\n\n\nEarly Upgrade\n−0.35 pp\n+$93/customer\n$50–$70\n\n\nPlan Optimization\n−0.31 pp\n+$82/customer\n$30–$50\n\n\n\nBaseline 5-year CLV per customer: $1,156\nAll three interventions generate positive economic returns under realistic cost assumptions. Credit auto-pay delivers the highest leverage — a $258 CLV buffer against a $40–$60 incentive cost."
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#business-insights",
+    "href": "projects/project2/smobile-churn.html#business-insights",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "Business Insights",
+    "text": "Business Insights\n1. Reactive churn management is inferior. The model-based proactive approach targets customers before they decide to leave, when retention offers are more effective and less expensive.\n2. Not all interventions are equal. Credit auto-pay delivers 3× the CLV impact of plan optimization. Prioritizing interventions by economic return — not just churn reduction — is critical for budget efficiency.\n3. Probability correction matters for economics. Predictions from a balanced training set (50% churn) would wildly overstate actual churn risk. Correcting back to the 2% population rate is essential before any CLV or cost-benefit calculation.\n4. Targeting beats mass deployment. Applying interventions only to high-risk customers within the relevant driver segment maximizes ROI. For example, offering upgrade incentives to all customers wastes budget on low-risk customers who would have stayed anyway.\n5. Model validation should use RCT. The counterfactual estimates provide a sound starting point, but a pilot randomized experiment is needed before large-scale rollout to confirm the real-world churn reductions are statistically significant."
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#my-contribution",
+    "href": "projects/project2/smobile-churn.html#my-contribution",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "My Contribution",
+    "text": "My Contribution\n\nConducted full EDA including distribution analysis, IQR outlier assessment, standardized difference analysis across churn groups, and categorical churn rate breakdowns\nBuilt and tuned both Logistic Regression and Random Forest models; made final model selection argument based on validation AUC comparison\nImplemented probability correction from balanced training data to representative 2% population rate\nDesigned all five retention actions based on churn driver analysis; quantified churn reduction for each using model-based counterfactuals\nBuilt the CLV model and computed breakeven costs and proposed investment levels for three priority actions"
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#tools-methods",
+    "href": "projects/project2/smobile-churn.html#tools-methods",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "Tools & Methods",
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · Logistic Regression · Random Forest · RandomizedSearchCV · Permutation Importance · Partial Dependence Plots · CLV Modeling · Probability Calibration · AUC"
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#github-repository",
+    "href": "projects/project2/smobile-churn.html#github-repository",
+    "title": "S-Mobile: Predicting Customer Churn",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
     "objectID": "index.html",

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Applied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing incremental profit by focusing on persuadable customers.">
 
-<title>Pentathlon: Next Product to Buy Modeling – Shuning Zhang</title>
+<title>Creative Gaming: Uplift Modeling – Shuning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -124,14 +154,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#next-product-to-buy-modeling-personalized-marketing-optimization" id="toc-next-product-to-buy-modeling-personalized-marketing-optimization" class="nav-link active" data-scroll-target="#next-product-to-buy-modeling-personalized-marketing-optimization">Next Product to Buy Modeling (Personalized Marketing Optimization)</a>
+  <li><a href="#business-problem" id="toc-business-problem" class="nav-link active" data-scroll-target="#business-problem">Business Problem</a></li>
+  <li><a href="#why-uplift-modeling-not-propensity-modeling" id="toc-why-uplift-modeling-not-propensity-modeling" class="nav-link" data-scroll-target="#why-uplift-modeling-not-propensity-modeling">Why Uplift Modeling, Not Propensity Modeling?</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
   <ul class="collapse">
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
-  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
-  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My Contribution</a></li>
-  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
+  <li><a href="#data-experimental-setup" id="toc-data-experimental-setup" class="nav-link" data-scroll-target="#data-experimental-setup">Data &amp; Experimental Setup</a></li>
+  <li><a href="#uplift-model-architecture" id="toc-uplift-model-architecture" class="nav-link" data-scroll-target="#uplift-model-architecture">Uplift Model Architecture</a></li>
   </ul></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#uplift-vs.-propensity-targeting-the-best-30000-of-120000-customers" id="toc-uplift-vs.-propensity-targeting-the-best-30000-of-120000-customers" class="nav-link" data-scroll-target="#uplift-vs.-propensity-targeting-the-best-30000-of-120000-customers">Uplift vs.&nbsp;Propensity: Targeting the Best 30,000 of 120,000 Customers</a></li>
+  <li><a href="#optimal-targeting-percentage" id="toc-optimal-targeting-percentage" class="nav-link" data-scroll-target="#optimal-targeting-percentage">Optimal Targeting Percentage</a></li>
+  <li><a href="#what-the-uplift-charts-revealed" id="toc-what-the-uplift-charts-revealed" class="nav-link" data-scroll-target="#what-the-uplift-charts-revealed">What the Uplift Charts Revealed</a></li>
+  </ul></li>
+  <li><a href="#business-insights" id="toc-business-insights" class="nav-link" data-scroll-target="#business-insights">Business Insights</a></li>
+  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My Contribution</a></li>
+  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
   </ul>
 </nav>
     </div>
@@ -140,9 +179,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pentathlon: Next Product to Buy Modeling</h1>
+<h1 class="title">Creative Gaming: Uplift Modeling</h1>
 </div>
 
+<div>
+  <div class="description">
+    Applied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing incremental profit by focusing on persuadable customers.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -157,60 +201,165 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="next-product-to-buy-modeling-personalized-marketing-optimization" class="level1">
-<h1>Next Product to Buy Modeling (Personalized Marketing Optimization)</h1>
-<p><img src="pentathlon.png" class="img-fluid" width="500"></p>
-<p>This project develops customer-level predictive models to optimize promotional messaging strategies using experimental e-mail marketing data.</p>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>The goal of this project is to move from a one-size-fits-all marketing approach to a personalized decision framework that maximizes long-term customer value.</p>
-<p>A randomized controlled trial (RCT) tested different e-mail frequencies (1–4 per week). While higher frequency increased short-term revenue, it also led to higher unsubscribe rates, reducing long-term customer lifetime value (LTV).</p>
-<p>This project builds on that experimental data to determine the most effective message (or no message) for each individual customer.</p>
+<p><img src="cg.png" class="img-fluid" width="300"></p>
+<blockquote class="blockquote">
+<p><strong>One-line summary:</strong> Built an uplift modeling framework for Creative Gaming’s Zalon ad campaign using a randomized controlled trial (RCT) — identifying which customers are genuinely influenced by ads rather than likely buyers, increasing incremental profit over propensity-based targeting across all four models tested.</p>
+</blockquote>
+<hr>
+<section id="business-problem" class="level2">
+<h2 class="anchored" data-anchor-id="business-problem">Business Problem</h2>
+<p>Creative Gaming needed to decide which of 120,000 customers to show ads for their new game Zalon ($14.99), where each ad costs $1.50 in lost coin purchases. The naive approach — targeting customers most likely to buy — wastes budget on people who would have purchased anyway (“sure things”) and misses the customers who are actually <em>persuaded</em> by the ad.</p>
+<p>The key question: <strong>which customers’ behavior is genuinely changed by seeing an ad?</strong></p>
+<hr>
+</section>
+<section id="why-uplift-modeling-not-propensity-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="why-uplift-modeling-not-propensity-modeling">Why Uplift Modeling, Not Propensity Modeling?</h2>
+<p>Standard propensity models rank customers by P(purchase | ad shown), which conflates purchase likelihood with ad effectiveness. Uplift modeling instead estimates the <strong>incremental causal effect</strong> of the ad per customer:</p>
+<p><span class="math display">\[\text{Uplift}_i = P(\text{purchase} \mid \text{ad}=1, X_i) - P(\text{purchase} \mid \text{ad}=0, X_i)\]</span></p>
+<p>This separates customers into four behavioral segments: <strong>Persuadables</strong> (target these), Sure Things (waste of budget), Lost Causes (ignore), and Do-Not-Disturbs (avoid — ads hurt conversion).</p>
+<p>The breakeven uplift threshold is: $1.50 / $14.99 ≈ <strong>0.10</strong> — only target customers whose incremental purchase probability exceeds 10%.</p>
+<hr>
 </section>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="data-experimental-setup" class="level3">
+<h3 class="anchored" data-anchor-id="data-experimental-setup">Data &amp; Experimental Setup</h3>
+<p>Creative Gaming’s random email allocation policy had created natural experimental data:</p>
 <ul>
-<li>Feature engineering using <strong>Polars</strong></li>
-<li>Built multiple predictive models:
-<ul>
-<li>Logistic Regression</li>
-<li>Random Forest</li>
-<li>XGBoost</li>
-<li>Neural Networks</li>
-</ul></li>
-<li>Applied the <strong>Next Product to Buy (NPTB)</strong> framework</li>
-<li>Estimated:
-<ul>
-<li>Purchase probability</li>
-<li>Expected order value</li>
-<li>Expected profit</li>
-</ul></li>
+<li><strong>Group 1 (Control):</strong> 30,000 customers who received no ad (<code>cg_organic_control</code>)</li>
+<li><strong>Group 2 (Treatment):</strong> 30,000 randomly selected customers who received the Zalon ad (<code>cg_ad_random</code>)</li>
+<li>Combined into a stacked RCT dataset of 60,000 observations with 70/30 train/test split, stratified by <code>converted</code> and <code>ad</code></li>
 </ul>
 </section>
-<section id="key-insights" class="level2">
-<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<section id="uplift-model-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="uplift-model-architecture">Uplift Model Architecture</h3>
+<p>For each model type, two separate models were trained — one on the treatment group and one on the control group — then the uplift score was computed as the difference in predicted probabilities:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Hyperparameters Tuned</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logistic Regression</td>
+<td>Baseline (no tuning needed)</td>
+</tr>
+<tr class="even">
+<td>Neural Network (MLP)</td>
+<td>Hidden layer size: {(100,), (200,)}; alpha: {1e-6, 1e-4, 1e-3}; learning rate: {1e-3, 5e-4}</td>
+</tr>
+<tr class="odd">
+<td>Random Forest</td>
+<td>n_estimators: {100, 200}; max_depth: {5, 10, None}; min_samples_leaf: {10, 50, 100}</td>
+</tr>
+<tr class="even">
+<td>XGBoost</td>
+<td>n_estimators: {50, 100, 200}; max_depth: {3, 5, 7}; learning_rate: {0.05, 0.1}; min_child_weight: {1, 5}</td>
+</tr>
+</tbody>
+</table>
+<p>All ML models used 5-fold cross-validation for hyperparameter tuning.</p>
+<hr>
+</section>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<section id="uplift-vs.-propensity-targeting-the-best-30000-of-120000-customers" class="level3">
+<h3 class="anchored" data-anchor-id="uplift-vs.-propensity-targeting-the-best-30000-of-120000-customers">Uplift vs.&nbsp;Propensity: Targeting the Best 30,000 of 120,000 Customers</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Uplift Profit</th>
+<th>Propensity Profit</th>
+<th>Uplift Advantage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logistic Regression</td>
+<td>higher</td>
+<td>lower</td>
+<td>uplift wins</td>
+</tr>
+<tr class="even">
+<td>Neural Network</td>
+<td>higher</td>
+<td>lower</td>
+<td>uplift wins</td>
+</tr>
+<tr class="odd">
+<td>Random Forest</td>
+<td>higher</td>
+<td>lower</td>
+<td>uplift wins</td>
+</tr>
+<tr class="even">
+<td>XGBoost</td>
+<td>higher</td>
+<td>lower</td>
+<td>uplift wins</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Uplift targeting consistently outperformed propensity targeting across all four models.</strong> The advantage comes from two sources: uplift avoids “sure things” with high purchase probability but zero incremental impact, and it explicitly identifies and avoids “do-not-disturb” customers whose conversion rate actually <em>decreases</em> when shown ads.</p>
+</section>
+<section id="optimal-targeting-percentage" class="level3">
+<h3 class="anchored" data-anchor-id="optimal-targeting-percentage">Optimal Targeting Percentage</h3>
+<p>Rather than arbitrarily targeting 25% (30K of 120K), the optimal targeting proportion was derived using the breakeven condition (uplift ≥ 0.10):</p>
 <ul>
-<li>Customer behavior varies significantly, making personalization critical</li>
-<li>Higher email frequency increases short-term revenue but harms long-term engagement</li>
-<li>Predictive modeling enables better targeting decisions than static strategies</li>
-<li>Personalized messaging significantly improves expected profit per customer</li>
+<li><strong>Propensity model (Logistic):</strong> optimal ≈ 50% of customers</li>
+<li><strong>Uplift model (Logistic):</strong> optimal ≈ 15% of customers</li>
 </ul>
+<p>The uplift model targets a much smaller, more concentrated group of genuinely persuadable customers — reducing cost while maximizing incremental profit.</p>
+</section>
+<section id="what-the-uplift-charts-revealed" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-uplift-charts-revealed">What the Uplift Charts Revealed</h3>
+<p>The uplift bar charts showed that the <strong>top 20% of customers had uplift above 20%</strong> — highly persuadable segments. The <strong>bottom decile showed negative uplift</strong>, meaning advertising to those customers would actually reduce conversions. This confirms that a selective targeting strategy is essential.</p>
+<p>The correlation analysis further validated the model:</p>
+<ul>
+<li>Uplift score and <code>pred_treatment</code>: <strong>ρ = +0.55</strong> — customers more likely to respond to ads have higher uplift</li>
+<li>Uplift score and <code>pred_control</code>: <strong>ρ = −0.66</strong> — customers who would buy anyway have <em>lower</em> uplift, not higher</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="business-insights" class="level2">
+<h2 class="anchored" data-anchor-id="business-insights">Business Insights</h2>
+<p><strong>1. Propensity models waste money on “sure things.”</strong> In telecom, e-commerce, and gaming, many high-propensity customers would convert without any marketing spend. Uplift modeling correctly identifies them as low-priority targets.</p>
+<p><strong>2. Do-not-disturb customers are a real cost.</strong> Negative uplift customers exist in every dataset — showing them an ad actively reduces conversion. Propensity models cannot detect this; uplift models can.</p>
+<p><strong>3. Smaller targeted groups can generate more profit.</strong> The optimal targeting percentage under uplift (~15%) is far smaller than under propensity (~50%). Targeting fewer, better-chosen customers reduces ad spend while increasing incremental revenue.</p>
+<p><strong>4. RCT data is the gold standard for uplift modeling.</strong> The random allocation of the ad campaign created clean experimental variation essential for reliable causal estimates. Without this, uplift scores would be confounded by selection bias.</p>
+<p><strong>5. Model complexity matters less than model type.</strong> All four models showed the same directional finding — uplift beats propensity. The more important choice is <em>whether</em> to use uplift modeling, not <em>which</em> algorithm to use.</p>
+<hr>
 </section>
 <section id="my-contribution" class="level2">
 <h2 class="anchored" data-anchor-id="my-contribution">My Contribution</h2>
 <ul>
-<li>Built and compared multiple predictive models</li>
-<li>Engineered features and processed data</li>
-<li>Evaluated model performance using multiple metrics</li>
-<li>Interpreted results and translated them into business insights</li>
+<li>Designed and implemented the full uplift modeling pipeline: data stacking, stratified train/test split, dual-model architecture (separate treatment and control models per algorithm)</li>
+<li>Built and tuned all four model types (Logistic Regression, Neural Network, Random Forest, XGBoost) with cross-validation</li>
+<li>Computed uplift scores, generated uplift tables and incremental uplift plots for all models</li>
+<li>Derived the optimal targeting percentage using the breakeven threshold formula for both propensity and uplift approaches</li>
+<li>Wrote the conceptual explanation distinguishing the four customer segments (Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs)</li>
 </ul>
+<hr>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h2>
+<p><code>Python</code> · <code>Polars</code> · <code>pyrsm</code> · <code>scikit-learn</code> · <code>XGBoost</code> · <code>Logistic Regression</code> · <code>Neural Network (MLP)</code> · <code>Random Forest</code> · <code>Uplift Modeling</code> · <code>RCT</code> · <code>Incremental Uplift Plots</code> · <code>5-Fold Cross-Validation</code> · <code>AUC</code></p>
+<hr>
 </section>
 <section id="github-repository" class="level2">
 <h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
-<p><a href="https://github.com/rsm-shz142/pentathlon-project">👉 View Full Project on GitHub</a></p>
+<p>👉 <a href="https://github.com/rsm-shz142/creative-gaming-uplift">View Full Project on GitHub</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

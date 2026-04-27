@@ -1,0 +1,125 @@
+---
+title: "S-Mobile: Predicting Customer Churn"
+description: "Built a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from targeted interventions."
+---
+
+![](smobile.png){width=300px}
+
+> **One-line summary:** Built an end-to-end churn analytics pipeline for Singapore's S-Mobile — from predictive modeling and driver analysis to actionable retention strategies with full 5-year CLV evaluation, identifying up to **$258 incremental CLV per customer** from the most effective intervention.
+
+---
+
+## Business Problem
+
+S-Mobile, a leading Singapore telecom with approximately 1 million subscribers, faced a 2% monthly churn rate. The traditional response — waiting for customers to call in and threaten to leave — was reactive and trained customers to game the system for discounts.
+
+The goal was to build a **proactive churn management system**: predict which customers are likely to leave *before* they do, identify the root causes, design targeted interventions, and evaluate the economics of each action.
+
+---
+
+## Methodology
+
+### Data & Setup
+
+- **39,000** training observations + **30,000** representative sample (2% real-world churn rate)
+- Features: device characteristics, usage behavior (minutes, overage, dropped calls), customer demographics (occupation, credit rating, tenure), service history
+- Key modeling challenge: training data was balanced at 50% churn for model fitting, then predictions were **probability-corrected** back to the true 2% population rate for downstream CLV analysis
+
+### Step 1 — Churn Prediction Model
+
+Built and compared two models:
+
+| Model | Validation AUC |
+|---|---|
+| Logistic Regression (final) | **~0.70** |
+| Random Forest (tuned, RandomizedSearchCV) | ~0.695 |
+
+Random Forest did not materially outperform Logistic Regression on the validation set, suggesting the data has limited nonlinear structure. Logistic Regression was selected as the final model for its interpretability and equivalent predictive performance. Variable `car` was dropped due to consistent statistical insignificance.
+
+### Step 2 — Key Churn Drivers
+
+Using **Permutation Importance** and **Partial Dependence Plots**, the top 5 churn drivers identified were:
+
+| Driver | Finding |
+|---|---|
+| **Occupation** | Students churn at far higher rates than retired customers |
+| **Equipment age (eqpdays)** | Older devices strongly predict switching behavior |
+| **Overage usage** | High overage minutes signal plan mismatch and billing frustration |
+| **Credit rating** | Low-credit customers are significantly less stable |
+| **Tenure (months)** | Longer-tenure customers are much less likely to churn |
+
+### Step 3 — Retention Actions
+
+Five targeted interventions were designed based on the churn drivers, each applied only to high-risk customers in the relevant segment:
+
+- **Early device upgrade program** — for high-risk customers with handsets above 75th percentile age
+- **Plan optimization** — for high-risk customers with consistently high overage usage
+- **Student retention offer** — flexible plans for students with above-median churn probability
+- **Credit auto-pay incentive** — for low-credit customers with high predicted churn risk
+- **Service quality improvement** — for high-risk customers experiencing frequent dropped calls
+
+### Step 4 — Quantifying Churn Reduction
+
+Using model-based counterfactual predictions on the representative sample (baseline churn rate = **1.99%**):
+
+| Intervention | Churn Rate Reduction |
+|---|---|
+| **Credit auto-pay enrollment** | **−0.88 pp** |
+| Early device upgrade | −0.35 pp |
+| Plan optimization | −0.31 pp |
+| Student retention offer | −0.04 pp |
+| Service quality improvement | −0.02 pp |
+
+---
+
+## Key Results
+
+### CLV Economics (5-Year, 10% Annual Discount Rate)
+
+Baseline assumptions: $40/month revenue per customer, 2% monthly churn, 60-month window.
+
+| Intervention | Churn Reduction | Incremental CLV (Breakeven) | Proposed Cost |
+|---|---|---|---|
+| **Credit Auto-pay** | −0.88 pp | **+$258/customer** | $40–$60 |
+| Early Upgrade | −0.35 pp | +$93/customer | $50–$70 |
+| Plan Optimization | −0.31 pp | +$82/customer | $30–$50 |
+
+**Baseline 5-year CLV per customer: $1,156**
+
+All three interventions generate positive economic returns under realistic cost assumptions. Credit auto-pay delivers the highest leverage — a $258 CLV buffer against a $40–$60 incentive cost.
+
+---
+
+## Business Insights
+
+**1. Reactive churn management is inferior.** The model-based proactive approach targets customers *before* they decide to leave, when retention offers are more effective and less expensive.
+
+**2. Not all interventions are equal.** Credit auto-pay delivers 3× the CLV impact of plan optimization. Prioritizing interventions by economic return — not just churn reduction — is critical for budget efficiency.
+
+**3. Probability correction matters for economics.** Predictions from a balanced training set (50% churn) would wildly overstate actual churn risk. Correcting back to the 2% population rate is essential before any CLV or cost-benefit calculation.
+
+**4. Targeting beats mass deployment.** Applying interventions only to high-risk customers within the relevant driver segment maximizes ROI. For example, offering upgrade incentives to all customers wastes budget on low-risk customers who would have stayed anyway.
+
+**5. Model validation should use RCT.** The counterfactual estimates provide a sound starting point, but a pilot randomized experiment is needed before large-scale rollout to confirm the real-world churn reductions are statistically significant.
+
+---
+
+## My Contribution
+
+- Conducted full EDA including distribution analysis, IQR outlier assessment, standardized difference analysis across churn groups, and categorical churn rate breakdowns
+- Built and tuned both Logistic Regression and Random Forest models; made final model selection argument based on validation AUC comparison
+- Implemented probability correction from balanced training data to representative 2% population rate
+- Designed all five retention actions based on churn driver analysis; quantified churn reduction for each using model-based counterfactuals
+- Built the CLV model and computed breakeven costs and proposed investment levels for three priority actions
+
+---
+
+## Tools & Methods
+
+`Python` · `Polars` · `pyrsm` · `scikit-learn` · `Logistic Regression` · `Random Forest` · `RandomizedSearchCV` · `Permutation Importance` · `Partial Dependence Plots` · `CLV Modeling` · `Probability Calibration` · `AUC`
+
+---
+
+## GitHub Repository
+
+👉 [View Full Project on GitHub](https://github.com/rsm-shz142/smobile-project)

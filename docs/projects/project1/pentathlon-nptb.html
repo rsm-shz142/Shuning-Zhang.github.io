@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Built an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.">
 
-<title>My Projects – Shuning Zhang</title>
+<title>Pentathlon: Next Product to Buy Modeling – Shuning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +27,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -132,7 +102,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -142,7 +112,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shuning Zhang</span>
     </a>
   </div>
@@ -153,19 +123,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -179,17 +149,44 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#business-problem" id="toc-business-problem" class="nav-link active" data-scroll-target="#business-problem">Business Problem</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#data-setup" id="toc-data-setup" class="nav-link" data-scroll-target="#data-setup">Data &amp; Setup</a></li>
+  <li><a href="#nptb-framework" id="toc-nptb-framework" class="nav-link" data-scroll-target="#nptb-framework">NPTB Framework</a></li>
+  <li><a href="#models-built" id="toc-models-built" class="nav-link" data-scroll-target="#models-built">Models Built</a></li>
+  </ul></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#personalization-substantially-outperforms-every-alternative" id="toc-personalization-substantially-outperforms-every-alternative" class="nav-link" data-scroll-target="#personalization-substantially-outperforms-every-alternative">Personalization Substantially Outperforms Every Alternative</a></li>
+  <li><a href="#message-distribution-shifts-when-profit-is-the-goal" id="toc-message-distribution-shifts-when-profit-is-the-goal" class="nav-link" data-scroll-target="#message-distribution-shifts-when-profit-is-the-goal">Message Distribution Shifts When Profit Is the Goal</a></li>
+  <li><a href="#why-xgboost-was-selected-as-the-final-model" id="toc-why-xgboost-was-selected-as-the-final-model" class="nav-link" data-scroll-target="#why-xgboost-was-selected-as-the-final-model">Why XGBoost Was Selected as the Final Model</a></li>
+  </ul></li>
+  <li><a href="#business-insights" id="toc-business-insights" class="nav-link" data-scroll-target="#business-insights">Business Insights</a></li>
+  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My Contribution</a></li>
+  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Projects</h1>
+<h1 class="title">Pentathlon: Next Product to Buy Modeling</h1>
 </div>
 
+<div>
+  <div class="description">
+    Built an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -204,91 +201,172 @@ window.Quarto = {
 </header>
 
 
+<p><img src="pentathlon.png" class="img-fluid" width="180"></p>
+<blockquote class="blockquote">
+<p><strong>One-line summary:</strong> Built a Next Product to Buy (NPTB) framework using four machine learning models to determine the optimal promotional email for each of 5 million customers — personalizing messaging increased expected profit by <strong>22% over random assignment</strong> and <strong>9% over the best single-message strategy</strong>.</p>
+</blockquote>
+<hr>
+<section id="business-problem" class="level2">
+<h2 class="anchored" data-anchor-id="business-problem">Business Problem</h2>
+<p>Pentathlon, a multi-department e-commerce sports retailer, was sending promotional emails without a systematic way to decide <strong>which department’s message</strong> to send each customer. The choices were: Endurance, Strength, Water, Team, Backcountry, Racquet, or no message at all.</p>
+<p>A prior RCT revealed a key tension: higher email frequency boosted short-term revenue but significantly increased unsubscribe rates, reducing long-term customer lifetime value. The goal of this project was to move from a one-size-fits-all approach to <strong>customer-level personalized messaging</strong> that maximizes expected profit.</p>
+<hr>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="data-setup" class="level3">
+<h3 class="anchored" data-anchor-id="data-setup">Data &amp; Setup</h3>
+<ul>
+<li><strong>600,000</strong> customer–email observations (70/30 train/test split)</li>
+<li>Features: demographics (age, gender, income, education, children) + historical purchase frequency across 6 departments</li>
+<li>Target: whether the customer made a purchase within 2 days of receiving the email (<code>buyer</code>), and if so, the order size (<code>total_os</code>)</li>
+</ul>
+</section>
+<section id="nptb-framework" class="level3">
+<h3 class="anchored" data-anchor-id="nptb-framework">NPTB Framework</h3>
+<p>For each customer, we estimated the <strong>expected profit</strong> of sending each of the 7 possible messages:</p>
+<p><span class="math display">\[\text{Expected Profit} = P(\text{purchase} \mid \text{message}) \times \hat{\text{order size}} \times 0.4\]</span></p>
+<p>The 0.4 margin reflects a 60% COGS assumption. Each customer was then assigned the message yielding the highest expected profit.</p>
+</section>
+<section id="models-built" class="level3">
+<h3 class="anchored" data-anchor-id="models-built">Models Built</h3>
+<p>We built and compared four model types for predicting purchase probability:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Approach</th>
+<th>Test AUC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logistic Regression (interaction)</td>
+<td>Message × customer feature interactions</td>
+<td>≈ 0.88</td>
+</tr>
+<tr class="even">
+<td>Neural Network (MLP)</td>
+<td>Tuned on hidden layer size, alpha</td>
+<td>≈ 0.88</td>
+</tr>
+<tr class="odd">
+<td>Random Forest</td>
+<td>Tuned on depth, n_estimators</td>
+<td>≈ 0.88</td>
+</tr>
+<tr class="even">
+<td><strong>XGBoost</strong></td>
+<td>Tuned on learning rate, depth, subsample</td>
+<td><strong>≈ 0.88</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key modeling insight:</strong> A baseline logistic model (without interaction terms) assigned 100% of customers to the same “endurance” message — no personalization at all. Adding message × feature interactions diversified recommendations across multiple departments, enabling true NPTB modeling.</p>
+<p>A separate OLS regression on buyers only estimated conditional order size per message, which was combined with purchase probability to compute expected profit.</p>
+<hr>
+</section>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<section id="personalization-substantially-outperforms-every-alternative" class="level3">
+<h3 class="anchored" data-anchor-id="personalization-substantially-outperforms-every-alternative">Personalization Substantially Outperforms Every Alternative</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategy</th>
+<th>Avg. Expected Profit / Customer</th>
+<th>Total Profit (5M customers)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Personalized (XGBoost)</strong></td>
+<td><strong>€0.684</strong></td>
+<td><strong>€3.42M</strong></td>
+</tr>
+<tr class="even">
+<td>Best Single Message (Endurance)</td>
+<td>€0.628</td>
+<td>€3.14M</td>
+</tr>
+<tr class="odd">
+<td>Random Assignment</td>
+<td>€0.561</td>
+<td>€2.81M</td>
+</tr>
+<tr class="even">
+<td>No Message (Control)</td>
+<td>€0.431</td>
+<td>€2.15M</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Personalization vs.&nbsp;random assignment: <strong>+€616K (+22%)</strong></li>
+<li>Personalization vs.&nbsp;best single message: <strong>+€283K (+9%)</strong></li>
+<li>Personalization vs.&nbsp;no message: <strong>+€1.27M (+59%)</strong></li>
+</ul>
+</section>
+<section id="message-distribution-shifts-when-profit-is-the-goal" class="level3">
+<h3 class="anchored" data-anchor-id="message-distribution-shifts-when-profit-is-the-goal">Message Distribution Shifts When Profit Is the Goal</h3>
+<p>When optimizing for <strong>purchase probability</strong>, ~70% of customers were assigned “Endurance” — one message dominated.</p>
+<p>When optimizing for <strong>expected profit</strong> (purchase probability × order size × margin), the distribution became more balanced:</p>
+<ul>
+<li>Endurance: ~43%</li>
+<li>Backcountry: ~36%</li>
+<li>Strength: ~17%</li>
+</ul>
+<p>This shift reveals that <strong>Backcountry messages, while not the most likely to generate a purchase, tend to generate much larger orders</strong> — making them more profitable for a significant segment of customers.</p>
+</section>
+<section id="why-xgboost-was-selected-as-the-final-model" class="level3">
+<h3 class="anchored" data-anchor-id="why-xgboost-was-selected-as-the-final-model">Why XGBoost Was Selected as the Final Model</h3>
+<p>All four models achieved similar test AUC (~0.88), so AUC alone did not differentiate them. We selected the final model based on <strong>personalized expected profit per customer</strong> on the test set — XGBoost produced the highest value across all strategies.</p>
+<hr>
+</section>
+</section>
+<section id="business-insights" class="level2">
+<h2 class="anchored" data-anchor-id="business-insights">Business Insights</h2>
+<p><strong>1. Personalization generates real money at scale.</strong> A ~9% improvement over the best uniform strategy translates to nearly €300K in additional profit per 5M-customer campaign — a figure that compounds across multiple campaigns per year.</p>
+<p><strong>2. Order size matters, not just purchase likelihood.</strong> Optimizing on probability alone misses high-value customers who respond to niche categories with large basket sizes (e.g., backcountry gear). The NPTB framework captures this.</p>
+<p><strong>3. For some customers, no email is optimal.</strong> Including the no-message option in the decision framework prevents over-messaging customers who are unlikely to convert regardless of the department — protecting long-term engagement and LTV.</p>
+<p><strong>4. The proposed 50/50 email policy has room to improve.</strong> Pentathlon’s proposed new policy (splitting emails equally between the top 2 departments per customer) improves over random, but does not maximize profit. A fully individualized allocation would outperform the fixed split, especially when the gap between the first and second best message is large.</p>
+<hr>
+</section>
+<section id="my-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-contribution">My Contribution</h2>
+<ul>
+<li>Designed and implemented the full NPTB prediction pipeline including counterfactual message scoring for all 7 message types</li>
+<li>Built interaction logistic regression model and identified why baseline model failed to personalize</li>
+<li>Engineered the expected profit formula combining purchase probability, order size regression, and margin</li>
+<li>Compared all four models on both AUC and expected profit metrics; made final model selection argument</li>
+<li>Wrote the policy critique and improvement recommendations</li>
+</ul>
+<hr>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h2>
+<p><code>Python</code> · <code>Polars</code> · <code>pyrsm</code> · <code>scikit-learn</code> · <code>XGBoost</code> · <code>Logistic Regression (interactions)</code> · <code>Neural Network (MLP)</code> · <code>Random Forest</code> · <code>OLS Regression</code> · <code>AUC</code> · <code>RMSE</code> · <code>Gains Curves</code></p>
+<hr>
+</section>
+<section id="github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
+<p>👉 <a href="https://github.com/rsm-shz142/pentathlon-project">View Full Project on GitHub</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1777278597641" data-listing-reading-time-sort="5" data-listing-word-count-sort="906">
-<a href="./projects/project3/creative-gaming-uplift.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project3/cg.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Creative Gaming: Uplift Modeling
-</h5>
-<div class="card-text listing-description delink">
-<p>Applied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1777268716833" data-listing-reading-time-sort="4" data-listing-word-count-sort="796">
-<a href="./projects/project1/pentathlon-nptb.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project1/pentathlon.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Pentathlon: Next Product to Buy Modeling
-</h5>
-<div class="card-text listing-description delink">
-<p>Built an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1777269146439" data-listing-reading-time-sort="5" data-listing-word-count-sort="846">
-<a href="./projects/project2/smobile-churn.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project2/smobile.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-S-Mobile: Predicting Customer Churn
-</h5>
-<div class="card-text listing-description delink">
-<p>Built a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1777279079070" data-listing-reading-time-sort="5" data-listing-word-count-sort="839">
-<a href="./projects/project4/tuango-targeting.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img loading='lazy' src="projects/project4/tuango.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tuango: Targeting Mobile App Messages
-</h5>
-<div class="card-text listing-description delink">
-<p>Built a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while…</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

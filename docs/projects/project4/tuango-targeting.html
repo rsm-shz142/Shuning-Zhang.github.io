@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Built a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while improving ROME from 3% to 57%.">
 
-<title>S-Mobile: Predicting Customer Churn – Shuning Zhang</title>
+<title>Tuango: Targeting Mobile App Messages – Shuning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -124,14 +154,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#s-mobile-predicting-customer-churn" id="toc-s-mobile-predicting-customer-churn" class="nav-link active" data-scroll-target="#s-mobile-predicting-customer-churn">S-Mobile: Predicting Customer Churn</a>
+  <li><a href="#business-problem" id="toc-business-problem" class="nav-link active" data-scroll-target="#business-problem">Business Problem</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
   <ul class="collapse">
-  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#tools-used" id="toc-tools-used" class="nav-link" data-scroll-target="#tools-used">Tools Used</a></li>
-  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
-  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
+  <li><a href="#data-setup" id="toc-data-setup" class="nav-link" data-scroll-target="#data-setup">Data &amp; Setup</a></li>
+  <li><a href="#step-1-preliminary-analysis" id="toc-step-1-preliminary-analysis" class="nav-link" data-scroll-target="#step-1-preliminary-analysis">Step 1 — Preliminary Analysis</a></li>
+  <li><a href="#step-2-logistic-regression-model" id="toc-step-2-logistic-regression-model" class="nav-link" data-scroll-target="#step-2-logistic-regression-model">Step 2 — Logistic Regression Model</a></li>
+  <li><a href="#step-3-order-size-model" id="toc-step-3-order-size-model" class="nav-link" data-scroll-target="#step-3-order-size-model">Step 3 — Order Size Model</a></li>
+  <li><a href="#step-4-breakeven-targeting-rule" id="toc-step-4-breakeven-targeting-rule" class="nav-link" data-scroll-target="#step-4-breakeven-targeting-rule">Step 4 — Breakeven Targeting Rule</a></li>
   </ul></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#projected-vs.-realized-performance" id="toc-projected-vs.-realized-performance" class="nav-link" data-scroll-target="#projected-vs.-realized-performance">Projected vs.&nbsp;Realized Performance</a></li>
+  <li><a href="#why-the-model-worked" id="toc-why-the-model-worked" class="nav-link" data-scroll-target="#why-the-model-worked">Why the Model Worked</a></li>
+  </ul></li>
+  <li><a href="#business-insights" id="toc-business-insights" class="nav-link" data-scroll-target="#business-insights">Business Insights</a></li>
+  <li><a href="#my-contribution" id="toc-my-contribution" class="nav-link" data-scroll-target="#my-contribution">My Contribution</a></li>
+  <li><a href="#tools-methods" id="toc-tools-methods" class="nav-link" data-scroll-target="#tools-methods">Tools &amp; Methods</a></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
   </ul>
 </nav>
     </div>
@@ -140,9 +180,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">S-Mobile: Predicting Customer Churn</h1>
+<h1 class="title">Tuango: Targeting Mobile App Messages</h1>
 </div>
 
+<div>
+  <div class="description">
+    Built a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while improving ROME from 3% to 57%.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -157,46 +202,174 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="s-mobile-predicting-customer-churn" class="level1">
-<h1>S-Mobile: Predicting Customer Churn</h1>
-<p><img src="smobile.png" class="img-fluid" width="500"></p>
-<p>This project focuses on predicting customer churn using data analytics and machine learning techniques.</p>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>Customer churn is a critical problem for subscription-based businesses. In this project, we build predictive models to identify customers who are likely to leave and explore key drivers behind churn behavior.</p>
+<p><img src="tuango.png" class="img-fluid" width="200"></p>
+<blockquote class="blockquote">
+<p><strong>One-line summary:</strong> Applied RFM-based logistic regression to identify which of 397,252 customers should receive a mobile deal offer — model-based selective targeting delivered <strong>¥887,423 profit at 56.6% ROME</strong>, versus only ¥111,713 at 3.1% ROME from mass messaging.</p>
+</blockquote>
+<hr>
+<section id="business-problem" class="level2">
+<h2 class="anchored" data-anchor-id="business-problem">Business Problem</h2>
+<p>Tuango, a Chinese “deal-of-the-day” platform similar to Groupon, ran a karaoke deal campaign by pushing offer messages through its mobile app. Sending messages has a <strong>hidden cost of 9 RMB per customer</strong> — if a customer receives too many irrelevant offers and blocks future messages, Tuango permanently loses that marketing channel.</p>
+<p>After running a test campaign on 20,908 customers, Tuango had 397,252 remaining customers to contact for the rollout. The question: <strong>should all of them receive the message, or only those most likely to buy?</strong></p>
+<hr>
 </section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<section id="data-setup" class="level3">
+<h3 class="anchored" data-anchor-id="data-setup">Data &amp; Setup</h3>
 <ul>
-<li>Predict whether a customer will churn</li>
-<li>Identify key drivers of churn</li>
-<li>Provide actionable insights to reduce churn</li>
-<li>Evaluate business impact of different strategies</li>
+<li><strong>20,908</strong> test-sample customers used to build and validate the model</li>
+<li><strong>397,252</strong> rollout customers for actual deployment</li>
+<li>Key features: RFM variables (Recency, Frequency, Monetary), Age, Gender, Music purchase history</li>
+<li>Target variable: whether the customer purchased the karaoke deal (<code>buyer</code>)</li>
 </ul>
 </section>
-<section id="tools-used" class="level2">
-<h2 class="anchored" data-anchor-id="tools-used">Tools Used</h2>
+<section id="step-1-preliminary-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-preliminary-analysis">Step 1 — Preliminary Analysis</h3>
 <ul>
-<li>Python</li>
-<li>pandas</li>
-<li>Machine Learning models</li>
-<li>Data Visualization</li>
+<li>Overall response rate in the test sample: <strong>~6.2%</strong> of customers purchased</li>
+<li>Among buyers, average order size: <strong>~2.7 sessions</strong> (30-minute karaoke sessions at 49 RMB each)</li>
+<li>Tuango’s fee: 50% of revenue → margin per response = 0.5 × 49 RMB × avg order size</li>
 </ul>
 </section>
-<section id="key-insights" class="level2">
-<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<section id="step-2-logistic-regression-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-logistic-regression-model">Step 2 — Logistic Regression Model</h3>
+<p>Built a logistic regression model predicting purchase probability using RFM + demographics:</p>
+<p><strong>Key variable importance findings (Permutation Importance):</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Importance</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Music (prior music purchase)</td>
+<td>Highest</td>
+<td>↑ increases purchase probability</td>
+</tr>
+<tr class="even">
+<td>Gender</td>
+<td>High</td>
+<td>Female &gt; Other &gt; Male</td>
+</tr>
+<tr class="odd">
+<td>Frequency</td>
+<td>Moderate</td>
+<td>↑ more past purchases → more likely to buy</td>
+</tr>
+<tr class="even">
+<td>Monetary</td>
+<td>Moderate</td>
+<td>↑ higher spend → more likely to buy</td>
+</tr>
+<tr class="odd">
+<td>Age</td>
+<td>Low-moderate</td>
+<td>↑ older → less likely to buy</td>
+</tr>
+<tr class="even">
+<td>Recency</td>
+<td>Lowest</td>
+<td>Less recent → less likely to buy</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="step-3-order-size-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-order-size-model">Step 3 — Order Size Model</h3>
+<p>Built a linear regression on buyers only to predict order size. Finding: <strong>R-squared is very low</strong> — the model explains little variation in order size. This means the RFM variables predict <em>whether</em> someone buys well, but not <em>how much</em> they buy once they decide to purchase.</p>
+</section>
+<section id="step-4-breakeven-targeting-rule" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-breakeven-targeting-rule">Step 4 — Breakeven Targeting Rule</h3>
+<p>Calculated the breakeven response rate:</p>
+<p><span class="math display">\[\text{Breakeven} = \frac{\text{Cost per message}}{\text{Margin per response}} = \frac{9 \text{ RMB}}{0.5 \times 49 \times \text{avg order size}}\]</span></p>
+<p>Only customers with predicted purchase probability <strong>above this breakeven</strong> received the message.</p>
+<hr>
+</section>
+</section>
+<section id="key-results" class="level2">
+<h2 class="anchored" data-anchor-id="key-results">Key Results</h2>
+<section id="projected-vs.-realized-performance" class="level3">
+<h3 class="anchored" data-anchor-id="projected-vs.-realized-performance">Projected vs.&nbsp;Realized Performance</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Target All</th>
+<th>Target by Logit Model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Messages sent</td>
+<td>397,252</td>
+<td>~subset only</td>
+</tr>
+<tr class="even">
+<td><strong>Profit (RMB)</strong></td>
+<td><strong>111,713</strong></td>
+<td><strong>887,423</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>ROME</strong></td>
+<td><strong>3.1%</strong></td>
+<td><strong>56.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Logit-based targeting delivered 8× more profit and 18× better ROME than mass messaging.</strong></p>
+<p>These numbers come from the actual post-rollout data — Tuango contacted all 397,252 customers (to generate evaluation data), allowing a clean comparison of what would have happened under each strategy.</p>
+</section>
+<section id="why-the-model-worked" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-model-worked">Why the Model Worked</h3>
+<p>The test sample response rate was ~6.2%, but the model identified a subset of customers with much higher predicted purchase probability. By filtering out low-probability customers, the targeting strategy:</p>
 <ul>
-<li>Customers with low engagement are more likely to churn</li>
-<li>Usage patterns strongly predict churn behavior</li>
-<li>Machine learning models improve prediction accuracy</li>
+<li>Concentrated messages on customers more likely to buy</li>
+<li>Reduced wasted message costs on unlikely buyers</li>
+<li>Avoided over-messaging customers who would block future notifications</li>
 </ul>
+<hr>
+</section>
+</section>
+<section id="business-insights" class="level2">
+<h2 class="anchored" data-anchor-id="business-insights">Business Insights</h2>
+<p><strong>1. The true cost of a message is not zero.</strong> The 9 RMB marginal cost accounts for the long-term risk of customers blocking deal messages — losing that channel permanently is far more costly than a single wasted send.</p>
+<p><strong>2. RFM variables are highly predictive for deal targeting.</strong> Prior music purchase history and gender were the strongest predictors, suggesting that category affinity and demographics drive deal responsiveness more than raw usage frequency.</p>
+<p><strong>3. Order size is hard to predict — but that’s okay.</strong> The linear regression showed very low R-squared for order size, meaning customers who buy tend to buy similar amounts regardless of their profile. The key lever is correctly predicting <em>who</em> buys, not <em>how much</em> they buy.</p>
+<p><strong>4. Mass messaging is a losing strategy at scale.</strong> A 3.1% ROME means the campaign barely broke even. At 397,252 customers, the difference between selective and mass targeting was ¥775,710 in additional profit — from the same customer base.</p>
+<p><strong>5. Model validation on actual rollout data confirms no overfitting.</strong> The realized post-rollout profit and ROME figures matched the projected direction from the test sample, confirming that the logistic regression generalized well to new customers.</p>
+<hr>
+</section>
+<section id="my-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="my-contribution">My Contribution</h2>
+<ul>
+<li>Conducted preliminary analysis: calculated response rate, average order size, and breakeven threshold</li>
+<li>Built and interpreted the logistic regression model including Permutation Importance and Partial Dependence Plots for all variables</li>
+<li>Built the order size linear regression and explained why low R-squared is expected in this context</li>
+<li>Derived the breakeven response rate and implemented the targeting decision rule</li>
+<li>Calculated projected and actual profit and ROME for both strategies; created comparison bar charts</li>
+<li>Evaluated post-rollout realized performance and confirmed model generalization</li>
+</ul>
+<hr>
+</section>
+<section id="tools-methods" class="level2">
+<h2 class="anchored" data-anchor-id="tools-methods">Tools &amp; Methods</h2>
+<p><code>Python</code> · <code>Polars</code> · <code>pyrsm</code> · <code>plotnine</code> · <code>Logistic Regression</code> · <code>Linear Regression</code> · <code>RFM Analysis</code> · <code>Permutation Importance</code> · <code>Partial Dependence Plots</code> · <code>Test-and-Rollout Design</code> · <code>ROME</code></p>
+<hr>
 </section>
 <section id="github-repository" class="level2">
 <h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
-<p><a href="https://github.com/rsm-shz142/smobile-project">👉 View Full Project on GitHub</a></p>
+<p>👉 <a href="https://github.com/rsm-shz142/tuango-mobile-targeting">View Full Project on GitHub</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
