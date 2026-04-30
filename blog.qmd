@@ -18,4 +18,4 @@ listing:
 **AUTHOR**
 Shuning Zhang
 
-Welcome to my blog page. Here I collect short reflections on website building, design, and learning.
+Welcome to my blog page. Here I collect reflections on website building, design, and learning.
