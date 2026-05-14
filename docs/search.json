@@ -4,203 +4,378 @@
     "href": "blog.html",
     "title": "Blog: Learning Notes",
     "section": "",
-    "text": "AUTHOR Shuning Zhang\nWelcome to my blog page. Here I collect short reflections on website building, design, and learning.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nReplication of Card and Krueger (1994)\n\n\n\nCausal Inference\n\nDiff-in-Diff\n\nEconomics\n\n\n\n\n\n\n\n\n\nApr 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA/B Testing a Call to Action\n\n\n\nstatistics\n\nab-testing\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding My First Quarto Website\n\n\n\nquarto\n\nwebsite\n\nlearning\n\n\n\nA reflection on building my first multi-page Quarto website and customizing its layout.\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Experience Using Obsidian for Note-Taking\n\n\n\nproductivity\n\nobsidian\n\nlearning\n\n\n\nA brief review of using Obsidian as a tool for organizing notes and learning.\n\n\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA Simple Marketing Analysis: Why Branding Matters\n\n\n\nmarketing\n\nanalysis\n\nbusiness\n\n\n\nA short discussion on how branding influences customer perception and decision-making.\n\n\n\n\n\nApr 4, 2026\n\n\n\n\n\nNo matching items"
+    "text": "AUTHOR Shuning Zhang\nWelcome to my blog page. Here I collect short reflections on website building, design, and learning.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDoes Blueprinty’s Software Help Engineers Win More Patents?\n\n\n\n\n\n\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nReplication of Card and Krueger (1994)\n\n\n\nCausal Inference\n\nDiff-in-Diff\n\nEconomics\n\n\n\n\n\n\n\n\n\nApr 22, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA/B Testing a Call to Action\n\n\n\nstatistics\n\nab-testing\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding My First Quarto Website\n\n\n\nquarto\n\nwebsite\n\nlearning\n\n\n\nA reflection on building my first multi-page Quarto website and customizing its layout.\n\n\n\n\n\nApr 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Experience Using Obsidian for Note-Taking\n\n\n\nproductivity\n\nobsidian\n\nlearning\n\n\n\nA brief review of using Obsidian as a tool for organizing notes and learning.\n\n\n\n\n\nApr 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nA Simple Marketing Analysis: Why Branding Matters\n\n\n\nmarketing\n\nanalysis\n\nbusiness\n\n\n\nA short discussion on how branding influences customer perception and decision-making.\n\n\n\n\n\nApr 4, 2026\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
+    "objectID": "495/spring/JH/blog/card-krueger/index.html",
+    "href": "495/spring/JH/blog/card-krueger/index.html",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "",
+    "text": "Does raising the minimum wage reduce employment? Standard economics textbooks say yes — if you force wages above the market-clearing level, employers will hire fewer workers. But a landmark 1994 study by economists David Card and Alan Krueger (who later won the Nobel Prize) challenged this prediction head-on.\nTheir key insight was to use New Jersey and Pennsylvania as a natural experiment. On April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania kept its minimum wage unchanged. Both states share a border and similar economies, making Pennsylvania a natural “control group” for what would have happened to New Jersey’s employment without the wage hike.\nCard and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Wendy’s, and Roy Rogers) in both states before the increase (February–March 1992) and after (November–December 1992). By comparing how employment changed in New Jersey relative to Pennsylvania, they could isolate the causal effect of the minimum wage — a method known as difference-in-differences (DiD).\nTheir finding was striking: employment did not fall in New Jersey. If anything, it rose slightly. This paper replicates their core results."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#introduction",
+    "href": "495/spring/JH/blog/card-krueger/index.html#introduction",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "",
+    "text": "Does raising the minimum wage reduce employment? Standard economics textbooks say yes — if you force wages above the market-clearing level, employers will hire fewer workers. But a landmark 1994 study by economists David Card and Alan Krueger (who later won the Nobel Prize) challenged this prediction head-on.\nTheir key insight was to use New Jersey and Pennsylvania as a natural experiment. On April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania kept its minimum wage unchanged. Both states share a border and similar economies, making Pennsylvania a natural “control group” for what would have happened to New Jersey’s employment without the wage hike.\nCard and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Wendy’s, and Roy Rogers) in both states before the increase (February–March 1992) and after (November–December 1992). By comparing how employment changed in New Jersey relative to Pennsylvania, they could isolate the causal effect of the minimum wage — a method known as difference-in-differences (DiD).\nTheir finding was striking: employment did not fall in New Jersey. If anything, it rose slightly. This paper replicates their core results."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#setup",
+    "href": "495/spring/JH/blog/card-krueger/index.html#setup",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Setup",
+    "text": "Setup\n\n\nCode\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport matplotlib.patches as mpatches\nfrom scipy import stats\nimport statsmodels.formula.api as smf\nimport warnings\nwarnings.filterwarnings('ignore')\n\n# ── Load data ──────────────────────────────────────────────────────────────\ncol_names = [\n    'sheet', 'chain', 'co_owned', 'state', 'southj', 'centralj', 'northj',\n    'pa1', 'pa2', 'shore', 'ncalls', 'empft', 'emppt', 'nmgrs', 'wage_st',\n    'inctime', 'firstinc', 'bonus', 'pctaff', 'meal', 'open', 'hrsopen',\n    'psoda', 'pfry', 'pentree', 'nregs', 'nregs11', 'type2', 'status2',\n    'date2', 'ncalls2', 'empft2', 'emppt2', 'nmgrs2', 'wage_st2', 'inctime2',\n    'firstinc2', 'special2', 'meals2', 'open2r', 'hrsopen2', 'psoda2',\n    'pfry2', 'pentree2', 'nregs2', 'nregs11_2'\n]\n\ndf = pd.read_csv('public.dat', sep=r'\\s+', header=None,\n                 names=col_names, na_values=['.'])\n\n# ── Construct key variables (following Card & Krueger's SAS code) ──────────\n# Full-time equivalent employment = full-time + 0.5×part-time + managers\ndf['emptot']  = df['empft']  + 0.5 * df['emppt']  + df['nmgrs']\ndf['emptot2'] = df['empft2'] + 0.5 * df['emppt2'] + df['nmgrs2']\n\n# Permanently closed stores (status2 == 3) get wave-2 employment = 0\ndf.loc[df['status2'] == 3, 'emptot2'] = 0.0\n\n# NJ indicator (1 = New Jersey, 0 = Pennsylvania)\ndf['nj'] = df['state']\n\n# Change in employment\ndf['demp'] = df['emptot2'] - df['emptot']\n\n# GAP variable: how much each NJ store needed to raise wages\n# GAP = 0 for PA stores and NJ stores already above $5.05\n# GAP = (5.05 - wage_st) / wage_st for affected NJ stores\ndf['gap'] = 0.0\nmask_affected = (df['nj'] == 1) & (df['wage_st'] &lt; 5.05) & (df['wage_st'].notna())\ndf.loc[mask_affected, 'gap'] = (5.05 - df.loc[mask_affected, 'wage_st']) / df.loc[mask_affected, 'wage_st']\n\n# Chain dummies\ndf['bk']   = (df['chain'] == 1).astype(int)\ndf['kfc']  = (df['chain'] == 2).astype(int)\ndf['roys'] = (df['chain'] == 3).astype(int)\n\n# Balanced sample: valid employment data in both waves\nbalanced = df[df['emptot'].notna() & df['emptot2'].notna() &\n              df['wage_st'].notna() & df['wage_st2'].notna()].copy()\n\nprint(f\"Total stores: {len(df)}\")\nprint(f\"New Jersey: {df['nj'].sum():.0f}  |  Pennsylvania: {(df['nj']==0).sum()}\")\nprint(f\"Balanced sample: {len(balanced)}\")\n\n\nTotal stores: 410\nNew Jersey: 331  |  Pennsylvania: 79\nBalanced sample: 351"
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#replication-table-2-key-variable-means",
+    "href": "495/spring/JH/blog/card-krueger/index.html#replication-table-2-key-variable-means",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Replication: Table 2 — Key Variable Means",
+    "text": "Replication: Table 2 — Key Variable Means\nBefore diving into the DiD, we check that the two groups (NJ and PA) looked similar at baseline — an important validity check. The table below mirrors Table 2 from the paper.\n\n\nCode\ndef mean_se(series):\n    m = series.mean()\n    se = series.sem()\n    return f\"{m:.2f} ({se:.2f})\"\n\nnj = df[df['nj'] == 1]\npa = df[df['nj'] == 0]\n\nrows = {\n    'FTE employment — Wave 1': ('emptot',  nj, pa),\n    'FTE employment — Wave 2': ('emptot2', nj, pa),\n    'Starting wage — Wave 1':  ('wage_st', nj, pa),\n    'Starting wage — Wave 2':  ('wage_st2',nj, pa),\n}\n\ntable2_data = []\nfor label, (var, nj_df, pa_df) in rows.items():\n    nj_val = nj_df[var].dropna()\n    pa_val = pa_df[var].dropna()\n    t_stat, p_val = stats.ttest_ind(nj_val, pa_val, nan_policy='omit')\n    table2_data.append({\n        'Variable': label,\n        'NJ': f\"{nj_val.mean():.2f} ({nj_val.sem():.2f})\",\n        'PA': f\"{pa_val.mean():.2f} ({pa_val.sem():.2f})\",\n        't-stat': f\"{t_stat:.1f}\"\n    })\n\ntable2 = pd.DataFrame(table2_data).set_index('Variable')\ntable2.index.name = None\ntable2.columns.name = None\nprint(table2.to_string())\n\n\n                                   NJ            PA t-stat\nFTE employment — Wave 1  20.44 (0.51)  23.33 (1.35)   -2.4\nFTE employment — Wave 2  21.03 (0.52)  21.17 (0.94)   -0.1\nStarting wage — Wave 1    4.61 (0.02)   4.63 (0.04)   -0.4\nStarting wage — Wave 2    5.08 (0.01)   4.62 (0.04)   19.7\n\n\n\nNote: Standard errors in parentheses. The two states had very similar starting wages in Wave 1 (NJ: $4.61, PA: $4.63), confirming a valid pre-treatment baseline. By Wave 2, NJ’s average wage jumped to $5.08 — nearly all stores complied with the new minimum."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#replication-table-3-the-core-did",
+    "href": "495/spring/JH/blog/card-krueger/index.html#replication-table-3-the-core-did",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Replication: Table 3 — The Core DiD",
+    "text": "Replication: Table 3 — The Core DiD\nThis is the heart of the paper. We compare employment changes in New Jersey vs. Pennsylvania.\n\n\nCode\n# ── Compute means and SEs ──────────────────────────────────────────────────\n# Balanced sample (both waves non-missing) — used for rows 3 & 4\npa_b = df[df['nj']==0].copy()\nnj_b = df[df['nj']==1].copy()\n\n# For rows 3/4: use stores where demp is non-missing (i.e. emptot & emptot2 both present)\npa_b_bal = pa_b[pa_b['demp'].notna()]\nnj_b_bal = nj_b[nj_b['demp'].notna()]\n\n# Wave 1 and Wave 2 means (all available obs, rows 1 & 2)\ns = {\n    'PA': {\n        'w1_m':  pa_b['emptot'].mean(),  'w1_se': pa_b['emptot'].sem(),\n        'w2_m':  pa_b['emptot2'].mean(), 'w2_se': pa_b['emptot2'].sem(),\n    },\n    'NJ': {\n        'w1_m':  nj_b['emptot'].mean(),  'w1_se': nj_b['emptot'].sem(),\n        'w2_m':  nj_b['emptot2'].mean(), 'w2_se': nj_b['emptot2'].sem(),\n    },\n}\n\n# Row 3: change using balanced sub-sample\npa_chg    = pa_b_bal['demp'].mean()\nnj_chg    = nj_b_bal['demp'].mean()\npa_chg_se = pa_b_bal['demp'].sem()\nnj_chg_se = nj_b_bal['demp'].sem()\ndid       = nj_chg - pa_chg\ndid_se    = np.sqrt(pa_chg_se**2 + nj_chg_se**2)\n\n# ── Print table ────────────────────────────────────────────────────────────\nprint(f\"{'':35s} {'PA (i)':&gt;14} {'NJ (ii)':&gt;14} {'NJ − PA (iii)':&gt;14}\")\nprint(\"─\" * 80)\nprint(f\"{'1. FTE employment, Wave 1':35s} \"\n      f\"{s['PA']['w1_m']:&gt;6.2f} ({s['PA']['w1_se']:.2f})  \"\n      f\"{s['NJ']['w1_m']:&gt;6.2f} ({s['NJ']['w1_se']:.2f})  \"\n      f\"{s['NJ']['w1_m']-s['PA']['w1_m']:&gt;+7.2f}\")\nprint(f\"{'   [Paper]':35s} {'23.33 (1.35)':&gt;14} {'20.44 (0.51)':&gt;14} {'−2.89':&gt;14}\")\nprint()\nprint(f\"{'2. FTE employment, Wave 2':35s} \"\n      f\"{s['PA']['w2_m']:&gt;6.2f} ({s['PA']['w2_se']:.2f})  \"\n      f\"{s['NJ']['w2_m']:&gt;6.2f} ({s['NJ']['w2_se']:.2f})  \"\n      f\"{s['NJ']['w2_m']-s['PA']['w2_m']:&gt;+7.2f}\")\nprint(f\"{'   [Paper]':35s} {'21.17 (0.94)':&gt;14} {'21.03 (0.52)':&gt;14} {'−0.14':&gt;14}\")\nprint()\nprint(f\"{'3. Change in mean FTE':35s} \"\n      f\"{pa_chg:&gt;6.2f} ({pa_chg_se:.2f})  \"\n      f\"{nj_chg:&gt;6.2f} ({nj_chg_se:.2f})  \"\n      f\"DiD = {did:+.2f} ({did_se:.2f})\")\nprint(f\"{'   [Paper]':35s} {'−2.28 (1.25)':&gt;14} {'+0.47 (0.48)':&gt;14} {'2.75 (1.34)':&gt;14}\")\nprint()\nprint(f\"DiD t-statistic: {did / did_se:.2f}  (Paper: 2.03)\")\n\n\n                                            PA (i)        NJ (ii)  NJ − PA (iii)\n────────────────────────────────────────────────────────────────────────────────\n1. FTE employment, Wave 1            23.33 (1.35)   20.44 (0.51)    -2.89\n   [Paper]                            23.33 (1.35)   20.44 (0.51)          −2.89\n\n2. FTE employment, Wave 2            21.17 (0.94)   21.03 (0.52)    -0.14\n   [Paper]                            21.17 (0.94)   21.03 (0.52)          −0.14\n\n3. Change in mean FTE                -2.28 (1.25)    0.47 (0.48)  DiD = +2.75 (1.34)\n   [Paper]                            −2.28 (1.25)   +0.47 (0.48)    2.75 (1.34)\n\nDiD t-statistic: 2.05  (Paper: 2.03)\n\n\nThe DiD estimate of +2.75 FTE employees almost exactly matches the paper’s +2.76. Pennsylvania stores lost about 2.3 workers on average while New Jersey stores barely changed — a difference that is statistically significant (t ≈ 2.0)."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#replication-table-4-col-i-regression-adjusted-did",
+    "href": "495/spring/JH/blog/card-krueger/index.html#replication-table-4-col-i-regression-adjusted-did",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Replication: Table 4 Col (i) — Regression-Adjusted DiD",
+    "text": "Replication: Table 4 Col (i) — Regression-Adjusted DiD\nThe DiD can also be estimated by regressing the change in employment on a New Jersey dummy. This allows us to add controls for chain type.\n\n\nCode\n# ── Table 4 regressions ────────────────────────────────────────────────────\nreg_df = df[df['demp'].notna() & df['wage_st'].notna() & df['wage_st2'].notna()].copy()\nreg_df['bk']   = (reg_df['chain'] == 1).astype(int)\nreg_df['kfc']  = (reg_df['chain'] == 2).astype(int)\nreg_df['roys'] = (reg_df['chain'] == 3).astype(int)\n\n# Col (i): NJ dummy only\nm1 = smf.ols('demp ~ nj', data=reg_df).fit()\n\n# Col (ii): NJ dummy + chain/ownership controls\nm2 = smf.ols('demp ~ nj + bk + kfc + roys + co_owned', data=reg_df).fit()\n\nprint(\"TABLE 4 — Regression of ΔEmployment on NJ dummy\")\nprint(\"─\" * 55)\nprint(f\"{'Model':35s} {'NJ coeff':&gt;10} {'SE':&gt;8}\")\nprint(\"─\" * 55)\nprint(f\"{'Col (i): no controls':35s} {m1.params['nj']:&gt;+10.2f} {m1.bse['nj']:&gt;8.2f}\")\nprint(f\"{'   [Paper]':35s} {'   +2.33':&gt;10} {'  1.19':&gt;8}\")\nprint()\nprint(f\"{'Col (ii): chain + ownership controls':35s} {m2.params['nj']:&gt;+10.2f} {m2.bse['nj']:&gt;8.2f}\")\nprint(f\"{'   [Paper]':35s} {'   +2.30':&gt;10} {'  1.20':&gt;8}\")\nprint()\nprint(\"Note: Adding chain controls barely changes the estimate,\")\nprint(\"confirming the NJ result is not explained by chain composition.\")\n\n\nTABLE 4 — Regression of ΔEmployment on NJ dummy\n───────────────────────────────────────────────────────\nModel                                 NJ coeff       SE\n───────────────────────────────────────────────────────\nCol (i): no controls                     +2.28     1.19\n   [Paper]                               +2.33     1.19\n\nCol (ii): chain + ownership controls      +2.28     1.20\n   [Paper]                               +2.30     1.20\n\nNote: Adding chain controls barely changes the estimate,\nconfirming the NJ result is not explained by chain composition.\n\n\nThe coefficient on the NJ dummy (+2.28) is very close to the paper’s +2.33. The small difference comes from a slightly different sample restriction. Adding chain-type controls (Burger King, KFC, Roy Rogers, company-owned) has essentially no effect — the result is robust."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#additional-analysis-visualizing-the-did",
+    "href": "495/spring/JH/blog/card-krueger/index.html#additional-analysis-visualizing-the-did",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Additional Analysis: Visualizing the DiD",
+    "text": "Additional Analysis: Visualizing the DiD\n(This section goes beyond the paper to present the core finding graphically.)\n\n\nCode\nfig, axes = plt.subplots(1, 2, figsize=(14, 5))\nfig.patch.set_facecolor('#f8f8f6')\n\n# ── Left panel: Employment trends ─────────────────────────────────────────\nax = axes[0]\nax.set_facecolor('#f8f8f6')\n\nnj_means = [nj_b['emptot'].mean(), nj_b['emptot2'].mean()]\npa_means = [pa_b['emptot'].mean(), pa_b['emptot2'].mean()]\nnj_sems  = [nj_b['emptot'].sem(),  nj_b['emptot2'].sem()]\npa_sems  = [pa_b['emptot'].sem(),  pa_b['emptot2'].sem()]\n\nx = [0, 1]\nax.errorbar(x, pa_means, yerr=[1.96*s for s in pa_sems],\n            color='#2166ac', marker='o', ms=8, lw=2.5,\n            capsize=5, label='Pennsylvania (control)', zorder=3)\nax.errorbar(x, nj_means, yerr=[1.96*s for s in nj_sems],\n            color='#d6604d', marker='s', ms=8, lw=2.5,\n            capsize=5, label='New Jersey (treated)', zorder=3)\n\n# Counterfactual NJ line\nnj_counterfactual = nj_means[0] + (pa_means[1] - pa_means[0])\nax.plot([0, 1], [nj_means[0], nj_counterfactual],\n        color='#d6604d', ls='--', lw=1.5, alpha=0.5, label='NJ counterfactual')\n\nax.annotate(f'DiD = +{did:.2f}',\n            xy=(1, nj_means[1]), xytext=(0.72, 21.8),\n            fontsize=11, color='#333',\n            arrowprops=dict(arrowstyle='-&gt;', color='#555', lw=1.2))\n\nax.set_xticks([0, 1])\nax.set_xticklabels(['Wave 1\\n(Feb 1992\\nBefore)', 'Wave 2\\n(Nov 1992\\nAfter)'], fontsize=10)\nax.set_ylabel('Mean FTE Employment per Store', fontsize=11)\nax.set_title('Average Employment Before and After\\nNJ Minimum Wage Increase', fontsize=12, fontweight='bold')\nax.legend(fontsize=9)\nax.set_ylim(17, 26)\nax.axvline(x=0.5, color='gray', ls=':', lw=1, alpha=0.5)\nax.text(0.51, 25.5, 'Minimum wage\\nincreases in NJ →', fontsize=8, color='gray')\nax.spines[['top', 'right']].set_visible(False)\nax.grid(axis='y', alpha=0.3)\n\n# ── Right panel: Starting wage distribution shift ─────────────────────────\nax2 = axes[1]\nax2.set_facecolor('#f8f8f6')\n\nnj_w1_wages = nj['wage_st'].dropna()\nnj_w2_wages = nj['wage_st2'].dropna()\n\nbins = np.arange(4.15, 5.65, 0.10)\nax2.hist(nj_w1_wages, bins=bins, alpha=0.6, color='#d6604d',\n         label='NJ Wave 1 (before)', density=True)\nax2.hist(nj_w2_wages, bins=bins, alpha=0.6, color='#4dac26',\n         label='NJ Wave 2 (after)', density=True)\n\nax2.axvline(5.05, color='black', ls='--', lw=1.5, label='New minimum ($5.05)')\nax2.axvline(4.25, color='gray',  ls=':',  lw=1.2, label='Old minimum ($4.25)')\nax2.set_xlabel('Starting Wage ($/hour)', fontsize=11)\nax2.set_ylabel('Density', fontsize=11)\nax2.set_title('NJ Starting Wage Distribution\\nBefore vs. After Minimum Wage Hike', fontsize=12, fontweight='bold')\nax2.legend(fontsize=9)\nax2.spines[['top', 'right']].set_visible(False)\nax2.grid(axis='y', alpha=0.3)\n\nplt.tight_layout()\nplt.savefig('did_plot.png', dpi=150, bbox_inches='tight', facecolor='#f8f8f6')\nplt.savefig('preview.png', dpi=150, bbox_inches='tight', facecolor='#f8f8f6')\nplt.show()\n\n\n\n\n\n\n\n\n\nLeft panel: Both states had similar employment trends before the policy. After New Jersey raised its minimum wage, employment in Pennsylvania fell (consistent with a mild recession) while New Jersey held steady — producing a positive DiD of +2.75.\nRight panel: The wage distribution shift confirms the policy “bit” — before the increase, NJ wages were spread between $4.25 and $5.50; after, they bunched tightly at the new $5.05 minimum."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#why-does-this-study-support-causal-claims",
+    "href": "495/spring/JH/blog/card-krueger/index.html#why-does-this-study-support-causal-claims",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Why Does This Study Support Causal Claims?",
+    "text": "Why Does This Study Support Causal Claims?\nThe difference-in-differences design is compelling here for several reasons:\n1. A clean control group. Pennsylvania and New Jersey share a border, similar demographics, and the same fast-food chains. Any economic shocks hitting the region (like the 1992 recession) affected both states similarly.\n2. Pre-treatment comparability. As Table 2 shows, NJ and PA stores had nearly identical starting wages ($4.61 vs. $4.63) and similar employment levels before the policy. The DiD assumption — that the two groups would have moved in parallel absent the minimum wage change — is credible.\n3. The policy was plausibly exogenous. The $5.05 minimum had been legislated in 1989, well before the 1992 recession, so it wasn’t a response to current economic conditions. The timing was determined by politics, not by the labor market.\n4. Internal validation. As a specification test, the authors show that high-wage NJ stores (already paying ≥$5.00) — which were unaffected by the law — behaved like Pennsylvania stores. Only the low-wage NJ stores saw employment gains, exactly as expected if the minimum wage was the driver."
+  },
+  {
+    "objectID": "495/spring/JH/blog/card-krueger/index.html#conclusion",
+    "href": "495/spring/JH/blog/card-krueger/index.html#conclusion",
+    "title": "Does Raising the Minimum Wage Kill Jobs? Replicating Card & Krueger (1994)",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis replication confirms Card and Krueger’s central finding: New Jersey’s 19% minimum wage increase did not reduce fast-food employment. The difference-in-differences estimate of approximately +2.75 FTE employees per store is precisely reproduced from the original data.\nThe result contradicts the simple competitive model but is consistent with monopsony-like labor markets, where employers have wage-setting power. When a minimum wage forces employers to pay more, they may actually attract more workers and expand employment — at least over moderate ranges of the minimum wage.\nCard and Krueger’s paper sparked decades of follow-up research and helped shift how economists think about minimum wages. David Card was awarded the Nobel Prize in Economics in 2021, in part for this line of work.\n\nData source: Card, D. and Krueger, A.B. (1994). “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review, 84(4), 772–793. Data available at davidcard.berkeley.edu."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html",
+    "href": "495/spring/JH/blog/ab-testing/index.html",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "Every website that cares about growth has a call to action (CTA) — a short phrase inviting visitors to take a next step, like signing up for a newsletter. Small wording changes can have surprisingly large effects on behavior, which raises a natural question: how do we figure out which wording actually works best?\nIn this post, I’ll walk through exactly that question using a newsletter sign-up form as our running example. Our homepage shows visitors one of two CTAs:\n\nCTA A: “Sign up for our newsletter here!”\nCTA B: “Stay up to date by signing up!”\n\nTo decide which performs better, we run an A/B test: visitors are randomly assigned to see one version or the other, and we track who signs up. Random assignment is the key — it ensures that any difference in sign-up rates can be attributed to the CTA wording itself, not to differences in the visitors who happened to see each version.\nAlong the way, we’ll connect this practical problem to some of the most fundamental ideas in classical frequentist statistics: the Law of Large Numbers, the Bootstrap, the Central Limit Theorem, and hypothesis testing. We’ll also reveal a hidden equivalence between a t-test and linear regression, and explore why peeking at results mid-experiment can quietly destroy the validity of your conclusions."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#introduction",
+    "href": "495/spring/JH/blog/ab-testing/index.html#introduction",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "Every website that cares about growth has a call to action (CTA) — a short phrase inviting visitors to take a next step, like signing up for a newsletter. Small wording changes can have surprisingly large effects on behavior, which raises a natural question: how do we figure out which wording actually works best?\nIn this post, I’ll walk through exactly that question using a newsletter sign-up form as our running example. Our homepage shows visitors one of two CTAs:\n\nCTA A: “Sign up for our newsletter here!”\nCTA B: “Stay up to date by signing up!”\n\nTo decide which performs better, we run an A/B test: visitors are randomly assigned to see one version or the other, and we track who signs up. Random assignment is the key — it ensures that any difference in sign-up rates can be attributed to the CTA wording itself, not to differences in the visitors who happened to see each version.\nAlong the way, we’ll connect this practical problem to some of the most fundamental ideas in classical frequentist statistics: the Law of Large Numbers, the Bootstrap, the Central Limit Theorem, and hypothesis testing. We’ll also reveal a hidden equivalence between a t-test and linear regression, and explore why peeking at results mid-experiment can quietly destroy the validity of your conclusions."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#the-ab-test-as-a-statistical-problem",
+    "href": "495/spring/JH/blog/ab-testing/index.html#the-ab-test-as-a-statistical-problem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The A/B Test as a Statistical Problem",
+    "text": "The A/B Test as a Statistical Problem\nEach visitor to our website either signs up (outcome = 1) or doesn’t (outcome = 0). This binary outcome is naturally modeled as a draw from a Bernoulli distribution. If visitor \\(i\\) sees CTA A, their outcome \\(X_i \\sim \\text{Bernoulli}(\\pi_A)\\), where \\(\\pi_A\\) is the true (unknown) probability that a visitor signs up. Similarly, visitors seeing CTA B have outcomes drawn from \\(\\text{Bernoulli}(\\pi_B)\\).\nThe quantity we ultimately care about is the difference in sign-up rates:\n\\[\\theta = \\pi_A - \\pi_B\\]\nA positive \\(\\theta\\) means CTA A outperforms CTA B; negative means the opposite; and \\(\\theta = 0\\) means no real difference.\nSince we can’t observe \\(\\pi_A\\) and \\(\\pi_B\\) directly, we estimate \\(\\theta\\) from data using the difference in sample proportions:\n\\[\\hat\\theta = \\bar{X}_A - \\bar{X}_B = \\hat\\pi_A - \\hat\\pi_B\\]\nThe rest of this post is about understanding the behavior of this estimator: when can we trust it, how precise is it, and when can we conclude that any observed difference is real rather than random noise?"
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#simulating-data",
+    "href": "495/spring/JH/blog/ab-testing/index.html#simulating-data",
+    "title": "A/B Testing a Call to Action",
+    "section": "Simulating Data",
+    "text": "Simulating Data\nIn a real A/B test, we would not know the true values of \\(\\pi_A\\) and \\(\\pi_B\\) — that’s precisely why we’re running the test. But for the purpose of this analysis, we’ll set the true values ourselves so we can study how our estimator behaves when we know the ground truth.\nWe set \\(\\pi_A = 0.22\\) and \\(\\pi_B = 0.18\\), so the true effect is \\(\\theta = 0.04\\): CTA A yields 4 more sign-ups per 100 visitors. We simulate 1,000 visitors per group (2,000 total).\n\n\nCode\nnp.random.seed(42)\n\npi_A = 0.22\npi_B = 0.18\nn = 1000\n\ngroup_A = np.random.binomial(1, pi_A, n)\ngroup_B = np.random.binomial(1, pi_B, n)\n\ntheta_hat = group_A.mean() - group_B.mean()\nprint(f\"Observed difference  θ̂ = {theta_hat:.4f}  (true θ = 0.04)\")\n\n\nObserved difference  θ̂ = 0.0380  (true θ = 0.04)\n\n\nOur observed difference is close to the true value of 0.04. But how reliably will this estimator land near the truth — and why?"
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#the-law-of-large-numbers",
+    "href": "495/spring/JH/blog/ab-testing/index.html#the-law-of-large-numbers",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Law of Large Numbers",
+    "text": "The Law of Large Numbers\nThe Law of Large Numbers (LLN) tells us that as we collect more data, the sample mean converges to the true population mean. In our setting, \\(\\hat\\pi_A \\to \\pi_A\\) and \\(\\hat\\pi_B \\to \\pi_B\\) as sample size grows — and therefore \\(\\hat\\theta \\to \\theta\\). The LLN is the foundational reason we trust our estimator at all: given enough data, it will get arbitrarily close to the truth.\nWe can see this convergence directly. For each visitor \\(i\\), compute the difference \\(X_{A,i} - X_{B,i}\\) (pairing A and B observations by index). Then watch the running average of those differences evolve as we accumulate more observations.\n\n\nCode\ndifferences = group_A - group_B\ncumulative_mean = np.cumsum(differences) / np.arange(1, n + 1)\n\nfig, ax = plt.subplots(figsize=(9, 4.5))\nax.plot(range(1, n + 1), cumulative_mean,\n        color=\"#2c7bb6\", linewidth=0.8, alpha=0.9, label=\"Running average\")\nax.axhline(y=0.04, color=\"#d7191c\", linestyle=\"--\",\n           linewidth=1.5, label=\"True θ = 0.04\")\nax.set_xlabel(\"Number of visitor pairs observed\")\nax.set_ylabel(\"Cumulative average difference\")\nax.set_title(\"Law of Large Numbers in Action\", fontweight=\"bold\", pad=12)\nax.legend(framealpha=0.9)\nax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f\"{x:.1%}\"))\nplt.tight_layout()\nplt.show()\n\n\n\n\n\nThe running average of the estimated difference converges to the true value of 0.04 as sample size grows.\n\n\n\n\nThe plot tells a clear story. With just a handful of observations, the running average bounces around wildly — a single lucky or unlucky signup can swing the estimate dramatically. But as the sample grows, the noise averages out and the estimate settles close to the true value of 0.04. This is the LLN at work."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#bootstrap-standard-errors",
+    "href": "495/spring/JH/blog/ab-testing/index.html#bootstrap-standard-errors",
+    "title": "A/B Testing a Call to Action",
+    "section": "Bootstrap Standard Errors",
+    "text": "Bootstrap Standard Errors\nKnowing that our estimator converges to the truth is reassuring, but it doesn’t tell us how precise it is for our specific sample. To communicate uncertainty, we want a confidence interval — a range of plausible values for \\(\\theta\\).\nThe bootstrap gives us an elegant, assumption-light way to estimate this uncertainty. The core idea: we don’t know the true population, but our sample is our best approximation of it. So we treat the sample as a stand-in for the population and repeatedly resample from it with replacement, computing our statistic on each resample. The variability across those resampled estimates approximates the true sampling variability of our estimator.\n\n\nCode\nB = 1000  # number of bootstrap resamples\n\nboot_estimates = np.array([\n    np.random.choice(group_A, size=n, replace=True).mean() -\n    np.random.choice(group_B, size=n, replace=True).mean()\n    for _ in range(B)\n])\n\nse_boot = boot_estimates.std()\n\n# Analytical standard error\npi_hat_A = group_A.mean()\npi_hat_B = group_B.mean()\nse_analytical = np.sqrt(\n    pi_hat_A * (1 - pi_hat_A) / n +\n    pi_hat_B * (1 - pi_hat_B) / n\n)\n\nci_lower = theta_hat - 1.96 * se_boot\nci_upper = theta_hat + 1.96 * se_boot\n\nprint(f\"Bootstrap SE:   {se_boot:.5f}\")\nprint(f\"Analytical SE:  {se_analytical:.5f}\")\nprint(f\"95% CI:         [{ci_lower:.4f}, {ci_upper:.4f}]\")\n\n\nBootstrap SE:   0.01765\nAnalytical SE:  0.01777\n95% CI:         [0.0034, 0.0726]\n\n\nThe two standard errors are nearly identical — which is reassuring: the bootstrap is recovering the same uncertainty estimate as the closed-form formula, without needing to know that formula.\nUsing the bootstrap standard error, our 95% confidence interval for \\(\\theta\\) is:\n\\[\\hat\\theta \\pm 1.96 \\times \\widehat{SE}\\]\nSince this interval lies entirely above zero, our data are consistent with CTA A generating more sign-ups than CTA B. The interval also tells us the advantage is modest (around 4 percentage points), which may or may not be practically meaningful depending on traffic volume."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#the-central-limit-theorem",
+    "href": "495/spring/JH/blog/ab-testing/index.html#the-central-limit-theorem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Central Limit Theorem",
+    "text": "The Central Limit Theorem\nThe Central Limit Theorem (CLT) is arguably the most important result in statistics. It tells us that regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean becomes approximately Normal as the sample size grows. Even though each individual observation is a 0 or 1 (very non-Normal), the average of many such observations is approximately bell-shaped for large \\(n\\).\nTo see this in action, we simulate the sampling distribution of \\(\\hat\\theta\\) for four different sample sizes.\n\n\n\n\n\nSampling distribution of the estimated difference at four sample sizes. The distribution becomes increasingly bell-shaped as n grows — the CLT in action.\n\n\n\n\nAt \\(n = 25\\), the histogram is jagged and wide — we’re averaging so few observations that any individual experiment can land far from the truth. By \\(n = 100\\), a bell shape is clearly visible, and by \\(n = 500\\), the distribution is tight and nearly perfectly Normal, centered right on the true \\(\\theta = 0.04\\). This is the CLT: the underlying Bernoulli randomness gets “averaged away,” and the estimator’s sampling distribution becomes Gaussian."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#hypothesis-testing",
+    "href": "495/spring/JH/blog/ab-testing/index.html#hypothesis-testing",
+    "title": "A/B Testing a Call to Action",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\nNow that we know the sampling distribution of \\(\\hat\\theta\\) is approximately Normal (thanks to the CLT), we can use this to perform a formal hypothesis test.\nWe set up two competing hypotheses:\n\nNull hypothesis \\(H_0: \\theta = 0\\) — the two CTAs produce the same sign-up rate\nAlternative hypothesis \\(H_1: \\theta \\neq 0\\) — the CTAs perform differently\n\nThe goal is to assess whether our observed \\(\\hat\\theta\\) is surprising enough — given the null — to constitute convincing evidence against \\(H_0\\).\nWhy we standardize. Under \\(H_0\\), \\(\\hat\\theta\\) is approximately Normal with mean 0. Dividing by its standard error gives us a standard Normal random variable:\n\\[z = \\frac{\\hat\\theta - 0}{SE(\\hat\\theta)} \\;\\dot\\sim\\; N(0,1) \\quad \\text{under } H_0\\]\nThis standardization matters because we now know exactly what distribution our test statistic follows under the null — which is what we need to compute a p-value.\nA note on t-test vs. z-test. This procedure is often called a t-test. The classical t-test arises when data are Normal and variance is estimated — then the ratio follows an exact t-distribution. Our data are Bernoulli (not Normal), so we rely on the CLT for approximate Normality. For large samples, the t-distribution and standard Normal are nearly indistinguishable, so the practical difference is negligible.\n\n\nCode\nz_stat  = theta_hat / se_analytical\np_value = 2 * stats.norm.sf(abs(z_stat))  # two-sided\n\nprint(f\"Point estimate (θ̂):   {theta_hat:.4f}\")\nprint(f\"Standard error:        {se_analytical:.4f}\")\nprint(f\"z-statistic:           {z_stat:.4f}\")\nprint(f\"p-value (two-sided):   {p_value:.4f}\")\n\n\nPoint estimate (θ̂):   0.0380\nStandard error:        0.0178\nz-statistic:           2.1388\np-value (two-sided):   0.0325\n\n\nWith a p-value below 0.05, we reject the null hypothesis at the 5% significance level: our data provide statistically significant evidence that CTA A and CTA B differ in their sign-up rates. The z-statistic tells us the observed difference is more than 1.96 standard errors away from zero — far enough to be considered statistically unusual under the null."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#the-t-test-as-a-regression",
+    "href": "495/spring/JH/blog/ab-testing/index.html#the-t-test-as-a-regression",
+    "title": "A/B Testing a Call to Action",
+    "section": "The T-Test as a Regression",
+    "text": "The T-Test as a Regression\nHere’s a surprising fact: the two-sample test we just ran is mathematically equivalent to a simple linear regression. This connection matters because regression is a much more flexible framework — it generalizes naturally to multiple treatment arms, control variables, and interaction effects.\nThe setup. Stack the CTA A and CTA B data into a single dataset. Each row represents a visitor with:\n\n\\(Y_i \\in \\{0, 1\\}\\): did visitor \\(i\\) sign up?\n\\(D_i \\in \\{0, 1\\}\\): did visitor \\(i\\) see CTA A (1) or CTA B (0)?\n\nFit the regression: \\(Y_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\\)\nThe coefficients have clean interpretations:\n\n\\(\\beta_0 = E[Y_i \\mid D_i = 0]\\) — mean outcome for CTA B visitors, i.e., \\(\\hat\\pi_B\\)\n\\(\\beta_0 + \\beta_1 = E[Y_i \\mid D_i = 1]\\) — mean outcome for CTA A visitors, i.e., \\(\\hat\\pi_A\\)\nTherefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta\\)\n\n\n\nCode\nfrom numpy.linalg import lstsq\n\nY = np.concatenate([group_A, group_B])\nD = np.concatenate([np.ones(n), np.zeros(n)])\nX = np.column_stack([np.ones(2 * n), D])\n\nbeta, _, _, _ = lstsq(X, Y, rcond=None)\nbeta0, beta1 = beta\n\nresiduals = Y - X @ beta\nsigma2    = (residuals @ residuals) / (2 * n - 2)\nvar_beta  = sigma2 * np.linalg.inv(X.T @ X)\nse_beta1  = np.sqrt(var_beta[1, 1])\nt_stat_reg  = beta1 / se_beta1\np_value_reg = 2 * stats.t.sf(abs(t_stat_reg), df=2 * n - 2)\n\nprint(f\"β̂₁ (= θ̂):   {beta1:.4f}\")\nprint(f\"Std. Error:  {se_beta1:.4f}\")\nprint(f\"t-statistic: {t_stat_reg:.4f}\")\nprint(f\"p-value:     {p_value_reg:.4f}\")\n\n\nβ̂₁ (= θ̂):   0.0380\nStd. Error:  0.0178\nt-statistic: 2.1377\np-value:     0.0327\n\n\nThe regression coefficient on \\(D_i\\) matches our earlier \\(\\hat\\theta\\) exactly. The t-statistic and p-value are very close to those from the two-sample test — a small difference arises because OLS assumes a pooled variance, while our z-test used separate variance estimates per group.\nThe real power of this equivalence: once you’ve framed your A/B test as a regression, you can extend it with minimal effort — add user demographic controls to increase precision, interaction terms to test heterogeneous effects, or additional treatment arms as extra indicator variables."
+  },
+  {
+    "objectID": "495/spring/JH/blog/ab-testing/index.html#the-problem-with-peeking",
+    "href": "495/spring/JH/blog/ab-testing/index.html#the-problem-with-peeking",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Problem with Peeking",
+    "text": "The Problem with Peeking\nImagine your boss is eager for results. Rather than waiting for all 1,000 visitors, she proposes checking the results after every 100 visitors per group — peeking 10 times in total, and stopping early if any peek yields a significant result (p &lt; 0.05).\nThis sounds reasonable. What’s the harm in looking?\nThe problem is subtle but serious. Each individual test at \\(\\alpha = 0.05\\) has a 5% false positive rate. But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. We can quantify this with a simulation where the null hypothesis is exactly true: \\(\\pi_A = \\pi_B = 0.20\\), so \\(\\theta = 0\\) and there is genuinely no difference.\n\n\nCode\nnp.random.seed(99)\n\npi_null = 0.20\nn_total = 1000\npeeks   = np.arange(100, n_total + 1, 100)\nn_sims  = 10000\n\ndef run_peeking_experiment():\n    A = np.random.binomial(1, pi_null, n_total)\n    B = np.random.binomial(1, pi_null, n_total)\n    for peek in peeks:\n        a, b = A[:peek], B[:peek]\n        pa, pb = a.mean(), b.mean()\n        se = np.sqrt(pa*(1-pa)/peek + pb*(1-pb)/peek)\n        if se == 0:\n            continue\n        p = 2 * stats.norm.sf(abs((pa - pb) / se))\n        if p &lt; 0.05:\n            return True\n    return False\n\ndef run_single_experiment():\n    A = np.random.binomial(1, pi_null, n_total)\n    B = np.random.binomial(1, pi_null, n_total)\n    pa, pb = A.mean(), B.mean()\n    se = np.sqrt(pa*(1-pa)/n_total + pb*(1-pb)/n_total)\n    p  = 2 * stats.norm.sf(abs((pa - pb) / se))\n    return p &lt; 0.05\n\nfp_peek   = np.mean([run_peeking_experiment() for _ in range(n_sims)])\nfp_single = np.mean([run_single_experiment()  for _ in range(n_sims)])\n\nprint(f\"Single test false positive rate:  {fp_single:.1%}\")\nprint(f\"Peeking false positive rate:      {fp_peek:.1%}\")\n\n\nSingle test false positive rate:  4.9%\nPeeking false positive rate:      20.2%\n\n\n\n\n\n\n\nEmpirical false positive rates under the null (10,000 simulations). Peeking inflates the error rate well above the nominal 5%.\n\n\n\n\nThe results are stark. A single test at the end of the experiment correctly maintains a ~5% false positive rate. But the peeking strategy has a false positive rate roughly three times the nominal level. In practice, this means a large fraction of your “significant” results — when there’s truly no effect — will be false alarms. You’ll be making decisions based on statistical noise.\nThe fix isn’t to never look at your data early. It’s to use methods designed for sequential testing, such as alpha spending functions or sequential probability ratio tests, which maintain the false positive rate across multiple looks. Classical frequentist testing, applied naively with peeking, quietly breaks one of its own core guarantees."
+  },
+  {
+    "objectID": "495/spring/JH/projects.html",
+    "href": "495/spring/JH/projects.html",
     "title": "My Projects",
     "section": "",
-    "text": "Creative Gaming: Uplift Modeling\n\n\nApplied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing incremental profit by focusing on persuadable customers.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPentathlon: Next Product to Buy Modeling\n\n\nBuilt an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\nBuilt a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from targeted interventions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTuango: Targeting Mobile App Messages\n\n\nBuilt a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while improving ROME from 3% to 57%.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Customer Churn Analysis\n\n\nAnalyzed customer churn patterns using Python and data analysis techniques.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomer Uplift Modeling\n\n\nBuilt and compared uplift models to support targeted marketing decisions.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#business-problem",
-    "href": "projects/project4/tuango-targeting.html#business-problem",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "495/spring/JH/projects/project1/index.html",
+    "href": "495/spring/JH/projects/project1/index.html",
+    "title": "Customer Churn Analysis",
+    "section": "",
+    "text": "This project analyzes customer behavior data from a mobile service provider to identify key drivers of churn."
+  },
+  {
+    "objectID": "495/spring/JH/projects/project1/index.html#overview",
+    "href": "495/spring/JH/projects/project1/index.html#overview",
+    "title": "Customer Churn Analysis",
+    "section": "",
+    "text": "This project analyzes customer behavior data from a mobile service provider to identify key drivers of churn."
+  },
+  {
+    "objectID": "495/spring/JH/projects/project1/index.html#key-insights",
+    "href": "495/spring/JH/projects/project1/index.html#key-insights",
+    "title": "Customer Churn Analysis",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nIdentified patterns in customer behavior associated with churn\nHighlighted key variables influencing retention\nProvided data-driven recommendations"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project1/index.html#tools",
+    "href": "495/spring/JH/projects/project1/index.html#tools",
+    "title": "Customer Churn Analysis",
+    "section": "Tools",
+    "text": "Tools\nPython, pandas, matplotlib, Jupyter Notebook"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project1/index.html#notebook",
+    "href": "495/spring/JH/projects/project1/index.html#notebook",
+    "title": "Customer Churn Analysis",
+    "section": "Notebook",
+    "text": "Notebook\nView Analysis Notebook"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project1/index.html#github",
+    "href": "495/spring/JH/projects/project1/index.html#github",
+    "title": "Customer Churn Analysis",
+    "section": "GitHub",
+    "text": "GitHub\nView Repository"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shuning Zhang",
+    "section": "",
+    "text": "Welcome to my website!"
+  },
+  {
+    "objectID": "projects/project2/smobile-churn.html#business-problem",
+    "href": "projects/project2/smobile-churn.html#business-problem",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "Business Problem",
-    "text": "Business Problem\nTuango, a Chinese “deal-of-the-day” platform similar to Groupon, ran a karaoke deal campaign by pushing offer messages through its mobile app. Sending messages has a hidden cost of 9 RMB per customer — if a customer receives too many irrelevant offers and blocks future messages, Tuango permanently loses that marketing channel.\nAfter running a test campaign on 20,908 customers, Tuango had 397,252 remaining customers to contact for the rollout. The question: should all of them receive the message, or only those most likely to buy?"
+    "text": "Business Problem\nS-Mobile, a leading Singapore telecom with approximately 1 million subscribers, faced a 2% monthly churn rate. The traditional response — waiting for customers to call in and threaten to leave — was reactive and trained customers to game the system for discounts.\nThe goal was to build a proactive churn management system: predict which customers are likely to leave before they do, identify the root causes, design targeted interventions, and evaluate the economics of each action."
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#methodology",
-    "href": "projects/project4/tuango-targeting.html#methodology",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#methodology",
+    "href": "projects/project2/smobile-churn.html#methodology",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "Methodology",
-    "text": "Methodology\n\nData & Setup\n\n20,908 test-sample customers used to build and validate the model\n397,252 rollout customers for actual deployment\nKey features: RFM variables (Recency, Frequency, Monetary), Age, Gender, Music purchase history\nTarget variable: whether the customer purchased the karaoke deal (buyer)\n\n\n\nStep 1 — Preliminary Analysis\n\nOverall response rate in the test sample: ~6.2% of customers purchased\nAmong buyers, average order size: ~2.7 sessions (30-minute karaoke sessions at 49 RMB each)\nTuango’s fee: 50% of revenue → margin per response = 0.5 × 49 RMB × avg order size\n\n\n\nStep 2 — Logistic Regression Model\nBuilt a logistic regression model predicting purchase probability using RFM + demographics:\nKey variable importance findings (Permutation Importance):\n\n\n\n\n\n\n\n\nVariable\nImportance\nDirection\n\n\n\n\nMusic (prior music purchase)\nHighest\n↑ increases purchase probability\n\n\nGender\nHigh\nFemale &gt; Other &gt; Male\n\n\nFrequency\nModerate\n↑ more past purchases → more likely to buy\n\n\nMonetary\nModerate\n↑ higher spend → more likely to buy\n\n\nAge\nLow-moderate\n↑ older → less likely to buy\n\n\nRecency\nLowest\nLess recent → less likely to buy\n\n\n\n\n\nStep 3 — Order Size Model\nBuilt a linear regression on buyers only to predict order size. Finding: R-squared is very low — the model explains little variation in order size. This means the RFM variables predict whether someone buys well, but not how much they buy once they decide to purchase.\n\n\nStep 4 — Breakeven Targeting Rule\nCalculated the breakeven response rate:\n\\[\\text{Breakeven} = \\frac{\\text{Cost per message}}{\\text{Margin per response}} = \\frac{9 \\text{ RMB}}{0.5 \\times 49 \\times \\text{avg order size}}\\]\nOnly customers with predicted purchase probability above this breakeven received the message."
+    "text": "Methodology\n\nData & Setup\n\n39,000 training observations + 30,000 representative sample (2% real-world churn rate)\nFeatures: device characteristics, usage behavior (minutes, overage, dropped calls), customer demographics (occupation, credit rating, tenure), service history\nKey modeling challenge: training data was balanced at 50% churn for model fitting, then predictions were probability-corrected back to the true 2% population rate for downstream CLV analysis\n\n\n\nStep 1 — Churn Prediction Model\nBuilt and compared two models:\n\n\n\nModel\nValidation AUC\n\n\n\n\nLogistic Regression (final)\n~0.70\n\n\nRandom Forest (tuned, RandomizedSearchCV)\n~0.695\n\n\n\nRandom Forest did not materially outperform Logistic Regression on the validation set, suggesting the data has limited nonlinear structure. Logistic Regression was selected as the final model for its interpretability and equivalent predictive performance. Variable car was dropped due to consistent statistical insignificance.\n\n\nStep 2 — Key Churn Drivers\nUsing Permutation Importance and Partial Dependence Plots, the top 5 churn drivers identified were:\n\n\n\n\n\n\n\nDriver\nFinding\n\n\n\n\nOccupation\nStudents churn at far higher rates than retired customers\n\n\nEquipment age (eqpdays)\nOlder devices strongly predict switching behavior\n\n\nOverage usage\nHigh overage minutes signal plan mismatch and billing frustration\n\n\nCredit rating\nLow-credit customers are significantly less stable\n\n\nTenure (months)\nLonger-tenure customers are much less likely to churn\n\n\n\n\n\nStep 3 — Retention Actions\nFive targeted interventions were designed based on the churn drivers, each applied only to high-risk customers in the relevant segment:\n\nEarly device upgrade program — for high-risk customers with handsets above 75th percentile age\nPlan optimization — for high-risk customers with consistently high overage usage\nStudent retention offer — flexible plans for students with above-median churn probability\nCredit auto-pay incentive — for low-credit customers with high predicted churn risk\nService quality improvement — for high-risk customers experiencing frequent dropped calls\n\n\n\nStep 4 — Quantifying Churn Reduction\nUsing model-based counterfactual predictions on the representative sample (baseline churn rate = 1.99%):\n\n\n\nIntervention\nChurn Rate Reduction\n\n\n\n\nCredit auto-pay enrollment\n−0.88 pp\n\n\nEarly device upgrade\n−0.35 pp\n\n\nPlan optimization\n−0.31 pp\n\n\nStudent retention offer\n−0.04 pp\n\n\nService quality improvement\n−0.02 pp"
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#key-results",
-    "href": "projects/project4/tuango-targeting.html#key-results",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#key-results",
+    "href": "projects/project2/smobile-churn.html#key-results",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "Key Results",
-    "text": "Key Results\n\nProjected vs. Realized Performance\n\n\n\n\nTarget All\nTarget by Logit Model\n\n\n\n\nMessages sent\n397,252\n~subset only\n\n\nProfit (RMB)\n111,713\n887,423\n\n\nROME\n3.1%\n56.6%\n\n\n\nLogit-based targeting delivered 8× more profit and 18× better ROME than mass messaging.\nThese numbers come from the actual post-rollout data — Tuango contacted all 397,252 customers (to generate evaluation data), allowing a clean comparison of what would have happened under each strategy.\n\n\nWhy the Model Worked\nThe test sample response rate was ~6.2%, but the model identified a subset of customers with much higher predicted purchase probability. By filtering out low-probability customers, the targeting strategy:\n\nConcentrated messages on customers more likely to buy\nReduced wasted message costs on unlikely buyers\nAvoided over-messaging customers who would block future notifications"
+    "text": "Key Results\n\nCLV Economics (5-Year, 10% Annual Discount Rate)\nBaseline assumptions: $40/month revenue per customer, 2% monthly churn, 60-month window.\n\n\n\n\n\n\n\n\n\nIntervention\nChurn Reduction\nIncremental CLV (Breakeven)\nProposed Cost\n\n\n\n\nCredit Auto-pay\n−0.88 pp\n+$258/customer\n$40–$60\n\n\nEarly Upgrade\n−0.35 pp\n+$93/customer\n$50–$70\n\n\nPlan Optimization\n−0.31 pp\n+$82/customer\n$30–$50\n\n\n\nBaseline 5-year CLV per customer: $1,156\nAll three interventions generate positive economic returns under realistic cost assumptions. Credit auto-pay delivers the highest leverage — a $258 CLV buffer against a $40–$60 incentive cost."
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#business-insights",
-    "href": "projects/project4/tuango-targeting.html#business-insights",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#business-insights",
+    "href": "projects/project2/smobile-churn.html#business-insights",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "Business Insights",
-    "text": "Business Insights\n1. The true cost of a message is not zero. The 9 RMB marginal cost accounts for the long-term risk of customers blocking deal messages — losing that channel permanently is far more costly than a single wasted send.\n2. RFM variables are highly predictive for deal targeting. Prior music purchase history and gender were the strongest predictors, suggesting that category affinity and demographics drive deal responsiveness more than raw usage frequency.\n3. Order size is hard to predict — but that’s okay. The linear regression showed very low R-squared for order size, meaning customers who buy tend to buy similar amounts regardless of their profile. The key lever is correctly predicting who buys, not how much they buy.\n4. Mass messaging is a losing strategy at scale. A 3.1% ROME means the campaign barely broke even. At 397,252 customers, the difference between selective and mass targeting was ¥775,710 in additional profit — from the same customer base.\n5. Model validation on actual rollout data confirms no overfitting. The realized post-rollout profit and ROME figures matched the projected direction from the test sample, confirming that the logistic regression generalized well to new customers."
+    "text": "Business Insights\n1. Reactive churn management is inferior. The model-based proactive approach targets customers before they decide to leave, when retention offers are more effective and less expensive.\n2. Not all interventions are equal. Credit auto-pay delivers 3× the CLV impact of plan optimization. Prioritizing interventions by economic return — not just churn reduction — is critical for budget efficiency.\n3. Probability correction matters for economics. Predictions from a balanced training set (50% churn) would wildly overstate actual churn risk. Correcting back to the 2% population rate is essential before any CLV or cost-benefit calculation.\n4. Targeting beats mass deployment. Applying interventions only to high-risk customers within the relevant driver segment maximizes ROI. For example, offering upgrade incentives to all customers wastes budget on low-risk customers who would have stayed anyway.\n5. Model validation should use RCT. The counterfactual estimates provide a sound starting point, but a pilot randomized experiment is needed before large-scale rollout to confirm the real-world churn reductions are statistically significant."
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#my-contribution",
-    "href": "projects/project4/tuango-targeting.html#my-contribution",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#my-contribution",
+    "href": "projects/project2/smobile-churn.html#my-contribution",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "My Contribution",
-    "text": "My Contribution\n\nConducted preliminary analysis: calculated response rate, average order size, and breakeven threshold\nBuilt and interpreted the logistic regression model including Permutation Importance and Partial Dependence Plots for all variables\nBuilt the order size linear regression and explained why low R-squared is expected in this context\nDerived the breakeven response rate and implemented the targeting decision rule\nCalculated projected and actual profit and ROME for both strategies; created comparison bar charts\nEvaluated post-rollout realized performance and confirmed model generalization"
+    "text": "My Contribution\n\nConducted full EDA including distribution analysis, IQR outlier assessment, standardized difference analysis across churn groups, and categorical churn rate breakdowns\nBuilt and tuned both Logistic Regression and Random Forest models; made final model selection argument based on validation AUC comparison\nImplemented probability correction from balanced training data to representative 2% population rate\nDesigned all five retention actions based on churn driver analysis; quantified churn reduction for each using model-based counterfactuals\nBuilt the CLV model and computed breakeven costs and proposed investment levels for three priority actions"
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#tools-methods",
-    "href": "projects/project4/tuango-targeting.html#tools-methods",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#tools-methods",
+    "href": "projects/project2/smobile-churn.html#tools-methods",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "Tools & Methods",
-    "text": "Tools & Methods\nPython · Polars · pyrsm · plotnine · Logistic Regression · Linear Regression · RFM Analysis · Permutation Importance · Partial Dependence Plots · Test-and-Rollout Design · ROME"
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · Logistic Regression · Random Forest · RandomizedSearchCV · Permutation Importance · Partial Dependence Plots · CLV Modeling · Probability Calibration · AUC"
   },
   {
-    "objectID": "projects/project4/tuango-targeting.html#github-repository",
-    "href": "projects/project4/tuango-targeting.html#github-repository",
-    "title": "Tuango: Targeting Mobile App Messages",
+    "objectID": "projects/project2/smobile-churn.html#github-repository",
+    "href": "projects/project2/smobile-churn.html#github-repository",
+    "title": "S-Mobile: Predicting Customer Churn",
     "section": "GitHub Repository",
     "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#business-problem",
-    "href": "projects/project1/pentathlon-nptb.html#business-problem",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#business-problem",
+    "href": "projects/project3/creative-gaming-uplift.html#business-problem",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "Business Problem",
-    "text": "Business Problem\nPentathlon, a multi-department e-commerce sports retailer, was sending promotional emails without a systematic way to decide which department’s message to send each customer. The choices were: Endurance, Strength, Water, Team, Backcountry, Racquet, or no message at all.\nA prior RCT revealed a key tension: higher email frequency boosted short-term revenue but significantly increased unsubscribe rates, reducing long-term customer lifetime value. The goal of this project was to move from a one-size-fits-all approach to customer-level personalized messaging that maximizes expected profit."
+    "text": "Business Problem\nCreative Gaming needed to decide which of 120,000 customers to show ads for their new game Zalon ($14.99), where each ad costs $1.50 in lost coin purchases. The naive approach — targeting customers most likely to buy — wastes budget on people who would have purchased anyway (“sure things”) and misses the customers who are actually persuaded by the ad.\nThe key question: which customers’ behavior is genuinely changed by seeing an ad?"
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#methodology",
-    "href": "projects/project1/pentathlon-nptb.html#methodology",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
+    "href": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
+    "title": "Creative Gaming: Uplift Modeling",
+    "section": "Why Uplift Modeling, Not Propensity Modeling?",
+    "text": "Why Uplift Modeling, Not Propensity Modeling?\nStandard propensity models rank customers by P(purchase | ad shown), which conflates purchase likelihood with ad effectiveness. Uplift modeling instead estimates the incremental causal effect of the ad per customer:\n\\[\\text{Uplift}_i = P(\\text{purchase} \\mid \\text{ad}=1, X_i) - P(\\text{purchase} \\mid \\text{ad}=0, X_i)\\]\nThis separates customers into four behavioral segments: Persuadables (target these), Sure Things (waste of budget), Lost Causes (ignore), and Do-Not-Disturbs (avoid — ads hurt conversion).\nThe breakeven uplift threshold is: $1.50 / $14.99 ≈ 0.10 — only target customers whose incremental purchase probability exceeds 10%."
+  },
+  {
+    "objectID": "projects/project3/creative-gaming-uplift.html#methodology",
+    "href": "projects/project3/creative-gaming-uplift.html#methodology",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "Methodology",
-    "text": "Methodology\n\nData & Setup\n\n600,000 customer–email observations (70/30 train/test split)\nFeatures: demographics (age, gender, income, education, children) + historical purchase frequency across 6 departments\nTarget: whether the customer made a purchase within 2 days of receiving the email (buyer), and if so, the order size (total_os)\n\n\n\nNPTB Framework\nFor each customer, we estimated the expected profit of sending each of the 7 possible messages:\n\\[\\text{Expected Profit} = P(\\text{purchase} \\mid \\text{message}) \\times \\hat{\\text{order size}} \\times 0.4\\]\nThe 0.4 margin reflects a 60% COGS assumption. Each customer was then assigned the message yielding the highest expected profit.\n\n\nModels Built\nWe built and compared four model types for predicting purchase probability:\n\n\n\n\n\n\n\n\nModel\nApproach\nTest AUC\n\n\n\n\nLogistic Regression (interaction)\nMessage × customer feature interactions\n≈ 0.88\n\n\nNeural Network (MLP)\nTuned on hidden layer size, alpha\n≈ 0.88\n\n\nRandom Forest\nTuned on depth, n_estimators\n≈ 0.88\n\n\nXGBoost\nTuned on learning rate, depth, subsample\n≈ 0.88\n\n\n\nKey modeling insight: A baseline logistic model (without interaction terms) assigned 100% of customers to the same “endurance” message — no personalization at all. Adding message × feature interactions diversified recommendations across multiple departments, enabling true NPTB modeling.\nA separate OLS regression on buyers only estimated conditional order size per message, which was combined with purchase probability to compute expected profit."
+    "text": "Methodology\n\nData & Experimental Setup\nCreative Gaming’s random email allocation policy had created natural experimental data:\n\nGroup 1 (Control): 30,000 customers who received no ad (cg_organic_control)\nGroup 2 (Treatment): 30,000 randomly selected customers who received the Zalon ad (cg_ad_random)\nCombined into a stacked RCT dataset of 60,000 observations with 70/30 train/test split, stratified by converted and ad\n\n\n\nUplift Model Architecture\nFor each model type, two separate models were trained — one on the treatment group and one on the control group — then the uplift score was computed as the difference in predicted probabilities:\n\n\n\n\n\n\n\nModel\nHyperparameters Tuned\n\n\n\n\nLogistic Regression\nBaseline (no tuning needed)\n\n\nNeural Network (MLP)\nHidden layer size: {(100,), (200,)}; alpha: {1e-6, 1e-4, 1e-3}; learning rate: {1e-3, 5e-4}\n\n\nRandom Forest\nn_estimators: {100, 200}; max_depth: {5, 10, None}; min_samples_leaf: {10, 50, 100}\n\n\nXGBoost\nn_estimators: {50, 100, 200}; max_depth: {3, 5, 7}; learning_rate: {0.05, 0.1}; min_child_weight: {1, 5}\n\n\n\nAll ML models used 5-fold cross-validation for hyperparameter tuning."
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#key-results",
-    "href": "projects/project1/pentathlon-nptb.html#key-results",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#key-results",
+    "href": "projects/project3/creative-gaming-uplift.html#key-results",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "Key Results",
-    "text": "Key Results\n\nPersonalization Substantially Outperforms Every Alternative\n\n\n\n\n\n\n\n\nStrategy\nAvg. Expected Profit / Customer\nTotal Profit (5M customers)\n\n\n\n\nPersonalized (XGBoost)\n€0.684\n€3.42M\n\n\nBest Single Message (Endurance)\n€0.628\n€3.14M\n\n\nRandom Assignment\n€0.561\n€2.81M\n\n\nNo Message (Control)\n€0.431\n€2.15M\n\n\n\n\nPersonalization vs. random assignment: +€616K (+22%)\nPersonalization vs. best single message: +€283K (+9%)\nPersonalization vs. no message: +€1.27M (+59%)\n\n\n\nMessage Distribution Shifts When Profit Is the Goal\nWhen optimizing for purchase probability, ~70% of customers were assigned “Endurance” — one message dominated.\nWhen optimizing for expected profit (purchase probability × order size × margin), the distribution became more balanced:\n\nEndurance: ~43%\nBackcountry: ~36%\nStrength: ~17%\n\nThis shift reveals that Backcountry messages, while not the most likely to generate a purchase, tend to generate much larger orders — making them more profitable for a significant segment of customers.\n\n\nWhy XGBoost Was Selected as the Final Model\nAll four models achieved similar test AUC (~0.88), so AUC alone did not differentiate them. We selected the final model based on personalized expected profit per customer on the test set — XGBoost produced the highest value across all strategies."
+    "text": "Key Results\n\nUplift vs. Propensity: Targeting the Best 30,000 of 120,000 Customers\n\n\n\nModel\nUplift Profit\nPropensity Profit\nUplift Advantage\n\n\n\n\nLogistic Regression\nhigher\nlower\nuplift wins\n\n\nNeural Network\nhigher\nlower\nuplift wins\n\n\nRandom Forest\nhigher\nlower\nuplift wins\n\n\nXGBoost\nhigher\nlower\nuplift wins\n\n\n\nUplift targeting consistently outperformed propensity targeting across all four models. The advantage comes from two sources: uplift avoids “sure things” with high purchase probability but zero incremental impact, and it explicitly identifies and avoids “do-not-disturb” customers whose conversion rate actually decreases when shown ads.\n\n\nOptimal Targeting Percentage\nRather than arbitrarily targeting 25% (30K of 120K), the optimal targeting proportion was derived using the breakeven condition (uplift ≥ 0.10):\n\nPropensity model (Logistic): optimal ≈ 50% of customers\nUplift model (Logistic): optimal ≈ 15% of customers\n\nThe uplift model targets a much smaller, more concentrated group of genuinely persuadable customers — reducing cost while maximizing incremental profit.\n\n\nWhat the Uplift Charts Revealed\nThe uplift bar charts showed that the top 20% of customers had uplift above 20% — highly persuadable segments. The bottom decile showed negative uplift, meaning advertising to those customers would actually reduce conversions. This confirms that a selective targeting strategy is essential.\nThe correlation analysis further validated the model:\n\nUplift score and pred_treatment: ρ = +0.55 — customers more likely to respond to ads have higher uplift\nUplift score and pred_control: ρ = −0.66 — customers who would buy anyway have lower uplift, not higher"
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#business-insights",
-    "href": "projects/project1/pentathlon-nptb.html#business-insights",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#business-insights",
+    "href": "projects/project3/creative-gaming-uplift.html#business-insights",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "Business Insights",
-    "text": "Business Insights\n1. Personalization generates real money at scale. A ~9% improvement over the best uniform strategy translates to nearly €300K in additional profit per 5M-customer campaign — a figure that compounds across multiple campaigns per year.\n2. Order size matters, not just purchase likelihood. Optimizing on probability alone misses high-value customers who respond to niche categories with large basket sizes (e.g., backcountry gear). The NPTB framework captures this.\n3. For some customers, no email is optimal. Including the no-message option in the decision framework prevents over-messaging customers who are unlikely to convert regardless of the department — protecting long-term engagement and LTV.\n4. The proposed 50/50 email policy has room to improve. Pentathlon’s proposed new policy (splitting emails equally between the top 2 departments per customer) improves over random, but does not maximize profit. A fully individualized allocation would outperform the fixed split, especially when the gap between the first and second best message is large."
+    "text": "Business Insights\n1. Propensity models waste money on “sure things.” In telecom, e-commerce, and gaming, many high-propensity customers would convert without any marketing spend. Uplift modeling correctly identifies them as low-priority targets.\n2. Do-not-disturb customers are a real cost. Negative uplift customers exist in every dataset — showing them an ad actively reduces conversion. Propensity models cannot detect this; uplift models can.\n3. Smaller targeted groups can generate more profit. The optimal targeting percentage under uplift (~15%) is far smaller than under propensity (~50%). Targeting fewer, better-chosen customers reduces ad spend while increasing incremental revenue.\n4. RCT data is the gold standard for uplift modeling. The random allocation of the ad campaign created clean experimental variation essential for reliable causal estimates. Without this, uplift scores would be confounded by selection bias.\n5. Model complexity matters less than model type. All four models showed the same directional finding — uplift beats propensity. The more important choice is whether to use uplift modeling, not which algorithm to use."
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#my-contribution",
-    "href": "projects/project1/pentathlon-nptb.html#my-contribution",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#my-contribution",
+    "href": "projects/project3/creative-gaming-uplift.html#my-contribution",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "My Contribution",
-    "text": "My Contribution\n\nDesigned and implemented the full NPTB prediction pipeline including counterfactual message scoring for all 7 message types\nBuilt interaction logistic regression model and identified why baseline model failed to personalize\nEngineered the expected profit formula combining purchase probability, order size regression, and margin\nCompared all four models on both AUC and expected profit metrics; made final model selection argument\nWrote the policy critique and improvement recommendations"
+    "text": "My Contribution\n\nDesigned and implemented the full uplift modeling pipeline: data stacking, stratified train/test split, dual-model architecture (separate treatment and control models per algorithm)\nBuilt and tuned all four model types (Logistic Regression, Neural Network, Random Forest, XGBoost) with cross-validation\nComputed uplift scores, generated uplift tables and incremental uplift plots for all models\nDerived the optimal targeting percentage using the breakeven threshold formula for both propensity and uplift approaches\nWrote the conceptual explanation distinguishing the four customer segments (Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs)"
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#tools-methods",
-    "href": "projects/project1/pentathlon-nptb.html#tools-methods",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#tools-methods",
+    "href": "projects/project3/creative-gaming-uplift.html#tools-methods",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "Tools & Methods",
-    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression (interactions) · Neural Network (MLP) · Random Forest · OLS Regression · AUC · RMSE · Gains Curves"
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression · Neural Network (MLP) · Random Forest · Uplift Modeling · RCT · Incremental Uplift Plots · 5-Fold Cross-Validation · AUC"
   },
   {
-    "objectID": "projects/project1/pentathlon-nptb.html#github-repository",
-    "href": "projects/project1/pentathlon-nptb.html#github-repository",
-    "title": "Pentathlon: Next Product to Buy Modeling",
+    "objectID": "projects/project3/creative-gaming-uplift.html#github-repository",
+    "href": "projects/project3/creative-gaming-uplift.html#github-repository",
+    "title": "Creative Gaming: Uplift Modeling",
     "section": "GitHub Repository",
     "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
-    "objectID": "posts/post2.html",
-    "href": "posts/post2.html",
-    "title": "My Experience Using Obsidian for Note-Taking",
+    "objectID": "posts/post3.html",
+    "href": "posts/post3.html",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
     "section": "",
-    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
   },
   {
-    "objectID": "posts/post2.html#introduction",
-    "href": "posts/post2.html#introduction",
-    "title": "My Experience Using Obsidian for Note-Taking",
+    "objectID": "posts/post3.html#introduction",
+    "href": "posts/post3.html#introduction",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
     "section": "",
-    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
   },
   {
-    "objectID": "posts/post2.html#key-features-i-like",
-    "href": "posts/post2.html#key-features-i-like",
-    "title": "My Experience Using Obsidian for Note-Taking",
-    "section": "Key Features I Like",
-    "text": "Key Features I Like\nOne of the most useful features in Obsidian is the ability to create links between notes. This allows me to connect ideas across different topics, which makes my notes feel more like a network rather than isolated pages.\nI also find the Markdown-based system very convenient. It keeps everything simple and focused on content rather than formatting."
+    "objectID": "posts/post3.html#example",
+    "href": "posts/post3.html#example",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Example",
+    "text": "Example\nFor example, consider two coffee shops offering similar drinks at similar prices. One has a well-designed logo, consistent visual identity, and a clear brand story, while the other does not.\nMost customers are more likely to choose the brand that appears more professional and trustworthy."
   },
   {
-    "objectID": "posts/post2.html#how-i-use-it",
-    "href": "posts/post2.html#how-i-use-it",
-    "title": "My Experience Using Obsidian for Note-Taking",
-    "section": "How I Use It",
-    "text": "How I Use It\nI mainly use Obsidian for:\n\nOrganizing class notes\nRecording ideas from readings or videos\nStructuring long-term learning topics\n\nFor example, I can create separate notes for finance, analytics, and personal development, and then link related concepts together."
+    "objectID": "posts/post3.html#key-insight",
+    "href": "posts/post3.html#key-insight",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Key Insight",
+    "text": "Key Insight\nBranding is not just about design. It includes:\n\nVisual identity (logo, colors, layout)\nMessaging and tone\nCustomer experience\n\nAll of these elements work together to create a consistent image in the customer’s mind."
   },
   {
-    "objectID": "posts/post2.html#limitations",
-    "href": "posts/post2.html#limitations",
-    "title": "My Experience Using Obsidian for Note-Taking",
-    "section": "Limitations",
-    "text": "Limitations\nAlthough Obsidian is powerful, it does have a learning curve. It takes some time to understand how to organize notes effectively, especially when using features like backlinks and graph view."
+    "objectID": "posts/post3.html#why-it-matters",
+    "href": "posts/post3.html#why-it-matters",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "section": "Why It Matters",
+    "text": "Why It Matters\nStrong branding can:\n\nIncrease customer trust\nImprove perceived value\nDifferentiate a product from competitors\n\nThis is especially important in competitive markets."
   },
   {
-    "objectID": "posts/post2.html#reflection",
-    "href": "posts/post2.html#reflection",
-    "title": "My Experience Using Obsidian for Note-Taking",
+    "objectID": "posts/post3.html#reflection",
+    "href": "posts/post3.html#reflection",
+    "title": "A Simple Marketing Analysis: Why Branding Matters",
     "section": "Reflection",
-    "text": "Reflection\nOverall, Obsidian has improved how I manage my learning process. It encourages me to think more actively about connections between ideas, rather than just storing information."
+    "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
   },
   {
-    "objectID": "posts/post1.html",
-    "href": "posts/post1.html",
-    "title": "Building My First Quarto Website",
+    "objectID": "posts/card_krueger_replication.html",
+    "href": "posts/card_krueger_replication.html",
+    "title": "Replication of Card and Krueger (1994)",
     "section": "",
-    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
   },
   {
-    "objectID": "posts/post1.html#introduction",
-    "href": "posts/post1.html#introduction",
-    "title": "Building My First Quarto Website",
+    "objectID": "posts/card_krueger_replication.html#introduction",
+    "href": "posts/card_krueger_replication.html#introduction",
+    "title": "Replication of Card and Krueger (1994)",
     "section": "",
-    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
+    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
   },
   {
-    "objectID": "posts/post1.html#what-i-built",
-    "href": "posts/post1.html#what-i-built",
-    "title": "Building My First Quarto Website",
-    "section": "What I built",
-    "text": "What I built\nThe website includes several sections such as an About page, a Resume page, a Projects page, and a Blog page. One of the most interesting parts was learning how these pages are connected through the _quarto.yml file.\nI also added a blog section to make the website feel more dynamic and less static."
+    "objectID": "posts/card_krueger_replication.html#main-analysis",
+    "href": "posts/card_krueger_replication.html#main-analysis",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "Main Analysis",
+    "text": "Main Analysis\n\nTable 2 — Key Variable Means (Partial Replication)\nTable 2 in the paper reports descriptive statistics for both states before and after the minimum wage increase. We replicate the employment and wage rows below. The point of this table is to show that NJ and PA stores were similar before the policy — especially that their starting wages were nearly identical (NJ: $4.61, PA: $4.63), which validates the parallel trends assumption.\n\n\nWave 1 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 1)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n20.44 (0.51)\n23.33 (1.35)\n20.44 (0.51)\n23.33 (1.35)\n-2.0\n\n\n1\nStarting wage (\\$/hr)\n4.61 (0.02)\n4.63 (0.04)\n4.61 (0.02)\n4.63 (0.04)\n-0.4\n\n\n2\nHours open (weekday)\n14.42 (0.15)\n14.53 (0.33)\n14.42 (0.20)\n14.52 (0.29)\n-0.3\n\n\n\n\n\n\n\n\nWave 2 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 2)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n21.03 (0.52)\n21.17 (0.94)\n21.03 (0.52)\n21.17 (0.94)\n-0.1\n\n\n1\nStarting wage (\\$/hr)\n5.08 (0.01)\n4.62 (0.04)\n5.08 (0.01)\n4.62 (0.04)\n10.8\n\n\n\n\n\n\n\nOur replicated means match the paper exactly. Notice that by Wave 2, the average starting wage in NJ jumped to $5.08 (just above the new $5.05 minimum), while PA wages barely moved. This confirms the policy was binding in NJ.\n\n\nTable 3 — Difference-in-Differences (Rows 1–3, Columns i–iii)\nThis is the heart of the paper. We compare average FTE employment before and after the minimum wage increase in NJ vs. PA.\n\n\n\n\n\n\n\n\n\n\nRow 1: FTE before\nRow 2: FTE after\nRow 3: Change\n\n\n\n\n0\nPA (i)\n23.33\n21.17\n-2.17\n\n\n1\nNJ (ii)\n20.44\n21.03\n0.59\n\n\n2\nNJ – PA (iii)\n-2.89\n-0.14\n2.75 (t=1.53)\n\n\n3\nPaper DiD\n–2.89\n–0.14\n2.76 (t=2.03)\n\n\n\n\n\n\n\nHow to read this table:\n\nBefore the wage increase, NJ stores employed slightly fewer workers than PA stores (20.44 vs. 23.33).\nAfter the increase, NJ employment rose while PA employment fell.\nThe DiD estimate of +2.76 FTE employees (our replication: +2.75) is positive and statistically significant (t ≈ 2.03), directly contradicting the prediction that raising the minimum wage reduces employment.\n\n\n\nTable 4, Column (i) — Regression-Adjusted DiD\nA simple OLS regression of the change in FTE employment on a New Jersey dummy confirms the DiD result while being more precise about the standard error. The sample here is restricted to stores with valid employment and wage data in both waves.\n\n\nSample size:        351  (paper: 357)\nNJ dummy (β):       2.28  (paper: 2.33)\nStandard error:     1.19  (paper: 1.19)\nt-statistic:        1.91\nMean ΔemploymentPA: -1.88\n\n\nThe coefficient on the NJ dummy (2.28, paper: 2.33) tells us that, controlling for nothing else, NJ stores gained about 2.3 more FTE employees than PA stores between Wave 1 and Wave 2. The standard error of 1.19 matches the paper exactly. The small discrepancy in the point estimate likely reflects minor differences in handling temporarily closed stores."
   },
   {
-    "objectID": "posts/post1.html#what-i-learned",
-    "href": "posts/post1.html#what-i-learned",
-    "title": "Building My First Quarto Website",
-    "section": "What I learned",
-    "text": "What I learned\nThrough this process, I learned:\n\nHow Quarto organizes content using .qmd files\nHow to create a navigation bar across multiple pages\nHow to customize the appearance of a website using CSS\nHow to structure content so that it is easy to read and navigate"
+    "objectID": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
+    "href": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "Something Additional: Visualizing the Wage Distribution Shift",
+    "text": "Something Additional: Visualizing the Wage Distribution Shift\nOne of the most compelling pieces of evidence in the paper is Figure 1: the distribution of starting wages in NJ and PA before and after the minimum wage increase. The paper only shows this as a histogram — here we recreate and extend it to make the Diff-in-Diff logic visually intuitive.\nThe key insight: if the minimum wage is truly binding (i.e., it forced real wage changes), we should see NJ’s wage distribution shift dramatically toward $5.05 after April 1992, while PA’s distribution stays flat. This is exactly what happened — and it’s the “first stage” that validates the whole study.\n\n\n\n\n\nStarting wage distributions before and after New Jersey’s minimum wage increase. The policy dramatically compressed NJ wages upward to the new $5.05 floor, while Pennsylvania’s distribution barely changed.\n\n\n\n\n\n\nShare of stores paying exactly $5.05 (new minimum):\n  NJ Wave 2: 89.0%  (paper: 85.2%)\n  PA Wave 2: 1.4%  (paper:  1.3%)\n\nShare of stores still paying $4.25 (old minimum):\n  NJ Wave 1: 32.2%  (paper: 30.5%)\n  PA Wave 1: 34.2%  (paper: 32.9%)\n  NJ Wave 2: 0.0%  (paper:  0.0%)\n  PA Wave 2: 28.2%  (paper: 25.3%)\n\n\nWhat this shows:\n\nBefore the increase (Wave 1), NJ and PA had nearly identical wage distributions — about 30% of stores in both states paid exactly the old minimum of $4.25/hr. This similarity supports the parallel-trends assumption underlying the DiD design.\nAfter the increase (Wave 2), 85% of NJ stores piled up right at the new $5.05 floor, while Pennsylvania’s distribution barely moved. By Wave 2, zero NJ stores still paid $4.25.\nThis dramatic shift is the “first stage” of the causal chain: the law actually changed wages, so any subsequent employment effects can be attributed to the policy rather than coincidence.\nDespite this large wage shock, NJ employment increased relative to PA — the central paradox that motivated the paper and challenged a generation of economists to rethink the competitive model of the labor market."
   },
   {
-    "objectID": "posts/post1.html#challenges",
-    "href": "posts/post1.html#challenges",
-    "title": "Building My First Quarto Website",
-    "section": "Challenges",
-    "text": "Challenges\nOne of the main challenges I faced was adjusting the layout and styles. Small changes in CSS sometimes had unexpected effects, and I had to experiment a lot to understand how different elements interact."
-  },
-  {
-    "objectID": "posts/post1.html#reflection",
-    "href": "posts/post1.html#reflection",
-    "title": "Building My First Quarto Website",
-    "section": "Reflection",
-    "text": "Reflection\nOverall, this project helped me understand how a simple text-based system can be used to build a complete website. It also gave me more confidence in learning new tools independently."
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "My Resume",
-    "section": "",
-    "text": "Download PDF file."
+    "objectID": "posts/card_krueger_replication.html#references",
+    "href": "posts/card_krueger_replication.html#references",
+    "title": "Replication of Card and Krueger (1994)",
+    "section": "References",
+    "text": "References\nCard, David, and Alan B. Krueger. 1994. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review 84 (4): 772–793."
   },
   {
     "objectID": "posts/ab-testing.html",
@@ -273,192 +448,304 @@
     "text": "The Problem with Peeking\nA key assumption behind the hypothesis testing framework used above is that the data are analyzed only once, after the full sample has been collected. In practice, however, it is tempting to monitor the results of an experiment as data come in and stop early if the results look promising. This behavior is often referred to as “peeking.”\nPeeking creates a problem because it effectively increases the number of opportunities to reject the null hypothesis. Each time we check the data, there is a chance of observing a statistically significant result purely by random variation. As a result, repeatedly checking the data inflates the probability of a false positive.\nIn other words, even if there is no true effect, peeking can make it appear as though there is one. This undermines the validity of p-values and confidence intervals, which rely on a fixed sampling plan.\nTo maintain valid inference, researchers must either commit to a pre-specified sample size or use methods that explicitly account for sequential testing. This highlights an important limitation of standard A/B testing procedures and underscores the need for careful experimental design."
   },
   {
-    "objectID": "posts/card_krueger_replication.html",
-    "href": "posts/card_krueger_replication.html",
-    "title": "Replication of Card and Krueger (1994)",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
     "section": "",
-    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
+    "text": "Download PDF file."
   },
   {
-    "objectID": "posts/card_krueger_replication.html#introduction",
-    "href": "posts/card_krueger_replication.html#introduction",
-    "title": "Replication of Card and Krueger (1994)",
+    "objectID": "posts/mle.html",
+    "href": "posts/mle.html",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
     "section": "",
-    "text": "Does raising the minimum wage cause unemployment? Standard economics textbooks say yes: if you force employers to pay workers more, they will simply hire fewer of them. Card and Krueger (1994) challenged this prediction head-on using a remarkably clean natural experiment.\nOn April 1, 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour — the highest state minimum wage in the country at the time. Pennsylvania, right next door, kept its minimum wage unchanged at $4.25. Card and Krueger surveyed 410 fast-food restaurants (Burger King, KFC, Roy Rogers, and Wendy’s) in both states before the increase (February–March 1992) and after (November–December 1992).\nThis setup is the classic Difference-in-Differences (DiD) design:\n\nTreatment group: New Jersey restaurants (subject to the wage increase)\nControl group: Pennsylvania restaurants (no change)\nKey assumption: Without the minimum wage increase, employment trends in both states would have moved in parallel\n\nThe DiD estimator subtracts two differences:\n\\[\n\\hat{\\tau}_{DiD}\n=\n(\\bar{Y}_{NJ,after} - \\bar{Y}_{NJ,before})\n-\n(\\bar{Y}_{PA,after} - \\bar{Y}_{PA,before})\n\\]\nBy comparing the change in NJ to the change in PA, we difference out any seasonal trends or macroeconomic shocks that affected both states equally — leaving only the effect of the minimum wage.\nTheir headline finding: employment in New Jersey did not fall after the minimum wage increase. In fact, it rose slightly relative to Pennsylvania, directly contradicting the standard competitive model."
+    "text": "Code\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport matplotlib.ticker as mticker\nfrom scipy import optimize\nfrom scipy.special import gammaln\nimport statsmodels.api as sm\nfrom great_tables import GT, style, loc, exibble"
   },
   {
-    "objectID": "posts/card_krueger_replication.html#main-analysis",
-    "href": "posts/card_krueger_replication.html#main-analysis",
-    "title": "Replication of Card and Krueger (1994)",
-    "section": "Main Analysis",
-    "text": "Main Analysis\n\nTable 2 — Key Variable Means (Partial Replication)\nTable 2 in the paper reports descriptive statistics for both states before and after the minimum wage increase. We replicate the employment and wage rows below. The point of this table is to show that NJ and PA stores were similar before the policy — especially that their starting wages were nearly identical (NJ: $4.61, PA: $4.63), which validates the parallel trends assumption.\n\n\nWave 1 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 1)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n20.44 (0.51)\n23.33 (1.35)\n20.44 (0.51)\n23.33 (1.35)\n-2.0\n\n\n1\nStarting wage (\\$/hr)\n4.61 (0.02)\n4.63 (0.04)\n4.61 (0.02)\n4.63 (0.04)\n-0.4\n\n\n2\nHours open (weekday)\n14.42 (0.15)\n14.53 (0.33)\n14.42 (0.20)\n14.52 (0.29)\n-0.3\n\n\n\n\n\n\n\n\nWave 2 Variables\n\n\n\n\n\n\n\n\n\nVariable (Wave 2)\nNJ (replicated)\nPA (replicated)\nNJ (paper)\nPA (paper)\nt-stat\n\n\n\n\n0\nFTE employment\n21.03 (0.52)\n21.17 (0.94)\n21.03 (0.52)\n21.17 (0.94)\n-0.1\n\n\n1\nStarting wage (\\$/hr)\n5.08 (0.01)\n4.62 (0.04)\n5.08 (0.01)\n4.62 (0.04)\n10.8\n\n\n\n\n\n\n\nOur replicated means match the paper exactly. Notice that by Wave 2, the average starting wage in NJ jumped to $5.08 (just above the new $5.05 minimum), while PA wages barely moved. This confirms the policy was binding in NJ.\n\n\nTable 3 — Difference-in-Differences (Rows 1–3, Columns i–iii)\nThis is the heart of the paper. We compare average FTE employment before and after the minimum wage increase in NJ vs. PA.\n\n\n\n\n\n\n\n\n\n\nRow 1: FTE before\nRow 2: FTE after\nRow 3: Change\n\n\n\n\n0\nPA (i)\n23.33\n21.17\n-2.17\n\n\n1\nNJ (ii)\n20.44\n21.03\n0.59\n\n\n2\nNJ – PA (iii)\n-2.89\n-0.14\n2.75 (t=1.53)\n\n\n3\nPaper DiD\n–2.89\n–0.14\n2.76 (t=2.03)\n\n\n\n\n\n\n\nHow to read this table:\n\nBefore the wage increase, NJ stores employed slightly fewer workers than PA stores (20.44 vs. 23.33).\nAfter the increase, NJ employment rose while PA employment fell.\nThe DiD estimate of +2.76 FTE employees (our replication: +2.75) is positive and statistically significant (t ≈ 2.03), directly contradicting the prediction that raising the minimum wage reduces employment.\n\n\n\nTable 4, Column (i) — Regression-Adjusted DiD\nA simple OLS regression of the change in FTE employment on a New Jersey dummy confirms the DiD result while being more precise about the standard error. The sample here is restricted to stores with valid employment and wage data in both waves.\n\n\nSample size:        351  (paper: 357)\nNJ dummy (β):       2.28  (paper: 2.33)\nStandard error:     1.19  (paper: 1.19)\nt-statistic:        1.91\nMean ΔemploymentPA: -1.88\n\n\nThe coefficient on the NJ dummy (2.28, paper: 2.33) tells us that, controlling for nothing else, NJ stores gained about 2.3 more FTE employees than PA stores between Wave 1 and Wave 2. The standard error of 1.19 matches the paper exactly. The small discrepancy in the point estimate likely reflects minor differences in handling temporarily closed stores."
+    "objectID": "posts/mle.html#introduction",
+    "href": "posts/mle.html#introduction",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
+    "section": "Introduction",
+    "text": "Introduction\nBlueprinty is a small software company that builds tools to help engineering firms prepare and submit patent applications to the US Patent Office. Their marketing team wants to make a compelling claim: firms that use Blueprinty’s software are more successful at getting patents approved.\nOn the surface, this sounds straightforward to test — just compare patent counts between customers and non-customers. But the reality is more nuanced. Blueprinty’s customers are not randomly selected. Firms that choose to adopt patent-application software may already be more innovative, better resourced, or more strategically focused on IP than firms that do not. Any raw difference in patent counts between the two groups could reflect these pre-existing characteristics rather than the effect of the software itself.\nTo evaluate this claim rigorously, we need a statistical model that controls for firm characteristics. Blueprinty has collected data on 1,500 mature (non-startup) engineering firms, including the number of patents each firm received over the last five years, the firm’s age, its regional location, and whether it is a Blueprinty customer. Using these data, we will fit a Poisson regression model via Maximum Likelihood Estimation — accounting for age and region — to isolate the association between Blueprinty usage and patent success."
   },
   {
-    "objectID": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
-    "href": "posts/card_krueger_replication.html#something-additional-visualizing-the-wage-distribution-shift",
-    "title": "Replication of Card and Krueger (1994)",
-    "section": "Something Additional: Visualizing the Wage Distribution Shift",
-    "text": "Something Additional: Visualizing the Wage Distribution Shift\nOne of the most compelling pieces of evidence in the paper is Figure 1: the distribution of starting wages in NJ and PA before and after the minimum wage increase. The paper only shows this as a histogram — here we recreate and extend it to make the Diff-in-Diff logic visually intuitive.\nThe key insight: if the minimum wage is truly binding (i.e., it forced real wage changes), we should see NJ’s wage distribution shift dramatically toward $5.05 after April 1992, while PA’s distribution stays flat. This is exactly what happened — and it’s the “first stage” that validates the whole study.\n\n\n\n\n\nStarting wage distributions before and after New Jersey’s minimum wage increase. The policy dramatically compressed NJ wages upward to the new $5.05 floor, while Pennsylvania’s distribution barely changed.\n\n\n\n\n\n\nShare of stores paying exactly $5.05 (new minimum):\n  NJ Wave 2: 89.0%  (paper: 85.2%)\n  PA Wave 2: 1.4%  (paper:  1.3%)\n\nShare of stores still paying $4.25 (old minimum):\n  NJ Wave 1: 32.2%  (paper: 30.5%)\n  PA Wave 1: 34.2%  (paper: 32.9%)\n  NJ Wave 2: 0.0%  (paper:  0.0%)\n  PA Wave 2: 28.2%  (paper: 25.3%)\n\n\nWhat this shows:\n\nBefore the increase (Wave 1), NJ and PA had nearly identical wage distributions — about 30% of stores in both states paid exactly the old minimum of $4.25/hr. This similarity supports the parallel-trends assumption underlying the DiD design.\nAfter the increase (Wave 2), 85% of NJ stores piled up right at the new $5.05 floor, while Pennsylvania’s distribution barely moved. By Wave 2, zero NJ stores still paid $4.25.\nThis dramatic shift is the “first stage” of the causal chain: the law actually changed wages, so any subsequent employment effects can be attributed to the policy rather than coincidence.\nDespite this large wage shock, NJ employment increased relative to PA — the central paradox that motivated the paper and challenged a generation of economists to rethink the competitive model of the labor market."
+    "objectID": "posts/mle.html#exploring-the-data",
+    "href": "posts/mle.html#exploring-the-data",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
+    "section": "Exploring the Data",
+    "text": "Exploring the Data\n\n\nCode\ndf = pd.read_csv(\"blueprinty.csv\")\ndf.head()\n\n\n\n\n\n\n\n\n\npatents\nregion\nage\niscustomer\n\n\n\n\n0\n0\nMidwest\n32.5\n0\n\n\n1\n3\nSouthwest\n37.5\n0\n\n\n2\n4\nNorthwest\n27.0\n1\n\n\n3\n3\nNortheast\n24.5\n0\n\n\n4\n3\nSouthwest\n37.0\n0\n\n\n\n\n\n\n\n\nPatent Counts by Customer Status\n\n\nCode\nfig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=False)\n\nfor ax, (status, label, color) in zip(\n    axes,\n    [(0, \"Non-Customers\", \"#4e79a7\"), (1, \"Blueprinty Customers\", \"#f28e2b\")]\n):\n    subset = df[df[\"iscustomer\"] == status][\"patents\"]\n    m = subset.mean()\n    ax.hist(subset, bins=range(0, 17), color=color, edgecolor=\"white\", alpha=0.9)\n    ax.axvline(m, color=\"black\", linestyle=\"--\", linewidth=1.5)\n    ax.text(m + 0.4, ax.get_ylim()[1] * 0.92, f\"Mean = {m:.2f}\", fontsize=10)\n    ax.set_title(label, fontsize=12, fontweight=\"bold\")\n    ax.set_xlabel(\"Patents (last 5 years)\")\n    ax.set_ylabel(\"Count\")\n    ax.set_xlim(0, 16)\n    ax.spines[[\"top\", \"right\"]].set_visible(False)\n\nfig.suptitle(\"Distribution of Patent Counts by Customer Status\", fontsize=13, y=1.02)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nmeans = df.groupby(\"iscustomer\")[\"patents\"].mean()\nmean_noncust = round(means[0], 2)\nmean_cust = round(means[1], 2)\n\n\nBlueprinty customers average about np.float64(4.13) patents over five years, compared to np.float64(3.47) patents for non-customers. Both distributions are right-skewed — most firms receive a modest number of patents, with a long tail of high performers. The customer group is noticeably shifted to the right. While this suggests a positive association between software adoption and patent success, we cannot yet attribute this gap to the software itself, since customers may differ systematically from non-customers in other ways.\n\n\nRegional Differences\n\n\nCode\nregion_props = (\n    df.groupby([\"region\", \"iscustomer\"])\n    .size()\n    .reset_index(name=\"n\")\n)\nregion_props[\"prop\"] = region_props.groupby(\"iscustomer\")[\"n\"].transform(lambda x: x / x.sum())\n\nregions = sorted(df[\"region\"].unique())\nx = np.arange(len(regions))\nwidth = 0.35\n\nfig, ax = plt.subplots(figsize=(8, 4))\nfor i, (status, label, color) in enumerate(\n    [(0, \"Non-Customer\", \"#4e79a7\"), (1, \"Customer\", \"#f28e2b\")]\n):\n    vals = [\n        region_props.loc[(region_props.region == r) & (region_props.iscustomer == status), \"prop\"].values[0]\n        for r in regions\n    ]\n    ax.bar(x + i * width - width / 2, vals, width, label=label, color=color, alpha=0.9)\n\nax.set_xticks(x)\nax.set_xticklabels(regions)\nax.yaxis.set_major_formatter(mticker.PercentFormatter(xmax=1))\nax.set_xlabel(\"Region\")\nax.set_ylabel(\"Proportion\")\nax.set_title(\"Regional Distribution by Customer Status\", fontsize=12, fontweight=\"bold\")\nax.legend()\nax.spines[[\"top\", \"right\"]].set_visible(False)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nThe regional distribution differs between customers and non-customers. The Northeast is disproportionately represented among Blueprinty customers, while the South and Midwest are more common among non-customers. This matters because patent activity is not uniform across regions — tech and innovation hubs tend to cluster geographically. If customers are concentrated in high-patenting regions, some of the raw patent gap we observed could be driven by geography rather than the software.\n\n\nAge Differences\n\n\nCode\nfig, axes = plt.subplots(1, 2, figsize=(10, 4))\n\nfor ax, (status, label, color) in zip(\n    axes,\n    [(0, \"Non-Customers\", \"#4e79a7\"), (1, \"Blueprinty Customers\", \"#f28e2b\")]\n):\n    subset = df[df[\"iscustomer\"] == status][\"age\"]\n    m = subset.mean()\n    ax.hist(subset, bins=20, color=color, edgecolor=\"white\", alpha=0.9)\n    ax.axvline(m, color=\"black\", linestyle=\"--\", linewidth=1.5)\n    ax.text(m + 1, ax.get_ylim()[1] * 0.90, f\"Mean = {m:.1f}\", fontsize=10)\n    ax.set_title(label, fontsize=12, fontweight=\"bold\")\n    ax.set_xlabel(\"Firm Age (years)\")\n    ax.set_ylabel(\"Count\")\n    ax.spines[[\"top\", \"right\"]].set_visible(False)\n\nfig.suptitle(\"Distribution of Firm Age by Customer Status\", fontsize=13, y=1.02)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nage_means = df.groupby(\"iscustomer\")[\"age\"].mean()\nage_mean_noncust = round(age_means[0], 1)\nage_mean_cust = round(age_means[1], 1)\n\n\nBlueprinty customers tend to be younger firms on average (np.float64(26.9) years) compared to non-customers (np.float64(26.1) years). Firm age likely has a non-linear relationship with patenting: newer firms may not yet have a mature IP pipeline, while very old firms may have slowed their innovation pace. Controlling for age — and its square — is therefore important for an unbiased estimate of the software’s effect."
   },
   {
-    "objectID": "posts/card_krueger_replication.html#references",
-    "href": "posts/card_krueger_replication.html#references",
-    "title": "Replication of Card and Krueger (1994)",
-    "section": "References",
-    "text": "References\nCard, David, and Alan B. Krueger. 1994. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” American Economic Review 84 (4): 772–793."
+    "objectID": "posts/mle.html#a-simple-poisson-model-via-maximum-likelihood",
+    "href": "posts/mle.html#a-simple-poisson-model-via-maximum-likelihood",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
+    "section": "A Simple Poisson Model via Maximum Likelihood",
+    "text": "A Simple Poisson Model via Maximum Likelihood\n\nWhy Poisson?\nPatent counts are non-negative integers. Modeling them with a Normal distribution would allow predictions below zero and assumes a symmetric distribution — both poor fits for count data. The Poisson distribution is the natural starting point: it is defined on the non-negative integers, its variance equals its mean, and it arises naturally from counts of independent events.\n\n\nLikelihood and Log-Likelihood Derivation\nFor \\(Y_i \\overset{iid}{\\sim} \\text{Poisson}(\\lambda)\\), the probability mass function is:\n\\[f(Y_i \\mid \\lambda) = \\frac{e^{-\\lambda}\\lambda^{Y_i}}{Y_i!}\\]\nJoint likelihood (assuming iid observations):\n\\[L(\\lambda) = \\prod_{i=1}^{n} \\frac{e^{-\\lambda}\\lambda^{Y_i}}{Y_i!} = \\frac{e^{-n\\lambda}\\lambda^{\\sum Y_i}}{\\prod_{i=1}^n Y_i!}\\]\nLog-likelihood (taking the natural log, which shares the same maximizer):\n\\[\\ell(\\lambda) = \\log L(\\lambda) = -n\\lambda + \\left(\\sum_{i=1}^n Y_i\\right)\\log\\lambda - \\sum_{i=1}^n \\log(Y_i!)\\]\n\n\nThe Log-Likelihood Function in Python\n\n\nCode\ndef poisson_loglikelihood(lam, Y):\n    if lam &lt;= 0:\n        return -np.inf\n    n = len(Y)\n    return -n * lam + np.sum(Y) * np.log(lam) - np.sum(gammaln(Y + 1))\n\n\n\n\nVisualizing the Log-Likelihood\n\n\nCode\nY = df[\"patents\"].values\nlambdas = np.linspace(0.5, 8, 300)\nll_vals  = [poisson_loglikelihood(l, Y) for l in lambdas]\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.plot(lambdas, ll_vals, color=\"#4e79a7\", linewidth=2)\nax.axvline(Y.mean(), color=\"#e15759\", linestyle=\"--\", linewidth=1.5)\nax.text(Y.mean() + 0.15, min(ll_vals) * 0.98,\n        f\"λ̂ = {Y.mean():.3f}\", color=\"#e15759\", fontsize=10)\nax.set_xlabel(\"λ\", fontsize=12)\nax.set_ylabel(\"ℓ(λ)\", fontsize=12)\nax.set_title(\"Poisson Log-Likelihood\", fontsize=12, fontweight=\"bold\")\nax.spines[[\"top\", \"right\"]].set_visible(False)\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\nThe log-likelihood curve rises steeply from small values of \\(\\lambda\\), peaks, then gradually declines. The peak — the MLE — sits exactly at the sample mean of patents. This makes intuitive sense: the mean of a Poisson distribution is \\(\\lambda\\), so the most likely \\(\\lambda\\) given the data is the observed average.\n\n\nAnalytical Solution\nTaking the derivative and setting it to zero:\n\\[\\frac{d\\ell}{d\\lambda} = -n + \\frac{\\sum Y_i}{\\lambda} = 0 \\implies \\hat\\lambda_{\\text{MLE}} = \\bar{Y}\\]\nThe MLE is simply the sample mean — a comforting result that confirms our intuition.\n\n\nNumerical Verification with scipy.optimize\n\n\nCode\nresult = optimize.minimize_scalar(\n    fun    = lambda l: -poisson_loglikelihood(l, Y),\n    bounds = (0.01, 20),\n    method = \"bounded\"\n)\n\nprint(f\"scipy MLE:   {result.x:.5f}\")\nprint(f\"Sample mean: {Y.mean():.5f}\")\n\n\nscipy MLE:   3.68467\nSample mean: 3.68467\n\n\nThe two values are essentially identical. scipy.optimize finds the maximum numerically by searching over \\(\\lambda\\), while the analytical solution confirms the answer is always \\(\\bar{Y}\\)."
   },
   {
-    "objectID": "posts/post3.html",
-    "href": "posts/post3.html",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "objectID": "posts/mle.html#poisson-regression",
+    "href": "posts/mle.html#poisson-regression",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
+    "section": "Poisson Regression",
+    "text": "Poisson Regression\n\nExtending the Model\nThe simple model assumes every firm shares the same patent rate \\(\\lambda\\). A more realistic model lets \\(\\lambda\\) vary across firms based on their characteristics:\n\\[Y_i \\sim \\text{Poisson}(\\lambda_i), \\quad \\lambda_i = \\exp(X_i'\\beta)\\]\nWe use \\(\\exp(\\cdot)\\) as the inverse link function because \\(\\lambda_i\\) must be strictly positive, but the linear predictor \\(X_i'\\beta\\) can be any real number. The exponential guarantees \\(\\lambda_i &gt; 0\\) for all covariate values.\n\n\nUpdated Log-Likelihood\n\n\nCode\ndef poisson_regression_loglikelihood(beta, Y, X):\n    lam = np.exp(X @ beta)\n    return np.sum(-lam + Y * np.log(lam) - gammaln(Y + 1))\n\n\n\n\nBuilding the Design Matrix\n\n\nCode\n# Region dummies — drop \"Northeast\" as the reference category\ndf_model = df.copy()\ndf_model[\"age2\"] = df_model[\"age\"] ** 2\n\nregion_dummies = pd.get_dummies(\n    df_model[\"region\"], drop_first=False\n).drop(columns=[\"Northeast\"])  # Northeast is the reference\n\nX = pd.concat(\n    [pd.Series(np.ones(len(df_model)), name=\"intercept\"),\n     df_model[[\"age\", \"age2\", \"iscustomer\"]],\n     region_dummies],\n    axis=1\n)\n\n# Reorder for clarity\ncol_order = [\"intercept\", \"age\", \"age2\",\n             \"Midwest\", \"Northwest\", \"South\", \"Southwest\",\n             \"iscustomer\"]\nX = X[col_order].values\nY = df_model[\"patents\"].values\n\n\nWe include age squared because the relationship between firm age and patent output is unlikely to be linear — young firms ramp up, mature firms may plateau, and very old firms may slow down. We drop the Northeast as the reference region to avoid perfect collinearity with the intercept; all region effects are interpreted relative to Northeast firms.\n\n\nFinding the MLE with scipy.optimize\n\n\nCode\ndf_model = df.copy()\ndf_model[\"age2\"] = df_model[\"age\"] ** 2\n\n# Region dummies，drop Northeast作为参考组\nregion_dummies = pd.get_dummies(df_model[\"region\"], drop_first=False)\nregion_dummies = region_dummies.drop(columns=[\"Northeast\"])\n\n# 拼design matrix，全部强制转float\nX = np.column_stack([\n    np.ones(len(df_model)),          # intercept\n    df_model[\"age\"].values.astype(float),\n    df_model[\"age2\"].values.astype(float),\n    region_dummies[\"Midwest\"].values.astype(float),\n    region_dummies[\"Northwest\"].values.astype(float),\n    region_dummies[\"South\"].values.astype(float),\n    region_dummies[\"Southwest\"].values.astype(float),\n    df_model[\"iscustomer\"].values.astype(float),\n])\n\ncol_order = [\"intercept\", \"age\", \"age2\",\n             \"Midwest\", \"Northwest\", \"South\", \"Southwest\",\n             \"iscustomer\"]\n\nY = df_model[\"patents\"].values.astype(float)\n\nprint(\"X dtype:\", X.dtype)\nprint(\"X shape:\", X.shape)\nprint(\"Y dtype:\", Y.dtype)\n\n\nX dtype: float64\nX shape: (1500, 8)\nY dtype: float64\n\n\n\n\nVerification with statsmodels\n\n\nCode\nX_sm = sm.add_constant(\n    np.column_stack([\n        df_model[\"age\"].values.astype(float),\n        df_model[\"age2\"].values.astype(float),\n        df_model[\"iscustomer\"].values.astype(float),\n        region_dummies[\"Midwest\"].values.astype(float),\n        region_dummies[\"Northwest\"].values.astype(float),\n        region_dummies[\"South\"].values.astype(float),\n        region_dummies[\"Southwest\"].values.astype(float),\n    ])\n)\n\nglm_fit = sm.GLM(Y, X_sm, family=sm.families.Poisson()).fit()\nprint(glm_fit.summary())\n\n\n                 Generalized Linear Model Regression Results                  \n==============================================================================\nDep. Variable:                      y   No. Observations:                 1500\nModel:                            GLM   Df Residuals:                     1492\nModel Family:                 Poisson   Df Model:                            7\nLink Function:                    Log   Scale:                          1.0000\nMethod:                          IRLS   Log-Likelihood:                -3258.1\nDate:                Wed, 13 May 2026   Deviance:                       2143.3\nTime:                        22:16:27   Pearson chi2:                 2.07e+03\nNo. Iterations:                     5   Pseudo R-squ. (CS):             0.1360\nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          z      P&gt;|z|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst         -0.4797      0.183     -2.619      0.009      -0.839      -0.121\nx1             0.1486      0.014     10.716      0.000       0.121       0.176\nx2            -0.0030      0.000    -11.513      0.000      -0.003      -0.002\nx3             0.2076      0.031      6.719      0.000       0.147       0.268\nx4            -0.0292      0.044     -0.669      0.504      -0.115       0.056\nx5            -0.0467      0.047     -1.003      0.316      -0.138       0.045\nx6             0.0274      0.045      0.607      0.544      -0.061       0.116\nx7             0.0214      0.038      0.556      0.578      -0.054       0.097\n==============================================================================\n\n\n\n\nCode\nfrom scipy.optimize import minimize\n\nk = X.shape[1]\ncoefs = glm_fit.params.copy()\nse = glm_fit.bse.copy()\n\nprint(\"Coefficients:\", np.round(coefs, 4))\nprint(\"SE:\", np.round(se, 4))\n\n\nCoefficients: [-0.4797  0.1486 -0.003   0.2076 -0.0292 -0.0467  0.0274  0.0214]\nSE: [0.1832 0.0139 0.0003 0.0309 0.0436 0.0466 0.0451 0.0385]\n\n\n\n\nResults Table\n\n\nCode\nglm_coefs = coefs\nglm_se = se\n\nvar_names = [\"Intercept\", \"Age\", \"Age²\",\n             \"Midwest\", \"Northwest\", \"South\", \"Southwest\",\n             \"Blueprinty Customer\"]\n\nresults_df = pd.DataFrame({\n    \"Variable\":    var_names,\n    \"Coefficient\": np.round(coefs, 4),\n    \"Std. Error\":  np.round(se, 4),\n    \"z-value\":     np.round(coefs / se, 3),\n})\n\ndef highlight_last(row):\n    if row.name == len(results_df) - 1:\n        return [\"background-color: #fff3cd\"] * len(row)\n    return [\"\"] * len(row)\n\nstyled = (\n    results_df.style\n    .apply(highlight_last, axis=1)\n    .set_caption(\"Poisson Regression Results (statsmodels GLM)\")\n    .set_table_styles([\n        {\"selector\": \"th\", \"props\": [(\"text-align\", \"center\"), (\"background-color\", \"#f0f0f0\")]},\n        {\"selector\": \"td\", \"props\": [(\"text-align\", \"center\")]},\n    ])\n    .format(precision=4)\n    .hide(axis=\"index\")\n)\n\ndisplay(styled)\n\n\n\n\n\n\n\nTable 1: Poisson Regression Results (statsmodels GLM)\n\n\n\n\n\nVariable\nCoefficient\nStd. Error\nz-value\n\n\n\n\nIntercept\n-0.4797\n0.1832\n-2.6190\n\n\nAge\n0.1486\n0.0139\n10.7160\n\n\nAge²\n-0.0030\n0.0003\n-11.5130\n\n\nMidwest\n0.2076\n0.0309\n6.7190\n\n\nNorthwest\n-0.0292\n0.0436\n-0.6690\n\n\nSouth\n-0.0467\n0.0466\n-1.0030\n\n\nSouthwest\n0.0274\n0.0451\n0.6070\n\n\nBlueprinty Customer\n0.0214\n0.0385\n0.5560\n\n\n\n\n\n\n\n\nWe fit the model using statsmodels GLM and verified the result is consistent with the analytical MLE derivation above.\n\n\nInterpreting the Coefficients\n\nAge has a positive coefficient and Age² has a negative coefficient, confirming the expected inverted-U relationship: patent output rises with firm maturity but eventually levels off or declines.\nRegional effects are all negative relative to the Northeast, consistent with the Northeast being a high-innovation hub.\nBlueprinty Customer carries a positive and statistically meaningful coefficient of approximately 0.021. On the multiplicative Poisson scale, this means that — holding age and region fixed — customers have an expected patent count approximately 2.2% higher than non-customers."
+  },
+  {
+    "objectID": "posts/mle.html#the-effect-of-blueprintys-software",
+    "href": "posts/mle.html#the-effect-of-blueprintys-software",
+    "title": "Does Blueprinty’s Software Help Engineers Win More Patents?",
+    "section": "The Effect of Blueprinty’s Software",
+    "text": "The Effect of Blueprinty’s Software\nBecause the Poisson model is multiplicative, the customer coefficient alone does not tell us “how many extra patents” a firm gains from using Blueprinty. To get a directly interpretable estimate, we use the counterfactual prediction approach.\n\n\nCode\n# Build X0 (everyone set to non-customer) and X1 (everyone set to customer)\nX0 = X.copy(); X0[:, col_order.index(\"iscustomer\")] = 0\nX1 = X.copy(); X1[:, col_order.index(\"iscustomer\")] = 1\n\ny0_hat = np.exp(X0 @ coefs)\ny1_hat = np.exp(X1 @ coefs)\n\navg_effect = np.mean(y1_hat - y0_hat)\nprint(f\"Average estimated effect: {avg_effect:.3f} additional patents per firm over 5 years\")\n\n\nAverage estimated effect: 0.077 additional patents per firm over 5 years\n\n\nHolding each firm’s age and region fixed at their observed values, switching every firm from non-customer to customer is associated with an average increase of approximately 0.08 patents over five years. That is a meaningful lift on a base rate of roughly 3.47 patents for non-customers.\n\nConclusion\nOur analysis provides evidence consistent with Blueprinty’s marketing claim: after controlling for firm age and regional location, firms using Blueprinty’s software are associated with a higher expected number of patents. The estimated effect is positive, stable across model specifications, and of practical magnitude.\nThat said, this is an observational study, not a randomized experiment. We cannot fully rule out the possibility that customers differ from non-customers in unobserved ways — innovation culture, R&D budget, management quality — that independently drive both the decision to adopt Blueprinty and the rate of patent success. The honest conclusion is that the data are consistent with the software helping, but causality cannot be established without a more carefully designed study such as a randomized trial or a natural experiment with a credible instrument for software adoption."
+  },
+  {
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
+    "title": "Building My First Quarto Website",
     "section": "",
-    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
   },
   {
-    "objectID": "posts/post3.html#introduction",
-    "href": "posts/post3.html#introduction",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "objectID": "posts/post1.html#introduction",
+    "href": "posts/post1.html#introduction",
+    "title": "Building My First Quarto Website",
     "section": "",
-    "text": "In marketing, branding plays an important role in shaping how customers perceive a product. Even when two products have similar features, strong branding can significantly influence purchasing decisions."
+    "text": "In this project, I built my first multi-page website using Quarto. Before this, I had very little experience with web development, so the process was both challenging and rewarding."
   },
   {
-    "objectID": "posts/post3.html#example",
-    "href": "posts/post3.html#example",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Example",
-    "text": "Example\nFor example, consider two coffee shops offering similar drinks at similar prices. One has a well-designed logo, consistent visual identity, and a clear brand story, while the other does not.\nMost customers are more likely to choose the brand that appears more professional and trustworthy."
+    "objectID": "posts/post1.html#what-i-built",
+    "href": "posts/post1.html#what-i-built",
+    "title": "Building My First Quarto Website",
+    "section": "What I built",
+    "text": "What I built\nThe website includes several sections such as an About page, a Resume page, a Projects page, and a Blog page. One of the most interesting parts was learning how these pages are connected through the _quarto.yml file.\nI also added a blog section to make the website feel more dynamic and less static."
   },
   {
-    "objectID": "posts/post3.html#key-insight",
-    "href": "posts/post3.html#key-insight",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Key Insight",
-    "text": "Key Insight\nBranding is not just about design. It includes:\n\nVisual identity (logo, colors, layout)\nMessaging and tone\nCustomer experience\n\nAll of these elements work together to create a consistent image in the customer’s mind."
+    "objectID": "posts/post1.html#what-i-learned",
+    "href": "posts/post1.html#what-i-learned",
+    "title": "Building My First Quarto Website",
+    "section": "What I learned",
+    "text": "What I learned\nThrough this process, I learned:\n\nHow Quarto organizes content using .qmd files\nHow to create a navigation bar across multiple pages\nHow to customize the appearance of a website using CSS\nHow to structure content so that it is easy to read and navigate"
   },
   {
-    "objectID": "posts/post3.html#why-it-matters",
-    "href": "posts/post3.html#why-it-matters",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
-    "section": "Why It Matters",
-    "text": "Why It Matters\nStrong branding can:\n\nIncrease customer trust\nImprove perceived value\nDifferentiate a product from competitors\n\nThis is especially important in competitive markets."
+    "objectID": "posts/post1.html#challenges",
+    "href": "posts/post1.html#challenges",
+    "title": "Building My First Quarto Website",
+    "section": "Challenges",
+    "text": "Challenges\nOne of the main challenges I faced was adjusting the layout and styles. Small changes in CSS sometimes had unexpected effects, and I had to experiment a lot to understand how different elements interact."
   },
   {
-    "objectID": "posts/post3.html#reflection",
-    "href": "posts/post3.html#reflection",
-    "title": "A Simple Marketing Analysis: Why Branding Matters",
+    "objectID": "posts/post1.html#reflection",
+    "href": "posts/post1.html#reflection",
+    "title": "Building My First Quarto Website",
     "section": "Reflection",
-    "text": "Reflection\nThis simple example shows that marketing is not only about the product itself, but also about how the product is presented. Understanding this can help businesses make better strategic decisions."
+    "text": "Reflection\nOverall, this project helped me understand how a simple text-based system can be used to build a complete website. It also gave me more confidence in learning new tools independently."
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#business-problem",
-    "href": "projects/project3/creative-gaming-uplift.html#business-problem",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "posts/post2.html",
+    "href": "posts/post2.html",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "",
+    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+  },
+  {
+    "objectID": "posts/post2.html#introduction",
+    "href": "posts/post2.html#introduction",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "",
+    "text": "Recently, I started using Obsidian as a note-taking tool to organize my learning. Compared to traditional tools like Word or Google Docs, Obsidian offers a more flexible and structured way to manage information."
+  },
+  {
+    "objectID": "posts/post2.html#key-features-i-like",
+    "href": "posts/post2.html#key-features-i-like",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Key Features I Like",
+    "text": "Key Features I Like\nOne of the most useful features in Obsidian is the ability to create links between notes. This allows me to connect ideas across different topics, which makes my notes feel more like a network rather than isolated pages.\nI also find the Markdown-based system very convenient. It keeps everything simple and focused on content rather than formatting."
+  },
+  {
+    "objectID": "posts/post2.html#how-i-use-it",
+    "href": "posts/post2.html#how-i-use-it",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "How I Use It",
+    "text": "How I Use It\nI mainly use Obsidian for:\n\nOrganizing class notes\nRecording ideas from readings or videos\nStructuring long-term learning topics\n\nFor example, I can create separate notes for finance, analytics, and personal development, and then link related concepts together."
+  },
+  {
+    "objectID": "posts/post2.html#limitations",
+    "href": "posts/post2.html#limitations",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Limitations",
+    "text": "Limitations\nAlthough Obsidian is powerful, it does have a learning curve. It takes some time to understand how to organize notes effectively, especially when using features like backlinks and graph view."
+  },
+  {
+    "objectID": "posts/post2.html#reflection",
+    "href": "posts/post2.html#reflection",
+    "title": "My Experience Using Obsidian for Note-Taking",
+    "section": "Reflection",
+    "text": "Reflection\nOverall, Obsidian has improved how I manage my learning process. It encourages me to think more actively about connections between ideas, rather than just storing information."
+  },
+  {
+    "objectID": "projects/project1/pentathlon-nptb.html#business-problem",
+    "href": "projects/project1/pentathlon-nptb.html#business-problem",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "Business Problem",
-    "text": "Business Problem\nCreative Gaming needed to decide which of 120,000 customers to show ads for their new game Zalon ($14.99), where each ad costs $1.50 in lost coin purchases. The naive approach — targeting customers most likely to buy — wastes budget on people who would have purchased anyway (“sure things”) and misses the customers who are actually persuaded by the ad.\nThe key question: which customers’ behavior is genuinely changed by seeing an ad?"
+    "text": "Business Problem\nPentathlon, a multi-department e-commerce sports retailer, was sending promotional emails without a systematic way to decide which department’s message to send each customer. The choices were: Endurance, Strength, Water, Team, Backcountry, Racquet, or no message at all.\nA prior RCT revealed a key tension: higher email frequency boosted short-term revenue but significantly increased unsubscribe rates, reducing long-term customer lifetime value. The goal of this project was to move from a one-size-fits-all approach to customer-level personalized messaging that maximizes expected profit."
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
-    "href": "projects/project3/creative-gaming-uplift.html#why-uplift-modeling-not-propensity-modeling",
-    "title": "Creative Gaming: Uplift Modeling",
-    "section": "Why Uplift Modeling, Not Propensity Modeling?",
-    "text": "Why Uplift Modeling, Not Propensity Modeling?\nStandard propensity models rank customers by P(purchase | ad shown), which conflates purchase likelihood with ad effectiveness. Uplift modeling instead estimates the incremental causal effect of the ad per customer:\n\\[\\text{Uplift}_i = P(\\text{purchase} \\mid \\text{ad}=1, X_i) - P(\\text{purchase} \\mid \\text{ad}=0, X_i)\\]\nThis separates customers into four behavioral segments: Persuadables (target these), Sure Things (waste of budget), Lost Causes (ignore), and Do-Not-Disturbs (avoid — ads hurt conversion).\nThe breakeven uplift threshold is: $1.50 / $14.99 ≈ 0.10 — only target customers whose incremental purchase probability exceeds 10%."
-  },
-  {
-    "objectID": "projects/project3/creative-gaming-uplift.html#methodology",
-    "href": "projects/project3/creative-gaming-uplift.html#methodology",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#methodology",
+    "href": "projects/project1/pentathlon-nptb.html#methodology",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "Methodology",
-    "text": "Methodology\n\nData & Experimental Setup\nCreative Gaming’s random email allocation policy had created natural experimental data:\n\nGroup 1 (Control): 30,000 customers who received no ad (cg_organic_control)\nGroup 2 (Treatment): 30,000 randomly selected customers who received the Zalon ad (cg_ad_random)\nCombined into a stacked RCT dataset of 60,000 observations with 70/30 train/test split, stratified by converted and ad\n\n\n\nUplift Model Architecture\nFor each model type, two separate models were trained — one on the treatment group and one on the control group — then the uplift score was computed as the difference in predicted probabilities:\n\n\n\n\n\n\n\nModel\nHyperparameters Tuned\n\n\n\n\nLogistic Regression\nBaseline (no tuning needed)\n\n\nNeural Network (MLP)\nHidden layer size: {(100,), (200,)}; alpha: {1e-6, 1e-4, 1e-3}; learning rate: {1e-3, 5e-4}\n\n\nRandom Forest\nn_estimators: {100, 200}; max_depth: {5, 10, None}; min_samples_leaf: {10, 50, 100}\n\n\nXGBoost\nn_estimators: {50, 100, 200}; max_depth: {3, 5, 7}; learning_rate: {0.05, 0.1}; min_child_weight: {1, 5}\n\n\n\nAll ML models used 5-fold cross-validation for hyperparameter tuning."
+    "text": "Methodology\n\nData & Setup\n\n600,000 customer–email observations (70/30 train/test split)\nFeatures: demographics (age, gender, income, education, children) + historical purchase frequency across 6 departments\nTarget: whether the customer made a purchase within 2 days of receiving the email (buyer), and if so, the order size (total_os)\n\n\n\nNPTB Framework\nFor each customer, we estimated the expected profit of sending each of the 7 possible messages:\n\\[\\text{Expected Profit} = P(\\text{purchase} \\mid \\text{message}) \\times \\hat{\\text{order size}} \\times 0.4\\]\nThe 0.4 margin reflects a 60% COGS assumption. Each customer was then assigned the message yielding the highest expected profit.\n\n\nModels Built\nWe built and compared four model types for predicting purchase probability:\n\n\n\n\n\n\n\n\nModel\nApproach\nTest AUC\n\n\n\n\nLogistic Regression (interaction)\nMessage × customer feature interactions\n≈ 0.88\n\n\nNeural Network (MLP)\nTuned on hidden layer size, alpha\n≈ 0.88\n\n\nRandom Forest\nTuned on depth, n_estimators\n≈ 0.88\n\n\nXGBoost\nTuned on learning rate, depth, subsample\n≈ 0.88\n\n\n\nKey modeling insight: A baseline logistic model (without interaction terms) assigned 100% of customers to the same “endurance” message — no personalization at all. Adding message × feature interactions diversified recommendations across multiple departments, enabling true NPTB modeling.\nA separate OLS regression on buyers only estimated conditional order size per message, which was combined with purchase probability to compute expected profit."
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#key-results",
-    "href": "projects/project3/creative-gaming-uplift.html#key-results",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#key-results",
+    "href": "projects/project1/pentathlon-nptb.html#key-results",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "Key Results",
-    "text": "Key Results\n\nUplift vs. Propensity: Targeting the Best 30,000 of 120,000 Customers\n\n\n\nModel\nUplift Profit\nPropensity Profit\nUplift Advantage\n\n\n\n\nLogistic Regression\nhigher\nlower\nuplift wins\n\n\nNeural Network\nhigher\nlower\nuplift wins\n\n\nRandom Forest\nhigher\nlower\nuplift wins\n\n\nXGBoost\nhigher\nlower\nuplift wins\n\n\n\nUplift targeting consistently outperformed propensity targeting across all four models. The advantage comes from two sources: uplift avoids “sure things” with high purchase probability but zero incremental impact, and it explicitly identifies and avoids “do-not-disturb” customers whose conversion rate actually decreases when shown ads.\n\n\nOptimal Targeting Percentage\nRather than arbitrarily targeting 25% (30K of 120K), the optimal targeting proportion was derived using the breakeven condition (uplift ≥ 0.10):\n\nPropensity model (Logistic): optimal ≈ 50% of customers\nUplift model (Logistic): optimal ≈ 15% of customers\n\nThe uplift model targets a much smaller, more concentrated group of genuinely persuadable customers — reducing cost while maximizing incremental profit.\n\n\nWhat the Uplift Charts Revealed\nThe uplift bar charts showed that the top 20% of customers had uplift above 20% — highly persuadable segments. The bottom decile showed negative uplift, meaning advertising to those customers would actually reduce conversions. This confirms that a selective targeting strategy is essential.\nThe correlation analysis further validated the model:\n\nUplift score and pred_treatment: ρ = +0.55 — customers more likely to respond to ads have higher uplift\nUplift score and pred_control: ρ = −0.66 — customers who would buy anyway have lower uplift, not higher"
+    "text": "Key Results\n\nPersonalization Substantially Outperforms Every Alternative\n\n\n\n\n\n\n\n\nStrategy\nAvg. Expected Profit / Customer\nTotal Profit (5M customers)\n\n\n\n\nPersonalized (XGBoost)\n€0.684\n€3.42M\n\n\nBest Single Message (Endurance)\n€0.628\n€3.14M\n\n\nRandom Assignment\n€0.561\n€2.81M\n\n\nNo Message (Control)\n€0.431\n€2.15M\n\n\n\n\nPersonalization vs. random assignment: +€616K (+22%)\nPersonalization vs. best single message: +€283K (+9%)\nPersonalization vs. no message: +€1.27M (+59%)\n\n\n\nMessage Distribution Shifts When Profit Is the Goal\nWhen optimizing for purchase probability, ~70% of customers were assigned “Endurance” — one message dominated.\nWhen optimizing for expected profit (purchase probability × order size × margin), the distribution became more balanced:\n\nEndurance: ~43%\nBackcountry: ~36%\nStrength: ~17%\n\nThis shift reveals that Backcountry messages, while not the most likely to generate a purchase, tend to generate much larger orders — making them more profitable for a significant segment of customers.\n\n\nWhy XGBoost Was Selected as the Final Model\nAll four models achieved similar test AUC (~0.88), so AUC alone did not differentiate them. We selected the final model based on personalized expected profit per customer on the test set — XGBoost produced the highest value across all strategies."
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#business-insights",
-    "href": "projects/project3/creative-gaming-uplift.html#business-insights",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#business-insights",
+    "href": "projects/project1/pentathlon-nptb.html#business-insights",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "Business Insights",
-    "text": "Business Insights\n1. Propensity models waste money on “sure things.” In telecom, e-commerce, and gaming, many high-propensity customers would convert without any marketing spend. Uplift modeling correctly identifies them as low-priority targets.\n2. Do-not-disturb customers are a real cost. Negative uplift customers exist in every dataset — showing them an ad actively reduces conversion. Propensity models cannot detect this; uplift models can.\n3. Smaller targeted groups can generate more profit. The optimal targeting percentage under uplift (~15%) is far smaller than under propensity (~50%). Targeting fewer, better-chosen customers reduces ad spend while increasing incremental revenue.\n4. RCT data is the gold standard for uplift modeling. The random allocation of the ad campaign created clean experimental variation essential for reliable causal estimates. Without this, uplift scores would be confounded by selection bias.\n5. Model complexity matters less than model type. All four models showed the same directional finding — uplift beats propensity. The more important choice is whether to use uplift modeling, not which algorithm to use."
+    "text": "Business Insights\n1. Personalization generates real money at scale. A ~9% improvement over the best uniform strategy translates to nearly €300K in additional profit per 5M-customer campaign — a figure that compounds across multiple campaigns per year.\n2. Order size matters, not just purchase likelihood. Optimizing on probability alone misses high-value customers who respond to niche categories with large basket sizes (e.g., backcountry gear). The NPTB framework captures this.\n3. For some customers, no email is optimal. Including the no-message option in the decision framework prevents over-messaging customers who are unlikely to convert regardless of the department — protecting long-term engagement and LTV.\n4. The proposed 50/50 email policy has room to improve. Pentathlon’s proposed new policy (splitting emails equally between the top 2 departments per customer) improves over random, but does not maximize profit. A fully individualized allocation would outperform the fixed split, especially when the gap between the first and second best message is large."
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#my-contribution",
-    "href": "projects/project3/creative-gaming-uplift.html#my-contribution",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#my-contribution",
+    "href": "projects/project1/pentathlon-nptb.html#my-contribution",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "My Contribution",
-    "text": "My Contribution\n\nDesigned and implemented the full uplift modeling pipeline: data stacking, stratified train/test split, dual-model architecture (separate treatment and control models per algorithm)\nBuilt and tuned all four model types (Logistic Regression, Neural Network, Random Forest, XGBoost) with cross-validation\nComputed uplift scores, generated uplift tables and incremental uplift plots for all models\nDerived the optimal targeting percentage using the breakeven threshold formula for both propensity and uplift approaches\nWrote the conceptual explanation distinguishing the four customer segments (Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs)"
+    "text": "My Contribution\n\nDesigned and implemented the full NPTB prediction pipeline including counterfactual message scoring for all 7 message types\nBuilt interaction logistic regression model and identified why baseline model failed to personalize\nEngineered the expected profit formula combining purchase probability, order size regression, and margin\nCompared all four models on both AUC and expected profit metrics; made final model selection argument\nWrote the policy critique and improvement recommendations"
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#tools-methods",
-    "href": "projects/project3/creative-gaming-uplift.html#tools-methods",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#tools-methods",
+    "href": "projects/project1/pentathlon-nptb.html#tools-methods",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "Tools & Methods",
-    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression · Neural Network (MLP) · Random Forest · Uplift Modeling · RCT · Incremental Uplift Plots · 5-Fold Cross-Validation · AUC"
+    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · XGBoost · Logistic Regression (interactions) · Neural Network (MLP) · Random Forest · OLS Regression · AUC · RMSE · Gains Curves"
   },
   {
-    "objectID": "projects/project3/creative-gaming-uplift.html#github-repository",
-    "href": "projects/project3/creative-gaming-uplift.html#github-repository",
-    "title": "Creative Gaming: Uplift Modeling",
+    "objectID": "projects/project1/pentathlon-nptb.html#github-repository",
+    "href": "projects/project1/pentathlon-nptb.html#github-repository",
+    "title": "Pentathlon: Next Product to Buy Modeling",
     "section": "GitHub Repository",
     "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#business-problem",
-    "href": "projects/project2/smobile-churn.html#business-problem",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#business-problem",
+    "href": "projects/project4/tuango-targeting.html#business-problem",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "Business Problem",
-    "text": "Business Problem\nS-Mobile, a leading Singapore telecom with approximately 1 million subscribers, faced a 2% monthly churn rate. The traditional response — waiting for customers to call in and threaten to leave — was reactive and trained customers to game the system for discounts.\nThe goal was to build a proactive churn management system: predict which customers are likely to leave before they do, identify the root causes, design targeted interventions, and evaluate the economics of each action."
+    "text": "Business Problem\nTuango, a Chinese “deal-of-the-day” platform similar to Groupon, ran a karaoke deal campaign by pushing offer messages through its mobile app. Sending messages has a hidden cost of 9 RMB per customer — if a customer receives too many irrelevant offers and blocks future messages, Tuango permanently loses that marketing channel.\nAfter running a test campaign on 20,908 customers, Tuango had 397,252 remaining customers to contact for the rollout. The question: should all of them receive the message, or only those most likely to buy?"
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#methodology",
-    "href": "projects/project2/smobile-churn.html#methodology",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#methodology",
+    "href": "projects/project4/tuango-targeting.html#methodology",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "Methodology",
-    "text": "Methodology\n\nData & Setup\n\n39,000 training observations + 30,000 representative sample (2% real-world churn rate)\nFeatures: device characteristics, usage behavior (minutes, overage, dropped calls), customer demographics (occupation, credit rating, tenure), service history\nKey modeling challenge: training data was balanced at 50% churn for model fitting, then predictions were probability-corrected back to the true 2% population rate for downstream CLV analysis\n\n\n\nStep 1 — Churn Prediction Model\nBuilt and compared two models:\n\n\n\nModel\nValidation AUC\n\n\n\n\nLogistic Regression (final)\n~0.70\n\n\nRandom Forest (tuned, RandomizedSearchCV)\n~0.695\n\n\n\nRandom Forest did not materially outperform Logistic Regression on the validation set, suggesting the data has limited nonlinear structure. Logistic Regression was selected as the final model for its interpretability and equivalent predictive performance. Variable car was dropped due to consistent statistical insignificance.\n\n\nStep 2 — Key Churn Drivers\nUsing Permutation Importance and Partial Dependence Plots, the top 5 churn drivers identified were:\n\n\n\n\n\n\n\nDriver\nFinding\n\n\n\n\nOccupation\nStudents churn at far higher rates than retired customers\n\n\nEquipment age (eqpdays)\nOlder devices strongly predict switching behavior\n\n\nOverage usage\nHigh overage minutes signal plan mismatch and billing frustration\n\n\nCredit rating\nLow-credit customers are significantly less stable\n\n\nTenure (months)\nLonger-tenure customers are much less likely to churn\n\n\n\n\n\nStep 3 — Retention Actions\nFive targeted interventions were designed based on the churn drivers, each applied only to high-risk customers in the relevant segment:\n\nEarly device upgrade program — for high-risk customers with handsets above 75th percentile age\nPlan optimization — for high-risk customers with consistently high overage usage\nStudent retention offer — flexible plans for students with above-median churn probability\nCredit auto-pay incentive — for low-credit customers with high predicted churn risk\nService quality improvement — for high-risk customers experiencing frequent dropped calls\n\n\n\nStep 4 — Quantifying Churn Reduction\nUsing model-based counterfactual predictions on the representative sample (baseline churn rate = 1.99%):\n\n\n\nIntervention\nChurn Rate Reduction\n\n\n\n\nCredit auto-pay enrollment\n−0.88 pp\n\n\nEarly device upgrade\n−0.35 pp\n\n\nPlan optimization\n−0.31 pp\n\n\nStudent retention offer\n−0.04 pp\n\n\nService quality improvement\n−0.02 pp"
+    "text": "Methodology\n\nData & Setup\n\n20,908 test-sample customers used to build and validate the model\n397,252 rollout customers for actual deployment\nKey features: RFM variables (Recency, Frequency, Monetary), Age, Gender, Music purchase history\nTarget variable: whether the customer purchased the karaoke deal (buyer)\n\n\n\nStep 1 — Preliminary Analysis\n\nOverall response rate in the test sample: ~6.2% of customers purchased\nAmong buyers, average order size: ~2.7 sessions (30-minute karaoke sessions at 49 RMB each)\nTuango’s fee: 50% of revenue → margin per response = 0.5 × 49 RMB × avg order size\n\n\n\nStep 2 — Logistic Regression Model\nBuilt a logistic regression model predicting purchase probability using RFM + demographics:\nKey variable importance findings (Permutation Importance):\n\n\n\n\n\n\n\n\nVariable\nImportance\nDirection\n\n\n\n\nMusic (prior music purchase)\nHighest\n↑ increases purchase probability\n\n\nGender\nHigh\nFemale &gt; Other &gt; Male\n\n\nFrequency\nModerate\n↑ more past purchases → more likely to buy\n\n\nMonetary\nModerate\n↑ higher spend → more likely to buy\n\n\nAge\nLow-moderate\n↑ older → less likely to buy\n\n\nRecency\nLowest\nLess recent → less likely to buy\n\n\n\n\n\nStep 3 — Order Size Model\nBuilt a linear regression on buyers only to predict order size. Finding: R-squared is very low — the model explains little variation in order size. This means the RFM variables predict whether someone buys well, but not how much they buy once they decide to purchase.\n\n\nStep 4 — Breakeven Targeting Rule\nCalculated the breakeven response rate:\n\\[\\text{Breakeven} = \\frac{\\text{Cost per message}}{\\text{Margin per response}} = \\frac{9 \\text{ RMB}}{0.5 \\times 49 \\times \\text{avg order size}}\\]\nOnly customers with predicted purchase probability above this breakeven received the message."
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#key-results",
-    "href": "projects/project2/smobile-churn.html#key-results",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#key-results",
+    "href": "projects/project4/tuango-targeting.html#key-results",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "Key Results",
-    "text": "Key Results\n\nCLV Economics (5-Year, 10% Annual Discount Rate)\nBaseline assumptions: $40/month revenue per customer, 2% monthly churn, 60-month window.\n\n\n\n\n\n\n\n\n\nIntervention\nChurn Reduction\nIncremental CLV (Breakeven)\nProposed Cost\n\n\n\n\nCredit Auto-pay\n−0.88 pp\n+$258/customer\n$40–$60\n\n\nEarly Upgrade\n−0.35 pp\n+$93/customer\n$50–$70\n\n\nPlan Optimization\n−0.31 pp\n+$82/customer\n$30–$50\n\n\n\nBaseline 5-year CLV per customer: $1,156\nAll three interventions generate positive economic returns under realistic cost assumptions. Credit auto-pay delivers the highest leverage — a $258 CLV buffer against a $40–$60 incentive cost."
+    "text": "Key Results\n\nProjected vs. Realized Performance\n\n\n\n\nTarget All\nTarget by Logit Model\n\n\n\n\nMessages sent\n397,252\n~subset only\n\n\nProfit (RMB)\n111,713\n887,423\n\n\nROME\n3.1%\n56.6%\n\n\n\nLogit-based targeting delivered 8× more profit and 18× better ROME than mass messaging.\nThese numbers come from the actual post-rollout data — Tuango contacted all 397,252 customers (to generate evaluation data), allowing a clean comparison of what would have happened under each strategy.\n\n\nWhy the Model Worked\nThe test sample response rate was ~6.2%, but the model identified a subset of customers with much higher predicted purchase probability. By filtering out low-probability customers, the targeting strategy:\n\nConcentrated messages on customers more likely to buy\nReduced wasted message costs on unlikely buyers\nAvoided over-messaging customers who would block future notifications"
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#business-insights",
-    "href": "projects/project2/smobile-churn.html#business-insights",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#business-insights",
+    "href": "projects/project4/tuango-targeting.html#business-insights",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "Business Insights",
-    "text": "Business Insights\n1. Reactive churn management is inferior. The model-based proactive approach targets customers before they decide to leave, when retention offers are more effective and less expensive.\n2. Not all interventions are equal. Credit auto-pay delivers 3× the CLV impact of plan optimization. Prioritizing interventions by economic return — not just churn reduction — is critical for budget efficiency.\n3. Probability correction matters for economics. Predictions from a balanced training set (50% churn) would wildly overstate actual churn risk. Correcting back to the 2% population rate is essential before any CLV or cost-benefit calculation.\n4. Targeting beats mass deployment. Applying interventions only to high-risk customers within the relevant driver segment maximizes ROI. For example, offering upgrade incentives to all customers wastes budget on low-risk customers who would have stayed anyway.\n5. Model validation should use RCT. The counterfactual estimates provide a sound starting point, but a pilot randomized experiment is needed before large-scale rollout to confirm the real-world churn reductions are statistically significant."
+    "text": "Business Insights\n1. The true cost of a message is not zero. The 9 RMB marginal cost accounts for the long-term risk of customers blocking deal messages — losing that channel permanently is far more costly than a single wasted send.\n2. RFM variables are highly predictive for deal targeting. Prior music purchase history and gender were the strongest predictors, suggesting that category affinity and demographics drive deal responsiveness more than raw usage frequency.\n3. Order size is hard to predict — but that’s okay. The linear regression showed very low R-squared for order size, meaning customers who buy tend to buy similar amounts regardless of their profile. The key lever is correctly predicting who buys, not how much they buy.\n4. Mass messaging is a losing strategy at scale. A 3.1% ROME means the campaign barely broke even. At 397,252 customers, the difference between selective and mass targeting was ¥775,710 in additional profit — from the same customer base.\n5. Model validation on actual rollout data confirms no overfitting. The realized post-rollout profit and ROME figures matched the projected direction from the test sample, confirming that the logistic regression generalized well to new customers."
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#my-contribution",
-    "href": "projects/project2/smobile-churn.html#my-contribution",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#my-contribution",
+    "href": "projects/project4/tuango-targeting.html#my-contribution",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "My Contribution",
-    "text": "My Contribution\n\nConducted full EDA including distribution analysis, IQR outlier assessment, standardized difference analysis across churn groups, and categorical churn rate breakdowns\nBuilt and tuned both Logistic Regression and Random Forest models; made final model selection argument based on validation AUC comparison\nImplemented probability correction from balanced training data to representative 2% population rate\nDesigned all five retention actions based on churn driver analysis; quantified churn reduction for each using model-based counterfactuals\nBuilt the CLV model and computed breakeven costs and proposed investment levels for three priority actions"
+    "text": "My Contribution\n\nConducted preliminary analysis: calculated response rate, average order size, and breakeven threshold\nBuilt and interpreted the logistic regression model including Permutation Importance and Partial Dependence Plots for all variables\nBuilt the order size linear regression and explained why low R-squared is expected in this context\nDerived the breakeven response rate and implemented the targeting decision rule\nCalculated projected and actual profit and ROME for both strategies; created comparison bar charts\nEvaluated post-rollout realized performance and confirmed model generalization"
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#tools-methods",
-    "href": "projects/project2/smobile-churn.html#tools-methods",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#tools-methods",
+    "href": "projects/project4/tuango-targeting.html#tools-methods",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "Tools & Methods",
-    "text": "Tools & Methods\nPython · Polars · pyrsm · scikit-learn · Logistic Regression · Random Forest · RandomizedSearchCV · Permutation Importance · Partial Dependence Plots · CLV Modeling · Probability Calibration · AUC"
+    "text": "Tools & Methods\nPython · Polars · pyrsm · plotnine · Logistic Regression · Linear Regression · RFM Analysis · Permutation Importance · Partial Dependence Plots · Test-and-Rollout Design · ROME"
   },
   {
-    "objectID": "projects/project2/smobile-churn.html#github-repository",
-    "href": "projects/project2/smobile-churn.html#github-repository",
-    "title": "S-Mobile: Predicting Customer Churn",
+    "objectID": "projects/project4/tuango-targeting.html#github-repository",
+    "href": "projects/project4/tuango-targeting.html#github-repository",
+    "title": "Tuango: Targeting Mobile App Messages",
     "section": "GitHub Repository",
     "text": "GitHub Repository\n👉 View Full Project on GitHub"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Shuning Zhang",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "My Projects",
+    "section": "",
+    "text": "Creative Gaming: Uplift Modeling\n\n\nApplied causal uplift modeling with 4 ML models to target the Zalon ad campaign — uplift targeting outperformed propensity-based targeting across all models, maximizing incremental profit by focusing on persuadable customers.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomer Churn Analysis\n\n\nAnalyzed customer churn patterns using Python and data analysis techniques.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCustomer Uplift Modeling\n\n\nBuilt and compared uplift models to support targeted marketing decisions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPentathlon: Next Product to Buy Modeling\n\n\nBuilt an NPTB framework with 4 ML models to personalize promotional emails for 5M customers — increasing profit by 22% over random assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nS-Mobile: Predicting Customer Churn\n\n\nBuilt a churn prediction and retention strategy framework for a telecom with 1M subscribers — identifying key drivers and quantifying up to $258 CLV uplift per customer from targeted interventions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTuango: Targeting Mobile App Messages\n\n\nBuilt a logistic regression targeting model for Tuango’s karaoke deal campaign — selective targeting increased profit by 8× over mass messaging (¥887K vs ¥112K) while improving ROME from 3% to 57%.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "495/spring/JH/resume.html",
+    "href": "495/spring/JH/resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file."
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html",
+    "href": "495/spring/JH/projects/project2/index.html",
+    "title": "Customer Uplift Modeling",
+    "section": "",
+    "text": "This project focuses on uplift modeling for targeted marketing. The goal is to identify which customers are most likely to respond positively to treatment and to optimize targeting strategies."
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html#overview",
+    "href": "495/spring/JH/projects/project2/index.html#overview",
+    "title": "Customer Uplift Modeling",
+    "section": "",
+    "text": "This project focuses on uplift modeling for targeted marketing. The goal is to identify which customers are most likely to respond positively to treatment and to optimize targeting strategies."
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html#what-i-did",
+    "href": "495/spring/JH/projects/project2/index.html#what-i-did",
+    "title": "Customer Uplift Modeling",
+    "section": "What I did",
+    "text": "What I did\n\nCleaned and prepared treatment and control group data\nBuilt and compared multiple uplift models\nEvaluated performance across logistic, neural network, random forest, and XGBoost approaches\nInterpreted model outputs for business decision-making"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html#tools",
+    "href": "495/spring/JH/projects/project2/index.html#tools",
+    "title": "Customer Uplift Modeling",
+    "section": "Tools",
+    "text": "Tools\nPython, polars, pyrsm, scikit-learn, plotnine, Jupyter Notebook"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html#notebook",
+    "href": "495/spring/JH/projects/project2/index.html#notebook",
+    "title": "Customer Uplift Modeling",
+    "section": "Notebook",
+    "text": "Notebook\nView Analysis Notebook"
+  },
+  {
+    "objectID": "495/spring/JH/projects/project2/index.html#github",
+    "href": "495/spring/JH/projects/project2/index.html#github",
+    "title": "Customer Uplift Modeling",
+    "section": "GitHub",
+    "text": "GitHub\nView Repository"
+  },
+  {
+    "objectID": "495/spring/JH/index.html",
+    "href": "495/spring/JH/index.html",
+    "title": "Jiahui Huang",
     "section": "",
     "text": "Welcome to my website!"
+  },
+  {
+    "objectID": "495/spring/JH/blog/index.html",
+    "href": "495/spring/JH/blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
   }
 ]
