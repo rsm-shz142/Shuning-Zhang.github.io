@@ -1,0 +1,463 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"A/B Testing a Call to Action\"\n",
+        "subtitle: \"Simulating Key Ideas from Classical Frequentist Statistics\"\n",
+        "author: \"Shuning Zhang\"\n",
+        "date: \"2026-04-15\"\n",
+        "categories: [statistics, ab-testing]\n",
+        "---"
+      ],
+      "id": "b63f8214"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "from scipy.stats import norm\n",
+        "import statsmodels.api as sm\n",
+        "\n",
+        "np.random.seed(42)\n",
+        "plt.rcParams[\"figure.figsize\"] = (8, 5)\n",
+        "plt.rcParams[\"axes.spines.top\"] = False\n",
+        "plt.rcParams[\"axes.spines.right\"] = False"
+      ],
+      "id": "5c9d4131",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Introduction\n",
+        "\n",
+        "My website includes a landing page where visitors can sign up to receive a newsletter. Since the landing page is often the first interaction a visitor has with the site, even small design or wording choices may affect whether that visitor decides to subscribe.\n",
+        "\n",
+        "In this post, I study whether the wording of a call to action can change sign-up behavior. I compare two versions of the message shown on the page. CTA A reads “Sign up for our newsletter here!” while CTA B reads “Stay up to date by signing up!” Both messages are trying to encourage the same action, but they may not be equally effective.\n",
+        "\n",
+        "To evaluate the two messages, I use an A/B test. In an A/B test, visitors are randomly assigned to one of two versions of a webpage element. One group sees CTA A and the other sees CTA B. Because the assignment is random, differences in sign-up rates between the two groups can be attributed to the CTA wording rather than to systematic differences between visitors. The goal is to determine which CTA produces the higher newsletter sign-up rate.\n",
+        "\n",
+        "\n",
+        "\n",
+        "## The A/B Test as a Statistical Problem\n",
+        "\n",
+        "We can express this A/B test as a simple statistical problem. For each visitor, the outcome is binary: either the visitor signs up for the newsletter or does not. Because the outcome only takes the values 1 or 0, each observation can be modeled as a Bernoulli random variable with parameter \\(\\pi\\), where \\(\\pi\\) represents the probability of signing up.\n",
+        "\n",
+        "The CTA shown to a visitor may affect that probability, so I allow the sign-up rate to differ across the two groups. Let \\(\\pi_A\\) be the probability of signing up for visitors who see CTA A, and let \\(\\pi_B\\) be the corresponding probability for visitors who see CTA B.\n",
+        "\n",
+        "The quantity of interest is the difference in sign-up rates:\n",
+        "\\[\n",
+        "\\theta = \\pi_A - \\pi_B\n",
+        "\\]\n",
+        "If \\(\\theta > 0\\), CTA A performs better on average. If \\(\\theta < 0\\), CTA B performs better.\n",
+        "\n",
+        "Because the true probabilities \\(\\pi_A\\) and \\(\\pi_B\\) are unknown, I estimate them using the observed sample means in each group. Since the data are binary, each sample mean is just the sample proportion of visitors who signed up. This gives the estimator\n",
+        "\\[\n",
+        "\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\n",
+        "\\]\n",
+        "where \\(\\bar{X}_A\\) is the sample sign-up rate for CTA A and \\(\\bar{X}_B\\) is the sample sign-up rate for CTA B.\n",
+        "\n",
+        "\n",
+        "## Simulating Data\n",
+        "\n",
+        "In a real A/B test, the true sign-up probabilities would be unknown. We would only observe sample outcomes and then try to infer the underlying difference between the two CTAs. For this exercise, however, simulation is helpful because it lets us work in a setting where the truth is known in advance. That makes it easier to evaluate how well our estimator performs.\n",
+        "\n",
+        "I assume that visitors who see CTA A sign up with probability \\(\\pi_A = 0.22\\), while visitors who see CTA B sign up with probability \\(\\pi_B = 0.18\\). This means the true treatment effect is\n",
+        "\\[\n",
+        "\\theta = \\pi_A - \\pi_B = 0.04.\n",
+        "\\]\n",
+        "\n",
+        "Using these assumptions, I simulate 1,000 Bernoulli observations for each group. Each observation equals 1 if the visitor signs up and 0 otherwise. These simulated samples will be used throughout the rest of the post."
+      ],
+      "id": "d9e8dd9c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "pi_A = 0.22\n",
+        "pi_B = 0.18\n",
+        "n_A = 1000\n",
+        "n_B = 1000\n",
+        "\n",
+        "A = np.random.binomial(1, pi_A, n_A)\n",
+        "B = np.random.binomial(1, pi_B, n_B)\n",
+        "\n",
+        "theta_true = pi_A - pi_B\n",
+        "theta_hat = A.mean() - B.mean()\n",
+        "\n",
+        "print(f\"Sample sign-up rate for CTA A: {A.mean():.4f}\")\n",
+        "print(f\"Sample sign-up rate for CTA B: {B.mean():.4f}\")\n",
+        "print(f\"Estimated difference (theta_hat): {theta_hat:.4f}\")\n",
+        "print(f\"True difference (theta): {theta_true:.4f}\")"
+      ],
+      "id": "ac5ca834",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## The Law of Large Numbers\n",
+        "\n",
+        "The Law of Large Numbers states that as the sample size increases, the sample average converges to the true population mean. In other words, while individual observations are noisy, averaging over many observations produces a more stable and reliable estimate.\n",
+        "\n",
+        "In the context of this A/B test, this idea is important because our estimator of interest, \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\), is based on sample averages. As we collect more data, we expect this estimate to get closer to the true treatment effect.\n",
+        "\n",
+        "To illustrate this, I compute the difference between the outcomes in the two groups for each observation and then track how the cumulative average of these differences evolves as the sample size grows."
+      ],
+      "id": "e13c9d86"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "diffs = A - B\n",
+        "running_mean = np.cumsum(diffs) / np.arange(1, len(diffs) + 1)\n",
+        "\n",
+        "plt.figure()\n",
+        "plt.plot(np.arange(1, len(diffs) + 1), running_mean)\n",
+        "plt.axhline(theta_true, linestyle=\"--\")\n",
+        "plt.xlabel(\"Number of paired observations\")\n",
+        "plt.ylabel(\"Cumulative average of A - B\")\n",
+        "plt.title(\"The Law of Large Numbers for the Estimated Treatment Effect\")\n",
+        "plt.show()"
+      ],
+      "id": "8e1a6a4f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "At the beginning, the running average fluctuates substantially, even taking on extreme values, because each new observation has a large impact when the sample size is very small. As more observations are added, these fluctuations become less pronounced and the estimate begins to stabilize.\n",
+        "\n",
+        "Over time, the cumulative average settles near the true treatment effect of 0.04. This illustrates the Law of Large Numbers: although individual observations are highly variable, averaging over a large number of observations produces a stable and reliable estimate of the underlying population parameter.\n",
+        "\n",
+        "\n",
+        "## Bootstrap Standard Errors\n",
+        "\n",
+        "So far, I have computed a single estimate of the treatment effect. However, this estimate is based on a finite sample and is therefore subject to randomness. If I were to repeat the experiment with a different sample, I would likely obtain a slightly different estimate.\n",
+        "\n",
+        "To quantify this uncertainty, I use the concept of a standard error. The standard error measures how much an estimator is expected to vary across repeated samples. In this section, I estimate the standard error of \\(\\hat{\\theta}\\) using a bootstrap approach and compare it to the analytical formula.\n",
+        "\n",
+        "The bootstrap method works by repeatedly resampling from the observed data with replacement and recomputing the estimator each time. This produces an empirical distribution of the estimator, which can be used to approximate its variability."
+      ],
+      "id": "44230838"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "n_boot = 1000\n",
+        "boot_thetas = []\n",
+        "\n",
+        "for _ in range(n_boot):\n",
+        "    A_boot = np.random.choice(A, size=len(A), replace=True)\n",
+        "    B_boot = np.random.choice(B, size=len(B), replace=True)\n",
+        "    boot_theta = A_boot.mean() - B_boot.mean()\n",
+        "    boot_thetas.append(boot_theta)\n",
+        "\n",
+        "boot_thetas = np.array(boot_thetas)"
+      ],
+      "id": "63469326",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "plt.hist(boot_thetas, bins=30)\n",
+        "plt.axvline(theta_hat, linestyle=\"--\")\n",
+        "plt.xlabel(\"Bootstrap estimates of theta\")\n",
+        "plt.ylabel(\"Frequency\")\n",
+        "plt.title(\"Bootstrap Distribution of the Treatment Effect\")\n",
+        "plt.show()"
+      ],
+      "id": "f9d0a37f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The histogram shows the distribution of the estimated treatment effect across many bootstrap samples. While each individual estimate differs slightly due to random sampling, the values are concentrated around the original estimate. This distribution reflects the uncertainty associated with \\(\\hat{\\theta}\\)."
+      ],
+      "id": "477ef902"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "se_boot = boot_thetas.std()\n",
+        "print(f\"Bootstrap standard error: {se_boot:.4f}\")"
+      ],
+      "id": "01d7496b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "se_analytical = np.sqrt(\n",
+        "    A.mean() * (1 - A.mean()) / len(A) +\n",
+        "    B.mean() * (1 - B.mean()) / len(B)\n",
+        ")\n",
+        "\n",
+        "print(f\"Analytical standard error: {se_analytical:.4f}\")"
+      ],
+      "id": "ee5d5157",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The bootstrap standard error is very close to the analytical standard error. This is reassuring, as it suggests that the bootstrap procedure is capturing the variability of the estimator correctly. The analytical formula is derived under standard assumptions, while the bootstrap provides a more general, data-driven way to estimate uncertainty."
+      ],
+      "id": "2e2562b7"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "ci_lower = theta_hat - 1.96 * se_boot\n",
+        "ci_upper = theta_hat + 1.96 * se_boot\n",
+        "\n",
+        "print(f\"95% CI: [{ci_lower:.4f}, {ci_upper:.4f}]\")"
+      ],
+      "id": "cc587d61",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Using the bootstrap standard error, I construct a 95% confidence interval for the treatment effect. This interval provides a range of plausible values for the true difference in sign-up rates. If the experiment were repeated many times, about 95% of such intervals would contain the true treatment effect. Importantly, the interval does not include zero, which suggests that there is a statistically significant difference between the two CTAs.\n",
+        "\n",
+        "\n",
+        "\n",
+        "## The Central Limit Theorem\n",
+        "\n",
+        "The Central Limit Theorem (CLT) provides a theoretical foundation for statistical inference. It states that, under fairly general conditions, the sampling distribution of an estimator becomes approximately normal as the sample size grows.\n",
+        "\n",
+        "In this context, the estimator of interest is \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\). Even though the underlying data are binary, the CLT tells us that the distribution of \\(\\hat{\\theta}\\) across repeated samples should be approximately normal when the sample size is large.\n",
+        "\n",
+        "To illustrate this, I repeatedly simulate new datasets and compute \\(\\hat{\\theta}\\) each time. This allows me to approximate the sampling distribution of the estimator and compare it to a normal distribution."
+      ],
+      "id": "8f842755"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "n_sim = 1000\n",
+        "theta_hats = []\n",
+        "\n",
+        "for _ in range(n_sim):\n",
+        "    A_sim = np.random.binomial(1, pi_A, n_A)\n",
+        "    B_sim = np.random.binomial(1, pi_B, n_B)\n",
+        "    theta_sim = A_sim.mean() - B_sim.mean()\n",
+        "    theta_hats.append(theta_sim)\n",
+        "\n",
+        "theta_hats = np.array(theta_hats)"
+      ],
+      "id": "cdb35adb",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "mean_theta = theta_hats.mean()\n",
+        "std_theta = theta_hats.std()\n",
+        "\n",
+        "x = np.linspace(mean_theta - 4*std_theta, mean_theta + 4*std_theta, 100)\n",
+        "\n",
+        "plt.hist(theta_hats, bins=30, density=True)\n",
+        "plt.plot(x, norm.pdf(x, mean_theta, std_theta))\n",
+        "plt.axvline(theta_true, linestyle=\"--\")\n",
+        "\n",
+        "plt.xlabel(\"Estimated treatment effect\")\n",
+        "plt.ylabel(\"Density\")\n",
+        "plt.title(\"Sampling Distribution of the Estimator and Normal Approximation\")\n",
+        "plt.show()"
+      ],
+      "id": "4445caa0",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The histogram shows the distribution of the estimated treatment effect across many repeated samples. The distribution is approximately symmetric and bell-shaped, even though the underlying data are binary.\n",
+        "\n",
+        "The overlaid normal curve closely matches the simulated distribution, indicating that the normal approximation works well in this setting. This is consistent with the Central Limit Theorem, which states that the sampling distribution of an estimator becomes approximately normal as the sample size increases.\n",
+        "\n",
+        "This result is important because it allows us to use normal-based methods, such as confidence intervals and hypothesis tests, even when the original data are not normally distributed.\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Hypothesis Testing\n",
+        "\n",
+        "To formally evaluate whether the two CTAs perform differently, I use a hypothesis test. The goal is to assess whether the observed difference in sign-up rates could plausibly be explained by random variation alone.\n",
+        "\n",
+        "The null hypothesis assumes that there is no difference between the two CTAs:\n",
+        "\\[\n",
+        "H_0: \\theta = 0\n",
+        "\\]\n",
+        "while the alternative hypothesis is that there is a nonzero difference:\n",
+        "\\[\n",
+        "H_1: \\theta \\neq 0.\n",
+        "\\]\n",
+        "\n",
+        "Under the null hypothesis, the estimated treatment effect should be close to zero, up to sampling variability. I use the standard error of the estimator to compute a test statistic, which measures how far the observed estimate is from zero in standardized units.\n"
+      ],
+      "id": "0bf66b29"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "z_stat = theta_hat / se_boot\n",
+        "print(f\"Test statistic (z): {z_stat:.4f}\")"
+      ],
+      "id": "b206eaa4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "p_value = 2 * (1 - norm.cdf(abs(z_stat)))\n",
+        "print(f\"P-value: {p_value:.4f}\")"
+      ],
+      "id": "e939b99f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The p-value measures how likely it would be to observe a difference at least as extreme as the one in the data if the null hypothesis were true. In this case, the p-value is approximately 0.031, which is below the 5% significance level.\n",
+        "\n",
+        "Therefore, I reject the null hypothesis of no difference between the two CTAs. This suggests that the observed difference in sign-up rates is unlikely to be due to random chance alone.\n",
+        "\n",
+        "Since the estimated treatment effect is positive, the results indicate that CTA A leads to a higher sign-up rate than CTA B.\n",
+        "\n",
+        "\n",
+        "\n",
+        "## The T-Test as a Regression\n",
+        "\n",
+        "Another way to analyze the A/B test is to frame it as a regression problem. Instead of comparing group means directly, I can estimate the treatment effect using a simple linear regression.\n",
+        "\n",
+        "To do this, I combine the data from both groups into a single dataset and create an indicator variable that equals 1 if the observation comes from CTA A and 0 if it comes from CTA B. I then regress the binary outcome (sign-up or not) on this indicator.\n",
+        "\n",
+        "In this setup, the coefficient on the indicator variable represents the difference in average outcomes between the two groups. This means that the regression coefficient should be equal to the estimator \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\).\n",
+        "\n",
+        "This shows that a two-sample t-test is equivalent to a regression with a binary treatment variable."
+      ],
+      "id": "cc48162c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Combine data\n",
+        "Y = np.concatenate([A, B])\n",
+        "T = np.concatenate([np.ones(len(A)), np.zeros(len(B))])"
+      ],
+      "id": "9c8b5f5e",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "X = sm.add_constant(T)\n",
+        "model = sm.OLS(Y, X).fit()\n",
+        "\n",
+        "coef = model.params[1]\n",
+        "se_reg = model.bse[1]\n",
+        "p_reg = model.pvalues[1]\n",
+        "intercept = model.params[0]\n",
+        "\n",
+        "print(f\"Intercept (mean outcome for CTA B): {intercept:.4f}\")\n",
+        "print(f\"Regression estimate of treatment effect: {coef:.4f}\")\n",
+        "print(f\"Standard error: {se_reg:.4f}\")\n",
+        "print(f\"P-value: {p_reg:.4f}\")\n",
+        "print(f\"Difference in means (theta_hat): {theta_hat:.4f}\")"
+      ],
+      "id": "dbb5d022",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "beta = model.params[1]\n",
+        "print(f\"Regression estimate of treatment effect: {beta:.4f}\")\n",
+        "print(f\"Difference in means (theta_hat): {theta_hat:.4f}\")"
+      ],
+      "id": "04578281",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The regression results match the earlier difference-in-means calculation exactly: the estimated coefficient on the treatment indicator is 0.038, which is the same as \\(\\hat{\\theta}\\). The intercept is 0.178, which corresponds to the average sign-up rate for CTA B.\n",
+        "\n",
+        "This confirms that a simple regression with a binary treatment indicator recovers the same treatment effect as the two-sample comparison of means. In this sense, the t-test and the regression approach are just two different ways of expressing the same underlying statistical idea.\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## The Problem with Peeking\n",
+        "\n",
+        "A key assumption behind the hypothesis testing framework used above is that the data are analyzed only once, after the full sample has been collected. In practice, however, it is tempting to monitor the results of an experiment as data come in and stop early if the results look promising. This behavior is often referred to as “peeking.”\n",
+        "\n",
+        "Peeking creates a problem because it effectively increases the number of opportunities to reject the null hypothesis. Each time we check the data, there is a chance of observing a statistically significant result purely by random variation. As a result, repeatedly checking the data inflates the probability of a false positive.\n",
+        "\n",
+        "In other words, even if there is no true effect, peeking can make it appear as though there is one. This undermines the validity of p-values and confidence intervals, which rely on a fixed sampling plan.\n",
+        "\n",
+        "To maintain valid inference, researchers must either commit to a pre-specified sample size or use methods that explicitly account for sequential testing. This highlights an important limitation of standard A/B testing procedures and underscores the need for careful experimental design."
+      ],
+      "id": "dc4206b9"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "mle-qmd",
+      "language": "python",
+      "display_name": "Python (mle-qmd)",
+      "path": "/Users/sumi/Library/Jupyter/kernels/mle-qmd"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

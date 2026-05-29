@@ -9,7 +9,6 @@ format:
   html:
     toc: true
     toc-location: left
-    toc-float: true
     toc-depth: 2
     code-fold: true
 jupyter: python3
