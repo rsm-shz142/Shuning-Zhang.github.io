@@ -264,7 +264,7 @@ window.Quarto = {
 </section>
 <section id="the-data" class="level2">
 <h2 class="anchored" data-anchor-id="the-data">The Data</h2>
-<div id="9c9cf846" class="cell" data-execution_count="1">
+<div id="b93c28e0" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -302,7 +302,7 @@ window.Quarto = {
 </details>
 </div>
 <p>The raw data also contains a small number of 2-item “tasks” involving an unlabeled item 11, which appear to be incomplete survey screens. We drop these and keep only the proper 4-item MaxDiff tasks.</p>
-<div id="71e7364d" class="cell" data-execution_count="2">
+<div id="edcf8944" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>task_sizes  <span class="op">=</span> df.groupby([<span class="st">"record_id"</span>, <span class="st">"task"</span>]).size()</span>
@@ -326,7 +326,7 @@ Items per task (J):           4
 Unique items in study:        10</code></pre>
 </div>
 </div>
-<div id="2f904682" class="cell" data-execution_count="3">
+<div id="32d378c7" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>check <span class="op">=</span> (df.groupby([<span class="st">"record_id"</span>, <span class="st">"task"</span>])[<span class="st">"response"</span>]</span>
@@ -346,7 +346,7 @@ Unique items in study:        10</code></pre>
 <pre><code>Sanity check PASSED: every task has exactly one best and one worst pick.</code></pre>
 </div>
 </div>
-<div id="7ef95cbd" class="cell" data-execution_count="4">
+<div id="de69cf0a" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>shown <span class="op">=</span> (df.groupby(<span class="st">"item"</span>).size()</span>
@@ -382,7 +382,7 @@ Min: 266,  Max: 276</code></pre>
 <p>The counts analysis is the simplest way to summarize MaxDiff data. For each class <span class="math inline">\(j\)</span>, we compute what fraction of times it was shown it was picked best, and what fraction it was picked worst. The score is:</p>
 <p><span class="math display">\[\text{score}_j = \%\text{best}_j - \%\text{worst}_j\]</span></p>
 <p>A score near +1 means students almost always chose this class as the best option when they saw it. A score near −1 means it was almost always chosen as worst. A score near 0 is middle-of-the-pack (or polarizing). This method is transparent and easy to explain, but it does not model the choice process — it ignores the competitive context of which other items were shown alongside each class.</p>
-<div id="ad6d637f" class="cell" data-execution_count="5">
+<div id="fd2a9805" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>times_shown  <span class="op">=</span> df.groupby(<span class="st">"item"</span>).size()</span>
@@ -424,7 +424,7 @@ Min: 266,  Max: 276</code></pre>
    10 Analytics Consulting    267    33    111  12.4%   41.6% -0.292</code></pre>
 </div>
 </div>
-<div id="b566d246" class="cell" data-execution_count="6">
+<div id="4c1284f8" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
@@ -451,7 +451,7 @@ Min: 266,  Max: 276</code></pre>
 <span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>counts[<span class="st">"ci_hi"</span>] <span class="op">=</span> [ci_hi[i<span class="op">-</span><span class="dv">1</span>] <span class="cf">for</span> i <span class="kw">in</span> counts[<span class="st">"item"</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="f99e921b" class="cell" data-execution_count="7">
+<div id="0fe06f2e" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
@@ -496,7 +496,7 @@ Min: 266,  Max: 276</code></pre>
 </ol>
 <p><span class="math display">\[P(\text{worst} = j \mid \mathcal{S} \setminus \{j^*_b\}) = \frac{\exp(-\beta_j)}{\sum_{k \in \mathcal{S} \setminus \{j^*_b\}} \exp(-\beta_k)}\]</span></p>
 <p><strong>Identifiability:</strong> The softmax is invariant to adding a constant to all <span class="math inline">\(\beta\)</span>’s, so only <span class="math inline">\(J-1 = 9\)</span> parameters are identified. We fix <span class="math inline">\(\beta_1 = 0\)</span> (item 1 = AI Math/Prog as reference) and estimate <span class="math inline">\(\beta_2, \ldots, \beta_{10}\)</span>. All estimates are interpreted relative to item 1.</p>
-<div id="debfeb9a" class="cell" data-execution_count="8">
+<div id="f1f9a77f" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tasks_list <span class="op">=</span> []</span>
@@ -536,7 +536,7 @@ First 3 tasks:
 <p>The log-likelihood sums two contributions per task: the log-probability of the best pick, and the log-probability of the worst pick from the remaining items with flipped signs:</p>
 <p><span class="math display">\[\ell(\boldsymbol{\beta}) = \sum_{\text{tasks}} \left[ \beta_{j^*_b} - \log\!\!\sum_{j \in \mathcal{S}} \exp(\beta_j) \;-\; \beta_{j^*_w} - \log\!\!\!\sum_{j \in \mathcal{S}\setminus\{j^*_b\}} \exp(-\beta_j) \right]\]</span></p>
 <p>We subtract the max before exponentiating (log-sum-exp trick) for numerical stability.</p>
-<div id="bab251cc" class="cell" data-execution_count="9">
+<div id="f3a3d18a" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> log_likelihood(beta9):</span>
@@ -568,7 +568,7 @@ First 3 tasks:
 Expected random baseline: -1689.74</code></pre>
 </div>
 </div>
-<div id="75a58ecf" class="cell" data-execution_count="10">
+<div id="06cf5f78" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> minimize(<span class="kw">lambda</span> b: <span class="op">-</span>log_likelihood(b), np.zeros(<span class="dv">9</span>),</span>
@@ -602,7 +602,7 @@ Expected random baseline: -1689.74</code></pre>
 Log-likelihood at MLE:  -1572.73</code></pre>
 </div>
 </div>
-<div id="bb08db27" class="cell" data-execution_count="11">
+<div id="0aa5811e" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> softmax(v):</span>
@@ -644,7 +644,7 @@ Log-likelihood at MLE:  -1572.73</code></pre>
    10 Analytics Consulting -0.239  0.141 0.044</code></pre>
 </div>
 </div>
-<div id="0434d667" class="cell" data-execution_count="12">
+<div id="78f502b9" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
@@ -675,7 +675,7 @@ Log-likelihood at MLE:  -1572.73</code></pre>
 <p><span class="math display">\[\pi(\boldsymbol{\beta} \mid \text{data}) \propto L(\boldsymbol{\beta}) \cdot \pi(\boldsymbol{\beta})\]</span></p>
 <p>We use a weakly informative prior: <span class="math inline">\(\beta_j \sim N(0, 10)\)</span> for each of the 9 free parameters (SD <span class="math inline">\(\approx 3.16\)</span>). This is very diffuse relative to the scale of our estimates, so the posterior will be dominated by the data.</p>
 <p>The Metropolis-Hastings algorithm proposes a random step from the current parameter values, computes the log-posterior ratio, and accepts or rejects according to that ratio. This produces a Markov chain whose stationary distribution is the posterior.</p>
-<div id="5cb17f50" class="cell" data-execution_count="13">
+<div id="c3801909" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> log_prior(beta9):</span>
@@ -718,7 +718,7 @@ Log-likelihood at MLE:  -1572.73</code></pre>
 Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
 </div>
 </div>
-<div id="a918cd5e" class="cell" data-execution_count="14">
+<div id="69948f72" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>burn       <span class="op">=</span> n_iter <span class="op">//</span> <span class="dv">4</span></span>
@@ -729,7 +729,7 @@ Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
 <pre><code>Burn-in: 2500 iterations discarded.  Post-burn-in draws: 7500</code></pre>
 </div>
 </div>
-<div id="cf9b7f66" class="cell" data-execution_count="15">
+<div id="7b6a0cb5" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">3</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>), sharex<span class="op">=</span><span class="va">True</span>)</span>
@@ -755,7 +755,7 @@ Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
 </div>
 </div>
 </div>
-<div id="6dbe8aaa" class="cell" data-execution_count="16">
+<div id="9ba53e52" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>full_draws <span class="op">=</span> np.column_stack([np.zeros(<span class="bu">len</span>(post_draws)), post_draws])</span>
@@ -804,7 +804,7 @@ Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
    10 Analytics Consulting       -0.228  -0.467   +0.040       0.043</code></pre>
 </div>
 </div>
-<div id="88639aaa" class="cell" data-execution_count="17">
+<div id="92c72c60" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
@@ -837,7 +837,7 @@ Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
 </section>
 <section id="comparing-the-three-methods" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-the-three-methods">Comparing the Three Methods</h2>
-<div id="0f366742" class="cell" data-execution_count="18">
+<div id="c8ee9108" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>counts_merge <span class="op">=</span> (counts[[<span class="st">"item"</span>,<span class="st">"short_name"</span>,<span class="st">"score"</span>,<span class="st">"counts_rank"</span>]]</span>
@@ -871,7 +871,7 @@ Acceptance rate: 28.6%  (target: 25–40%)</code></pre>
 Analytics Consulting       -0.292           10     0.044        10       0.043          10</code></pre>
 </div>
 </div>
-<div id="3df91d61" class="cell" data-execution_count="19">
+<div id="144ce155" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>item_order <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>))</span>
@@ -897,7 +897,7 @@ Analytics Consulting       -0.292           10     0.044        10       0.043  
 <span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>mle_shares    <span class="op">=</span> [mle_df[mle_df[<span class="st">"item"</span>]<span class="op">==</span>i].iloc[<span class="dv">0</span>][<span class="st">"share"</span>]      <span class="cf">for</span> i <span class="kw">in</span> item_order]</span>
 <span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>bayes_shares  <span class="op">=</span> [bayes_df[bayes_df[<span class="st">"item"</span>]<span class="op">==</span>i].iloc[<span class="dv">0</span>][<span class="st">"share_mean"</span>] <span class="cf">for</span> i <span class="kw">in</span> item_order]</span>
 <span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">14</span>, <span class="dv">5</span>))</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">3</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">14</span>))</span>
 <span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>plot_panel(axes[<span class="dv">0</span>], names_arr, counts_scores, colors_arr,</span>
 <span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Counts</span><span class="ch">\n</span><span class="st">(% Best − % Worst)"</span>, <span class="st">"Score"</span>)</span>
 <span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>plot_panel(axes[<span class="dv">1</span>], names_arr, mle_shares,    colors_arr,</span>
@@ -911,7 +911,7 @@ Analytics Consulting       -0.292           10     0.044        10       0.043  
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="post4_files/figure-html/cell-20-output-1.png" width="1334" height="475" class="figure-img"></p>
+<p><img src="post4_files/figure-html/cell-20-output-1.png" width="758" height="1322" class="figure-img"></p>
 </figure>
 </div>
 </div>

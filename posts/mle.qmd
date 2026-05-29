@@ -1,8 +1,8 @@
 ---
 title: "Does Blueprinty's Software Help Engineers Win More Patents?"
 subtitle: "A Poisson Regression Case Study via Maximum Likelihood Estimation"
-author: "Your Name"
-date: today
+author: "Shuning Zhang"
+date: 2026-05-22
 format:
   html:
     toc: true

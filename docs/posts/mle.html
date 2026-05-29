@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2026-05-28">
+<meta name="author" content="Shuning Zhang">
+<meta name="dcterms.date" content="2026-05-22">
 
 <title>Does Blueprinty’s Software Help Engineers Win More Patents? – Shuning Zhang</title>
 <style>
@@ -245,14 +245,14 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Shuning Zhang </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 28, 2026</p>
+      <p class="date">May 22, 2026</p>
     </div>
   </div>
   
@@ -264,7 +264,7 @@ window.Quarto = {
 </header>
 
 
-<div id="8f725517" class="cell" data-execution_count="1">
+<div id="6818ea37" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -286,13 +286,13 @@ window.Quarto = {
 </section>
 <section id="exploring-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h2>
-<div id="5fc1f767" class="cell" data-execution_count="2">
+<div id="8bbe3f59" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"blueprinty.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="19">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -350,7 +350,7 @@ window.Quarto = {
 </div>
 <section id="patent-counts-by-customer-status" class="level3">
 <h3 class="anchored" data-anchor-id="patent-counts-by-customer-status">Patent Counts by Customer Status</h3>
-<div id="e2dbac46" class="cell" data-execution_count="3">
+<div id="f46e670c" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>), sharey<span class="op">=</span><span class="va">False</span>)</span>
@@ -382,7 +382,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="57e0b37c" class="cell" data-execution_count="4">
+<div id="e3581f66" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>means <span class="op">=</span> df.groupby(<span class="st">"iscustomer"</span>)[<span class="st">"patents"</span>].mean()</span>
@@ -394,7 +394,7 @@ window.Quarto = {
 </section>
 <section id="regional-differences" class="level3">
 <h3 class="anchored" data-anchor-id="regional-differences">Regional Differences</h3>
-<div id="577ba29a" class="cell" data-execution_count="5">
+<div id="f98b3085" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>region_props <span class="op">=</span> (</span>
@@ -441,7 +441,7 @@ window.Quarto = {
 </section>
 <section id="age-differences" class="level3">
 <h3 class="anchored" data-anchor-id="age-differences">Age Differences</h3>
-<div id="a88bddef" class="cell" data-execution_count="6">
+<div id="31a40f19" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
@@ -472,7 +472,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="3bfa07be" class="cell" data-execution_count="7">
+<div id="4c4054dc" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>age_means <span class="op">=</span> df.groupby(<span class="st">"iscustomer"</span>)[<span class="st">"age"</span>].mean()</span>
@@ -501,7 +501,7 @@ window.Quarto = {
 </section>
 <section id="the-log-likelihood-function-in-python" class="level3">
 <h3 class="anchored" data-anchor-id="the-log-likelihood-function-in-python">The Log-Likelihood Function in Python</h3>
-<div id="81944695" class="cell" data-execution_count="8">
+<div id="47bc7009" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> poisson_loglikelihood(lam, Y):</span>
@@ -514,7 +514,7 @@ window.Quarto = {
 </section>
 <section id="visualizing-the-log-likelihood" class="level3">
 <h3 class="anchored" data-anchor-id="visualizing-the-log-likelihood">Visualizing the Log-Likelihood</h3>
-<div id="21bab32b" class="cell" data-execution_count="9">
+<div id="05381162" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Y <span class="op">=</span> df[<span class="st">"patents"</span>].values</span>
@@ -551,7 +551,7 @@ window.Quarto = {
 </section>
 <section id="numerical-verification-with-scipy.optimize" class="level3">
 <h3 class="anchored" data-anchor-id="numerical-verification-with-scipy.optimize">Numerical Verification with <code>scipy.optimize</code></h3>
-<div id="7d4b28d5" class="cell" data-execution_count="10">
+<div id="8104171a" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> optimize.minimize_scalar(</span>
@@ -582,7 +582,7 @@ Sample mean: 3.68467</code></pre>
 </section>
 <section id="updated-log-likelihood" class="level3">
 <h3 class="anchored" data-anchor-id="updated-log-likelihood">Updated Log-Likelihood</h3>
-<div id="a0b87b88" class="cell" data-execution_count="11">
+<div id="ceec9a76" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> poisson_regression_loglikelihood(beta, Y, X):</span>
@@ -593,7 +593,7 @@ Sample mean: 3.68467</code></pre>
 </section>
 <section id="building-the-design-matrix" class="level3">
 <h3 class="anchored" data-anchor-id="building-the-design-matrix">Building the Design Matrix</h3>
-<div id="9a4777a8" class="cell" data-execution_count="12">
+<div id="fa7af250" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Region dummies — drop "Northeast" as the reference category</span></span>
@@ -623,7 +623,7 @@ Sample mean: 3.68467</code></pre>
 </section>
 <section id="finding-the-mle-with-scipy.optimize" class="level3">
 <h3 class="anchored" data-anchor-id="finding-the-mle-with-scipy.optimize">Finding the MLE with <code>scipy.optimize</code></h3>
-<div id="9412d322" class="cell" data-execution_count="13">
+<div id="38a0bbc8" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_model <span class="op">=</span> df.copy()</span>
@@ -664,7 +664,7 @@ Y dtype: float64</code></pre>
 </section>
 <section id="verification-with-statsmodels" class="level3">
 <h3 class="anchored" data-anchor-id="verification-with-statsmodels">Verification with <code>statsmodels</code></h3>
-<div id="2b2ede1b" class="cell" data-execution_count="14">
+<div id="5ae1d750" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>X_sm <span class="op">=</span> sm.add_constant(</span>
@@ -690,8 +690,8 @@ Model:                            GLM   Df Residuals:                     1492
 Model Family:                 Poisson   Df Model:                            7
 Link Function:                    Log   Scale:                          1.0000
 Method:                          IRLS   Log-Likelihood:                -3258.1
-Date:                Wed, 13 May 2026   Deviance:                       2143.3
-Time:                        22:16:27   Pearson chi2:                 2.07e+03
+Date:                Thu, 28 May 2026   Deviance:                       2143.3
+Time:                        23:19:24   Pearson chi2:                 2.07e+03
 No. Iterations:                     5   Pseudo R-squ. (CS):             0.1360
 Covariance Type:            nonrobust                                         
 ==============================================================================
@@ -708,7 +708,7 @@ x7             0.0214      0.038      0.556      0.578      -0.054       0.097
 ==============================================================================</code></pre>
 </div>
 </div>
-<div id="2fd26158" class="cell" data-execution_count="15">
+<div id="f8dc452f" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.optimize <span class="im">import</span> minimize</span>
@@ -728,7 +728,7 @@ SE: [0.1832 0.0139 0.0003 0.0309 0.0436 0.0466 0.0451 0.0385]</code></pre>
 </section>
 <section id="results-table" class="level3">
 <h3 class="anchored" data-anchor-id="results-table">Results Table</h3>
-<div id="571d904c" class="cell" data-execution_count="16">
+<div id="258cc447" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>glm_coefs <span class="op">=</span> coefs</span>
@@ -766,81 +766,81 @@ SE: [0.1832 0.0139 0.0003 0.0309 0.0436 0.0466 0.0451 0.0385]</code></pre>
 </details>
 <div class="cell-output cell-output-display">
 <style type="text/css">
-#T_738ef th {
+#T_64caa th {
   text-align: center;
   background-color: #f0f0f0;
 }
-#T_738ef td {
+#T_64caa td {
   text-align: center;
 }
-#T_738ef_row7_col0, #T_738ef_row7_col1, #T_738ef_row7_col2, #T_738ef_row7_col3 {
+#T_64caa_row7_col0, #T_64caa_row7_col1, #T_64caa_row7_col2, #T_64caa_row7_col3 {
   background-color: #fff3cd;
 }
 </style>
 
-<div id="T_738ef" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-postprocess="true">
+<div id="T_64caa" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-postprocess="true">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="T_738ef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="T_64caa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Poisson Regression Results (statsmodels GLM)
 </figcaption>
-<div aria-describedby="T_738ef-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table id="T_738ef" class="caption-top table table-sm table-striped small">
+<div aria-describedby="T_64caa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="T_64caa" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th id="T_738ef_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Variable</th>
-<th id="T_738ef_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Coefficient</th>
-<th id="T_738ef_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Std. Error</th>
-<th id="T_738ef_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">z-value</th>
+<th id="T_64caa_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Variable</th>
+<th id="T_64caa_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Coefficient</th>
+<th id="T_64caa_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Std. Error</th>
+<th id="T_64caa_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">z-value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_738ef_row0_col0" class="data row0 col0">Intercept</td>
-<td id="T_738ef_row0_col1" class="data row0 col1">-0.4797</td>
-<td id="T_738ef_row0_col2" class="data row0 col2">0.1832</td>
-<td id="T_738ef_row0_col3" class="data row0 col3">-2.6190</td>
+<td id="T_64caa_row0_col0" class="data row0 col0">Intercept</td>
+<td id="T_64caa_row0_col1" class="data row0 col1">-0.4797</td>
+<td id="T_64caa_row0_col2" class="data row0 col2">0.1832</td>
+<td id="T_64caa_row0_col3" class="data row0 col3">-2.6190</td>
 </tr>
 <tr class="even">
-<td id="T_738ef_row1_col0" class="data row1 col0">Age</td>
-<td id="T_738ef_row1_col1" class="data row1 col1">0.1486</td>
-<td id="T_738ef_row1_col2" class="data row1 col2">0.0139</td>
-<td id="T_738ef_row1_col3" class="data row1 col3">10.7160</td>
+<td id="T_64caa_row1_col0" class="data row1 col0">Age</td>
+<td id="T_64caa_row1_col1" class="data row1 col1">0.1486</td>
+<td id="T_64caa_row1_col2" class="data row1 col2">0.0139</td>
+<td id="T_64caa_row1_col3" class="data row1 col3">10.7160</td>
 </tr>
 <tr class="odd">
-<td id="T_738ef_row2_col0" class="data row2 col0">Age²</td>
-<td id="T_738ef_row2_col1" class="data row2 col1">-0.0030</td>
-<td id="T_738ef_row2_col2" class="data row2 col2">0.0003</td>
-<td id="T_738ef_row2_col3" class="data row2 col3">-11.5130</td>
+<td id="T_64caa_row2_col0" class="data row2 col0">Age²</td>
+<td id="T_64caa_row2_col1" class="data row2 col1">-0.0030</td>
+<td id="T_64caa_row2_col2" class="data row2 col2">0.0003</td>
+<td id="T_64caa_row2_col3" class="data row2 col3">-11.5130</td>
 </tr>
 <tr class="even">
-<td id="T_738ef_row3_col0" class="data row3 col0">Midwest</td>
-<td id="T_738ef_row3_col1" class="data row3 col1">0.2076</td>
-<td id="T_738ef_row3_col2" class="data row3 col2">0.0309</td>
-<td id="T_738ef_row3_col3" class="data row3 col3">6.7190</td>
+<td id="T_64caa_row3_col0" class="data row3 col0">Midwest</td>
+<td id="T_64caa_row3_col1" class="data row3 col1">0.2076</td>
+<td id="T_64caa_row3_col2" class="data row3 col2">0.0309</td>
+<td id="T_64caa_row3_col3" class="data row3 col3">6.7190</td>
 </tr>
 <tr class="odd">
-<td id="T_738ef_row4_col0" class="data row4 col0">Northwest</td>
-<td id="T_738ef_row4_col1" class="data row4 col1">-0.0292</td>
-<td id="T_738ef_row4_col2" class="data row4 col2">0.0436</td>
-<td id="T_738ef_row4_col3" class="data row4 col3">-0.6690</td>
+<td id="T_64caa_row4_col0" class="data row4 col0">Northwest</td>
+<td id="T_64caa_row4_col1" class="data row4 col1">-0.0292</td>
+<td id="T_64caa_row4_col2" class="data row4 col2">0.0436</td>
+<td id="T_64caa_row4_col3" class="data row4 col3">-0.6690</td>
 </tr>
 <tr class="even">
-<td id="T_738ef_row5_col0" class="data row5 col0">South</td>
-<td id="T_738ef_row5_col1" class="data row5 col1">-0.0467</td>
-<td id="T_738ef_row5_col2" class="data row5 col2">0.0466</td>
-<td id="T_738ef_row5_col3" class="data row5 col3">-1.0030</td>
+<td id="T_64caa_row5_col0" class="data row5 col0">South</td>
+<td id="T_64caa_row5_col1" class="data row5 col1">-0.0467</td>
+<td id="T_64caa_row5_col2" class="data row5 col2">0.0466</td>
+<td id="T_64caa_row5_col3" class="data row5 col3">-1.0030</td>
 </tr>
 <tr class="odd">
-<td id="T_738ef_row6_col0" class="data row6 col0">Southwest</td>
-<td id="T_738ef_row6_col1" class="data row6 col1">0.0274</td>
-<td id="T_738ef_row6_col2" class="data row6 col2">0.0451</td>
-<td id="T_738ef_row6_col3" class="data row6 col3">0.6070</td>
+<td id="T_64caa_row6_col0" class="data row6 col0">Southwest</td>
+<td id="T_64caa_row6_col1" class="data row6 col1">0.0274</td>
+<td id="T_64caa_row6_col2" class="data row6 col2">0.0451</td>
+<td id="T_64caa_row6_col3" class="data row6 col3">0.6070</td>
 </tr>
 <tr class="even">
-<td id="T_738ef_row7_col0" class="data row7 col0">Blueprinty Customer</td>
-<td id="T_738ef_row7_col1" class="data row7 col1">0.0214</td>
-<td id="T_738ef_row7_col2" class="data row7 col2">0.0385</td>
-<td id="T_738ef_row7_col3" class="data row7 col3">0.5560</td>
+<td id="T_64caa_row7_col0" class="data row7 col0">Blueprinty Customer</td>
+<td id="T_64caa_row7_col1" class="data row7 col1">0.0214</td>
+<td id="T_64caa_row7_col2" class="data row7 col2">0.0385</td>
+<td id="T_64caa_row7_col3" class="data row7 col3">0.5560</td>
 </tr>
 </tbody>
 </table>
@@ -864,7 +864,7 @@ Table&nbsp;1: Poisson Regression Results (statsmodels GLM)
 <section id="the-effect-of-blueprintys-software" class="level2">
 <h2 class="anchored" data-anchor-id="the-effect-of-blueprintys-software">The Effect of Blueprinty’s Software</h2>
 <p>Because the Poisson model is multiplicative, the customer coefficient alone does not tell us “how many extra patents” a firm gains from using Blueprinty. To get a directly interpretable estimate, we use the <strong>counterfactual prediction</strong> approach.</p>
-<div id="a8ef901d" class="cell" data-execution_count="17">
+<div id="f7659507" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Build X0 (everyone set to non-customer) and X1 (everyone set to customer)</span></span>

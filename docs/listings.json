@@ -2,8 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/mle.html",
       "/posts/post4.html",
+      "/posts/mle.html",
       "/posts/card_krueger_replication.html",
       "/posts/ab-testing.html",
       "/posts/post1.html",
