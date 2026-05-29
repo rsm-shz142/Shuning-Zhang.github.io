@@ -3,6 +3,7 @@
     "listing": "/blog.html",
     "items": [
       "/posts/mle.html",
+      "/posts/post4.html",
       "/posts/card_krueger_replication.html",
       "/posts/ab-testing.html",
       "/posts/post1.html",
@@ -11,33 +12,12 @@
     ]
   },
   {
-    "listing": "/495/spring/JH/projects.html",
-    "items": [
-      "/495/spring/JH/projects/project1/index.html",
-      "/495/spring/JH/projects/project2/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/project3/creative-gaming-uplift.html",
-      "/495/spring/JH/projects/project1/index.html",
-      "/495/spring/JH/projects/project2/index.html",
       "/projects/project1/pentathlon-nptb.html",
       "/projects/project2/smobile-churn.html",
       "/projects/project4/tuango-targeting.html"
-    ]
-  },
-  {
-    "listing": "/495/spring/JH/blog/index.html",
-    "items": []
-  },
-  {
-    "listing": "/495/spring/JH/blog.html",
-    "items": [
-      "/495/spring/JH/blog/index.html",
-      "/495/spring/JH/blog/card-krueger/index.html",
-      "/495/spring/JH/blog/ab-testing/index.html"
     ]
   }
 ]
